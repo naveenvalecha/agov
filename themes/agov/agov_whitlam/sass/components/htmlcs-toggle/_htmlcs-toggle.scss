@@ -1,0 +1,20 @@
+.htmlcs-toggle,
+%html-toggle {
+  display: none;
+
+@include respond-to('large') {
+  display: block;
+  width: auto;
+  background: color(blue-steel);
+  border: 3px solid color(grey-extra-light);
+  padding-right: 15px;
+  bottom: 40%;
+  left: 0;
+  color: color(white);
+  text-shadow: none;
+
+  input {
+    margin-top: 9px;
+   }
+  }
+}
