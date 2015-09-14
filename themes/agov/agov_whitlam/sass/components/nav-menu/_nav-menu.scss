@@ -49,10 +49,3 @@
     @extend %nav-menu__nested-list;
   }
 }
-
-//Drupal selectors.
-
-// scss-lint:disable IdSelector
-#block-menu-block-agov-menu-block-sidebar > .menu {
-  @extend %nav-menu;
-}

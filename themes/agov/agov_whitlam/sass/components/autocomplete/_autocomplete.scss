@@ -63,35 +63,3 @@
     color: color(autocomplete-select);
   }
 }
-
-//
-// Drupal selectors.
-//
-
-html.js input {
-  &.form-autocomplete {
-    @extend %autocomplete;
-  }
-
-  &.throbbing {
-    @extend %autocomplete-is-throbbing;
-  }
-}
-
-// scss-lint:disable IdSelector
-#autocomplete {
-  @extend %autocomplete__list-wrapper;
-
-  ul {
-    @extend %autocomplete__list;
-  }
-
-  li {
-    @extend %autocomplete__list-item;
-  }
-
-  .selected {
-    @extend %autocomplete__list-item-is-selected;
-  }
-}
-// scss-lint:enable IdSelector

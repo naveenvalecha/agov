@@ -30,20 +30,3 @@
     display: inline;
   }
 }
-
-//
-// Drupal selectors.
-//
-
-// The inline field label used by the Fences module.
-span.field-label {
-  @extend %inline-sibling;
-}
-
-.field__label-inline {
-  @extend %inline-sibling;
-}
-
-.field__items-inline {
-  @extend %inline-sibling__adjacent;
-}

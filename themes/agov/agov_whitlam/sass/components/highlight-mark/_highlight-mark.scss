@@ -12,12 +12,3 @@
   // Remove background highlighting from <mark> in normalize.
   background-color: transparent;
 }
-
-//
-// Drupal selectors.
-//
-
-.new,
-.update {
-  @extend %highlight-mark;
-}

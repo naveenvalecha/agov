@@ -110,22 +110,3 @@
     }
   }
 }
-
-//
-// Drupal selectors.
-//
-
-.messages {
-  &.warning {
-    @extend %messages--warning;
-  }
-
-  &.error {
-    @extend %messages--error;
-  }
-}
-
-.messages--error .error,
-.messages.error .error {
-  @extend %messages--error__highlighted-text;
-}

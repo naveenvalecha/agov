@@ -22,9 +22,3 @@
     color: color(date);
   }
 }
-
-//Fugly selectors.
-
-.field-type-datetime.field-label-hidden {
-  @extend %date--without-label;
-}

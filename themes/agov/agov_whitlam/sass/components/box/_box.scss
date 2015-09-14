@@ -80,11 +80,4 @@
   }
 }
 
-.pane-bean-current-news {
-  .box--icon {
-    &:first-child {
-      @extend %box--icon--reduced-top-spacing;
-    }
-  }
-}
 

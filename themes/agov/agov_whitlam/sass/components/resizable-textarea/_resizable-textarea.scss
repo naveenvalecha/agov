@@ -20,11 +20,3 @@
     overflow: hidden;
   }
 }
-
-//
-// Drupal selectors.
-//
-
-.resizable-textarea .grippie {
-  @extend %resizable-textarea__grippie;
-}
