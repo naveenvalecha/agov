@@ -32,25 +32,3 @@
     color: color(info);
   }
 }
-
-//
-// Drupal selectors.
-//
-
-// System status report.
-.ok {
-  @extend %status--ok;
-}
-
-.warning {
-  @extend %status--warning;
-}
-
-.error {
-  @extend %status--error;
-}
-
-// Node revisions.
-.revision-current {
-  @extend %status--ok;
-}
