@@ -1,0 +1,81 @@
+// Dependencies.
+@import 'components/inline-links/inline-links';
+
+// Header
+//
+// The header of page.
+//
+// Markup: header.hbs
+//
+// Style guide: components.header
+
+.header,
+%header {
+  background: color(header-background);
+  position: relative;
+  margin-bottom: 80px;
+
+  @include respond-to('medium') {
+    margin-bottom: 0;
+  }
+}
+
+.header__inner,
+%header__inner {
+  padding: 30px 35px 25px;
+  position: relative;
+
+  @include respond-to('medium') {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.header__secondary-menu,
+%header__secondary-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: .8rem;
+
+  ul {
+    @extend %inline-links;
+    margin: 0;
+  }
+
+  li {
+    @extend %inline-links__item;
+  }
+
+  a {
+    color: color(secondary-menu);
+
+    &:hover {
+      color: color(secondary-menu-hover);
+    }
+  }
+}
+
+
+.header__logo,
+%header__logo {
+  @include respond-to('medium') {
+    float: left;
+  }
+}
+
+.header__region,
+%header__region {
+  @include respond-to('medium') {
+    float: right;
+  }
+}
+
+.header__logo-image,
+%header__logo-image {
+  max-width: 50%;
+
+  @include respond-to('medium') {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+uuid: cecdadd5-48c0-4d5e-881c-2843975b6718
+langcode: en
+status: true
+dependencies: {  }
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'use text format plain_text'
+  - 'access content'
+  - 'search content'

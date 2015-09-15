@@ -1,0 +1,58 @@
+// Nav menu
+//
+// A "nav menu" is secondary, hierarchical navigation which can be displayed to the
+// side or below the main content.
+//
+// Markup: nav-menu.hbs
+//
+// Style guide: components.navigation.nav-menu
+
+.nav-menu,
+%nav-menu {
+  padding: 0;
+  text-indent: 0;
+
+  &__item {
+    padding: 0;
+    margin-bottom: 9px;
+    list-style: none;
+  }
+
+  &__link {
+    &.active,
+    &-is-active {
+      text-decoration: none;
+      font-weight: bold;
+      color: color(nav-menu-active);
+    }
+  }
+
+  &__nested-list {
+    padding-left: 28px;
+  }
+
+  &__wrapper {
+    > ul {
+      @extend %nav-menu;
+    }
+  }
+
+  li {
+    @extend %nav-menu__item;
+  }
+
+  a {
+    @extend %nav-menu__link;
+  }
+
+  ul {
+    @extend %nav-menu__nested-list;
+  }
+}
+
+//Drupal selectors.
+
+// scss-lint:disable IdSelector
+#block-menu-block-agov-menu-block-sidebar > .menu {
+  @extend %nav-menu;
+}

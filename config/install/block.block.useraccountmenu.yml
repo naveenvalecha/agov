@@ -1,0 +1,26 @@
+uuid: 0f57a86f-8380-43f4-aa00-e7b9cabc4923
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - agov_whitlam
+id: useraccountmenu
+theme: agov_whitlam
+region: header
+weight: -1
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: visible
+  cache:
+    max_age: -1
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,31 @@
+// Do not print
+//
+// Removes an element from the print version of the web site.
+//
+// By importing this CSS file as media "all", we allow this print file to be
+// aggregated with other stylesheets, for improved front-end performance.
+//
+// Markup: print-none.hbs
+//
+// Style guide: components.print-none
+
+.print-none,
+%print-none {
+  @media print {
+    display: none;
+  }
+}
+
+//
+// Drupal selectors.
+//
+
+// Hide Drupal nav elements.
+.toolbar,
+.action-links,
+.links,
+.book-navigation,
+.forum-topic-navigation,
+.feed-icons {
+  @extend %print-none;
+}

@@ -1,0 +1,126 @@
+// Search
+//
+// A simple search styling.
+//
+// Markup: search.hbs
+//
+// Style guide: components.search
+
+.search__wrapper,
+%search__wrapper {
+  @include box-sizing(content-box);
+  width: 100%;
+  background: color('white');
+  margin: 20px -35px -25px;
+  padding: 20px 35px;
+
+  @include respond-to('medium') {
+    @include box-sizing(border-box);
+    margin: 0;
+    background: none;
+    position: relative;
+    bottom: 0;
+    padding: 14px 5px 5px;
+  }
+}
+
+.search,
+%search {
+  color: color(search-color);
+  background: color(search-bg);
+
+  @include respond-to('medium') {
+    color: color(search-color-light);
+    background: transparent;
+  }
+}
+
+.search__inner-wrapper,
+%search__inner-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 13px;
+  width: 100%;
+  border-bottom: 1px solid color(search-border);
+
+  @include respond-to('medium') {
+    width: auto;
+    float: right;
+    border-width: 2px;
+    min-width: 363px;
+    padding: 0 0 13px;
+
+    &:hover,
+    &:focus {
+      border-color: color('white');
+    }
+  }
+
+}
+
+.search__input,
+%search__input {
+  @include box-shadow(none);
+  // scss-lint:disable ImportantRule
+  background: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+  // scss-lint:enable ImportantRule
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+
+  @include input-placeholder() {
+
+    @include opacity(1);
+    color: color(search-color);
+  }
+
+  @include respond-to('medium') {
+    background: none;
+    border: 0;
+
+    @include input-placeholder() {
+      color: color(search-color-light);
+    }
+  }
+
+}
+
+.search__button,
+%search__button {
+  background: none;
+  background-repeat: no-repeat;
+  background-image: inline-image('components/search/search-icon-blue.png');
+  position: absolute;
+  right: 0;
+  top: 1em;
+  border: 0;
+  text-indent: -999em;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-color: none;
+  padding-left: 13px;
+
+  @include respond-to('medium') {
+    background: none;
+    background-repeat: no-repeat;
+    background-image: inline-image('components/search/search-icon.png');
+    top: 0;
+    padding: 0;
+  }
+}
+
+//Fugly selectors.
+
+.search {
+
+  .form-search {
+    @extend %search__input;
+  }
+
+  .form-submit {
+    @extend %search__button;
+  }
+}

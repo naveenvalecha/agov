@@ -1,0 +1,39 @@
+// Footer Bottom
+//
+// The footer bottom region of page
+//
+// Markup: footer-bottom.hbs
+//
+// Style guide: components.footer-bottom
+
+.footer-bottom,
+%footer-bottom {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: color(grey-extra-dark);
+  color: color(text-bg);
+
+  &__left {
+    @include respond-to(medium) {
+      float: left;
+    }
+  }
+
+  &__right {
+    @include respond-to(medium) {
+      margin-left: 25px;
+      float: right;
+    }
+  }
+
+  :link,
+  :visited,
+  &__link {
+    color: color(text-bg);
+
+    &:hover,
+    &:focus {
+      color: color(grey-light);
+    }
+  }
+}

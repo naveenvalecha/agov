@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Theme override for a form element.
+ *
+#}
+
+{% if label_display in ['before', 'invisible'] %}
+  {{ label }}
+{% endif %}
+{{ children }}
+
+{% if label_display == 'after' %}
+  {{ label }}
+{% endif %}
+
+{% if errors %}
+  <div class="form-item--error-message">
+    <strong>{{ errors }}</strong>
+  </div>
+{% endif %}

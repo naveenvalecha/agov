@@ -1,0 +1,215 @@
+// Comments
+//
+// The comments of page.
+//
+// Markup: comment.hbs
+//
+// Style guide: components.comment
+
+// Comments picture
+//
+// The comments of page.
+//
+// Markup: comment-picture.hbs
+//
+// Style guide: components.comment-picture
+
+// Wrapper for a single comment.
+$padding-left: 50px;
+$padding-left-with-picture: 64px;
+$padding-left-no-picture: 42px;
+
+.comment,
+%comment {
+  margin-bottom: 42px;
+
+  &--inner-wrapper {
+    padding-left: 50px;
+    position: relative;
+
+    &:before {
+      @extend .fa;
+      @extend .fa-comment-o;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      font-size: 30px;
+      color: color(comment-icon);
+    }
+
+    .submitted {
+      margin-top: 0;
+      display: inline;
+      font-size: 15px;
+      font-style: italic;
+    }
+  }
+
+  &.with-picture {
+    .comment--inner-wrapper {
+      padding-left: 64px;
+
+      &:before {
+        content: '';
+      }
+    }
+  }
+
+  .field-name-comment-body {
+    p {
+      margin: 0;
+    }
+  }
+
+  ul.links {
+    margin: 10px 0;
+    text-indent: 0;
+  }
+
+  .user-picture {
+    float: left;
+
+    a {
+      display: inline-block;
+      padding-top: 3px;
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    img {
+      @include border-radius(100%);
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .author {
+    a {
+      color: color(text);
+      text-transform: capitalize;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: color(link);
+        outline: none;
+      }
+    }
+  }
+
+  .date-month {
+    color: color(comment-date);
+  }
+
+  // Wrapper for the list of comments and its title.
+  &__section {
+    @include output-rhythm(margin, rhythm(1) 0);
+
+    &-title {
+      @extend %divider;
+      margin-bottom: 45px;
+      padding-top: 25px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  // Comment's permalink wrapper.
+  &__permalink {
+    text-transform: uppercase;
+    font-size: 75%;
+  }
+
+  // Preview of the comment before submitting new or updated comment.
+  &--preview {
+    background-color: color(preview-bg);
+  }
+
+  // Nested comments are indented.
+  &--nested {
+    // Drupal core uses a 25px left margin.
+    @include rtl() {
+      margin-left: 0;
+      margin-right: $indent-amount;
+    }
+  }
+}
+
+//
+// Drupal selectors.
+//
+
+.comments {
+  @extend %comment__section;
+}
+
+.comment-preview {
+  @extend %comment--preview;
+}
+
+.comment .permalink {
+  @extend %comment__permalink;
+}
+
+.indented {
+  @extend %comment--nested;
+
+  .comment {
+    margin-top: -12px;
+    padding-left: 8px;
+
+    @include respond-to('medium') {
+      padding-left: $padding-left;
+    }
+
+    &.with-picture {
+      padding-left: 14px;
+
+      @include respond-to('medium') {
+        padding-left: $padding-left-with-picture;
+      }
+
+      .comment--inner-wrapper {
+        padding-left: $padding-left;
+      }
+    }
+  }
+
+  .indented {
+    .comment {
+      margin-top: -12px;
+      padding-left: 8px;
+
+      @include respond-to('medium') {
+        padding-left: $padding-left + $padding-left-no-picture;
+      }
+
+      &.with-picture {
+        padding-left: 14px;
+
+        @include respond-to('medium') {
+          padding-left: $padding-left-with-picture + $padding-left;
+        }
+      }
+    }
+  }
+
+  .user-picture img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .comment--inner-wrapper {
+    padding-left: $padding-left-no-picture;
+
+    &:before {
+      font-size: 24px;
+    }
+  }
+}
+
