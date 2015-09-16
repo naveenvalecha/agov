@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.standard_page.body
     - field.field.node.standard_page.field_standard_page_image
     - node.type.standard_page
@@ -9,27 +10,24 @@ dependencies:
     - image
     - text
     - user
-id: node.standard_page.default
+id: node.standard_page.full
 targetEntityType: node
 bundle: standard_page
-mode: default
+mode: full
 content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
   field_standard_page_image:
-    weight: 102
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      image_style: ''
+      image_style: full_page_wide
       image_link: ''
     third_party_settings: {  }
     type: image
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true

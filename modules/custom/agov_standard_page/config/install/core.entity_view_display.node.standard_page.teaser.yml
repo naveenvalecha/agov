@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.standard_page.body
+    - field.field.node.standard_page.field_standard_page_image
     - node.type.standard_page
   module:
     - text
@@ -22,4 +23,5 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_standard_page_image: true
