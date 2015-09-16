@@ -11,3 +11,7 @@ defaults[projects][subdir] = "contrib"
 ; Themes
 
 ; Libraries
+
+; Development Modules
+projects[config_devel][version] = '1.0-beta4'
+projects[config_devel][subdir] = 'development'
