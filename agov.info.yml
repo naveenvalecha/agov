@@ -4,6 +4,7 @@ description: A distribution for government and the public sector in Australia.
 core: 8.x
 
 dependencies:
+  # Core modules
   - node
   - history
   - block
@@ -37,6 +38,9 @@ dependencies:
   - views
   - views_ui
   - tour
+
+  # Custom modules
+  - agov_standard_page
 
 themes:
   - agov_whitlam
