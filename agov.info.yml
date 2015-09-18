@@ -39,6 +39,9 @@ dependencies:
   - views_ui
   - tour
 
+  # Contrib modules
+  - file_entity
+
   # Custom modules
   - agov_standard_page
 
