@@ -42,6 +42,15 @@ dependencies:
   # Custom modules
   - agov_standard_page
 
+configurable_dependencies:
+  module_one:
+    label: Module One
+    enabled: true
+
+  module_two:
+    label: Module two
+    enabled: false
+
 themes:
   - agov_whitlam
   - seven
