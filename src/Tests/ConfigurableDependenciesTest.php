@@ -7,8 +7,6 @@
 
 namespace Drupal\agov\Tests;
 
-use Drupal\Core\DrupalKernel;
-use Drupal\Core\Site\Settings;
 use Drupal\simpletest\InstallerTestBase;
 use Symfony\Component\BrowserKit\Request;
 
