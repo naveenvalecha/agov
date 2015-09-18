@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Contains \
+ */
+
+namespace Drupal\agov\Tests;
+
+use Drupal\Core\DrupalKernel;
+use Drupal\Core\Site\Settings;
+use Drupal\simpletest\InstallerTestBase;
+use Symfony\Component\BrowserKit\Request;
+
+/**
+ * Test the configurable dependencies installer.
+ *
+ * @group agov
+ */
+class ConfigurableDependenciesTest extends InstallerTestBase {
+
+  protected $profile = 'agov_test_profile';
+
+  /**
+   * Test we're on the configurable dependencies.
+   */
+  public function testInstaller() {
+    // Make sure we're on the right page.
+    $this->assertText('aGov Module Configuration');
+
+    // We should have the forum module listed and checked by default.
+    $this->assertText('This is Drupals core forum module.');
+    $this->assertFieldChecked('edit-configurable-modules-forum');
+
+    // We should have the contact module but that should be disabled.
+    $this->assertText('Contact');
+    $this->assertNoFieldChecked('edit-configurable-modules-contact');
+
+    // Complete the installer so the modules are installed and clear the entity
+    // definitions.
+    \Drupal::entityManager()->clearCachedDefinitions();
+    $this->drupalPostForm($this->getUrl(), ['configurable_modules[forum]' => 1], 'Save and continue');
+
+    // Make sure the modules we requested are installed.
+    $this->drupalGet('/admin/modules');
+    $this->assertFieldChecked('edit-modules-core-forum-enable');
+    $this->assertNoFieldChecked('edit-modules-core-contact-enable');
+  }
+
+}

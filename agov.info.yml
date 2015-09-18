@@ -43,8 +43,9 @@ dependencies:
   - agov_standard_page
 
 configurable_dependencies:
-  module_one:
-    label: Module One
+  module_enabled_by_default:
+    label: Config Devel
+    description: This module provides some great news articles.
     enabled: true
 
   module_two:

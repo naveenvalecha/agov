@@ -7,10 +7,36 @@
 
 namespace Drupal\agov\Form;
 
+use Drupal\Core\Extension\ModuleInstallerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class ConfigurableProfileDependenciesForm extends FormBase {
+
+  /**
+   * @var \Drupal\Core\Extension\ModuleInstallerInterface
+   */
+  protected $moduleInstaller;
+
+  /**
+   * Constructs a new configurable profile form.
+   *
+   * \Drupal\Core\Extension\ModuleInstallerInterface $module_installer
+   *   The module installer service.
+   */
+  public function __construct(ModuleInstallerInterface $module_installer) {
+    $this->moduleInstaller = $module_installer;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('module_installer')
+    );
+  }
 
   /**
    * {@inheritdoc}
@@ -25,30 +51,37 @@ class ConfigurableProfileDependenciesForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
 
     $form['#title'] = $this->t('aGov Module Configuration');
-    $install_state = $form_state->getBuildInfo()['args'][0];
+//    $install_state = $form_state->getBuildInfo()['args'][0];
+
+    global $install_state;
 
     // If we have any configurable_dependencies in the profile then show them
     // to the user so they can be selected.
     if (!empty($install_state['profile_info']['configurable_dependencies'])) {
-      $options = [];
-      $defaults = [];
-      foreach ($install_state['profile_info']['configurable_dependencies'] as $module_name => $info) {
-        $options[$module_name] = $info['label'];
-        if (!empty($info['enabled'])) {
-          $defaults[] = $module_name;
-        }
-      }
-
       $form['configurable_modules'] = [
-        '#title' => $this->t('Configurable modules'),
-        '#type' => 'checkboxes',
-        '#options' => $options,
-        '#default_value' => $defaults,
+        '#type' => 'container',
+        '#tree' => TRUE,
       ];
+      foreach ($install_state['profile_info']['configurable_dependencies'] as $module_name => $info) {
+        $form['configurable_modules'][$module_name] = [
+          '#title' => $info['label'],
+          '#description' => !empty($info['description']) ? $info['description'] : '',
+          '#type' => 'checkbox',
+          '#default_value' => !empty($info['enabled']),
+        ];
+      }
     }
     else {
       $form['#suffix'] = $this->t('There are no available modules at this time.');
     }
+
+    $form['actions'] = array('#type' => 'actions');
+    $form['actions']['save'] = array(
+      '#type' => 'submit',
+      '#value' => $this->t('Save and continue'),
+      '#button_type' => 'primary',
+      '#submit' => array('::submitForm'),
+    );
 
     return $form;
   }
@@ -57,8 +90,10 @@ class ConfigurableProfileDependenciesForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    // TODO: Implement submitForm() method.
-    // $this->moduleInstaller->install($form_state->getValues('configurable_modules'));
+    $modules_to_install = array_filter($form_state->getValue('configurable_modules'), function($enabled) {
+      return (bool) $enabled;
+    });
+    $this->moduleInstaller->install(array_keys($modules_to_install));
   }
 
 }
