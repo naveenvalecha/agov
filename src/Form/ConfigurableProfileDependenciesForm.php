@@ -51,9 +51,7 @@ class ConfigurableProfileDependenciesForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
 
     $form['#title'] = $this->t('aGov Module Configuration');
-//    $install_state = $form_state->getBuildInfo()['args'][0];
-
-    global $install_state;
+    $install_state = $form_state->getBuildInfo()['args'][0];
 
     // If we have any configurable_dependencies in the profile then show them
     // to the user so they can be selected.
