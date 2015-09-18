@@ -132,8 +132,10 @@
     width: auto;
   }
 
-  &-is-active {
+  &-is-active,
+  .is-active {
     background: color(navbar);
+    color: color(navbar-active) !important;
   }
 
   &-active-trail {
