@@ -42,16 +42,6 @@ dependencies:
   # Custom modules
   - agov_standard_page
 
-configurable_dependencies:
-  module_enabled_by_default:
-    label: Config Devel
-    description: This module provides some great news articles.
-    enabled: true
-
-  module_two:
-    label: Module two
-    enabled: false
-
 themes:
   - agov_whitlam
   - seven
