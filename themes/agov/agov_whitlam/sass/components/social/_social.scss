@@ -17,13 +17,13 @@
     text-indent: 0;
     padding: 0;
     margin: 0;
+    list-style: none;
   }
 
   &__item {
     float: left;
     list-style: none;
-    margin-right: 14px;
-    margin-bottom: 5px;
+    margin: 0 14px 5px 0;
 
     a {
       @include border-radius(100%);
@@ -31,17 +31,30 @@
       width: 48px;
       height: 48px;
       text-align: center;
-      display: inline-block;
+      display: block;
 
       &:hover {
         background: color(social-bg-hover);
       }
-    }
 
-    i {
-      color: color(social-icon);
-      font-size: 24px;
-      line-height: 50px;
+      span {
+        color: color(social-icon);
+        font-size: 24px;
+        line-height: 50px;
+      }
     }
+  }
+}
+
+// Join the dots for the linkicon generated markup.
+.linkicon--social ul {
+  @extend %social__list;
+
+  li {
+    @extend %social__item;
+  }
+
+  .linkicon__text {
+    display: none;
   }
 }
