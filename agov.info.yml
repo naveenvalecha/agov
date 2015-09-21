@@ -45,6 +45,12 @@ dependencies:
   # Custom modules
   - agov_standard_page
 
+configurable_dependencies:
+  agov_default_content:
+    label: aGov Default Content
+    description: Provides default content so you can see the aGov features in action.
+    enabled: true
+
 themes:
   - agov_whitlam
   - seven
