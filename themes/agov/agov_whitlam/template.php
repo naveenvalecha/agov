@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * Theme template file.
+ */
+
+/**
  * Implements hook_preprocess_html().
  */
 function agov_whitlam_preprocess_html(&$variables, $hook) {
@@ -13,12 +18,7 @@ function agov_whitlam_preprocess_html(&$variables, $hook) {
 }
 
 /**
- * Override or insert variables into the node templates.
- *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("node" in this case.)
+ * Implements hook_preprocess_node().
  */
 function agov_whitlam_preprocess_node(&$variables, $hook) {
   $node = $variables['node'];
@@ -44,12 +44,7 @@ function agov_whitlam_preprocess_node(&$variables, $hook) {
 }
 
 /**
- * Override or insert variables into the comment templates.
- *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("comment" in this case.)
+ * Implements hook_preprocess_comment().
  */
 function agov_whitlam_preprocess_comment(&$variables, $hook) {
   $comment = $variables['comment'];
@@ -76,12 +71,7 @@ function agov_whitlam_preprocess_comment_wrapper(&$variables, $hook) {
 }
 
 /**
- * Override or insert variables into the block templates.
- *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("block" in this case.)
+ * Implements hook_preprocess_block().
  */
 function agov_whitlam_preprocess_block(&$variables, $hook) {
   $block = $variables['elements']['#block'];
@@ -102,7 +92,7 @@ function agov_whitlam_preprocess_block(&$variables, $hook) {
  * @param array $variables
  *   Variables to pass to the theme template.
  */
-function agov_whitlam_preprocess_entity(&$variables) {
+function agov_whitlam_preprocess_entity(array &$variables) {
   $entity_type = $variables['elements']['#entity_type'];
   $entity = $variables['elements']['#entity'];
 

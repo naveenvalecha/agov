@@ -14,7 +14,6 @@ function agov_whitlam_form_system_theme_settings_alter(&$form, &$form_state, $fo
   }
 
   // Create the form using Forms API: http://api.drupal.org/api/7
-
   /* -- Delete this line if you want to use this setting
   $form['agov_whitlam_example'] = array(
   '#type'          => 'checkbox',
