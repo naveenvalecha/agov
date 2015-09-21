@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\agov\Tests\ConfigurableDependenciesTest
+ * Contains \Drupal\agov\Tests\ConfigurableDependenciesTest.
  */
 
 namespace Drupal\agov\Tests;
@@ -18,6 +18,8 @@ use Symfony\Component\BrowserKit\Request;
 class ConfigurableDependenciesTest extends InstallerTestBase {
 
   /**
+   * Override the installation profile to our testing profile.
+   *
    * @var string
    */
   protected $profile = 'agov_test_profile';

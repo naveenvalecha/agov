@@ -2,7 +2,7 @@
 
 /**
  * @file
- * \Drupal\agov\Form\ConfigurableProfileDependenciesForm
+ * Contains \Drupal\agov\Form\ConfigurableProfileDependenciesForm.
  */
 
 namespace Drupal\agov\Form;
@@ -12,9 +12,14 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+/**
+ * Provides a form for selecting available modules during install.
+ */
 class ConfigurableProfileDependenciesForm extends FormBase {
 
   /**
+   * The module installer service.
+   *
    * @var \Drupal\Core\Extension\ModuleInstallerInterface
    */
   protected $moduleInstaller;
@@ -22,7 +27,7 @@ class ConfigurableProfileDependenciesForm extends FormBase {
   /**
    * Constructs a new configurable profile form.
    *
-   * \Drupal\Core\Extension\ModuleInstallerInterface $module_installer
+   * @param \Drupal\Core\Extension\ModuleInstallerInterface $module_installer
    *   The module installer service.
    */
   public function __construct(ModuleInstallerInterface $module_installer) {
