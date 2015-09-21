@@ -5,6 +5,11 @@ api = 2
 defaults[projects][subdir] = "contrib"
 
 ; Contrib modules
+projects[file_entity][type] = module
+projects[file_entity][download][type] = git
+projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
+projects[file_entity][download][branch] = 8.x-2.x
+projects[file_entity][subdir] = 'contrib'
 
 ; aGov
 
@@ -15,3 +20,8 @@ defaults[projects][subdir] = "contrib"
 ; Development Modules
 projects[config_devel][version] = '1.0-beta4'
 projects[config_devel][subdir] = 'development'
+projects[default_content][type] = module
+projects[default_content][download][type] = git
+projects[default_content][download][url] = https://github.com/larowlan/default_content.git
+projects[default_content][download][branch] = 8.x
+projects[default_content][subdir] = 'development'

@@ -39,9 +39,34 @@ dependencies:
   - views_ui
   - tour
 
+  # Contrib modules
+  - file_entity
+
   # Custom modules
   - agov_standard_page
 
 themes:
   - agov_whitlam
   - seven
+
+config_devel:
+  - block.block.mainnavigation
+  - block.block.searchform
+  - block.block.useraccountmenu
+  - agov_whitlam.settings
+  - block.block.searchform
+  - block.block.seven_breadcrumbs
+  - block.block.seven_content
+  - block.block.seven_help
+  - block.block.seven_local_actions
+  - block.block.seven_login
+  - block.block.seven_messages
+  - block.block.seven_primary_local_tasks
+  - block.block.seven_secondary_local_tasks
+  - block.block.useraccountmenu
+  - filter.format.basic_html
+  - filter.format.full_html
+  - filter.format.restricted_html
+  - system.theme
+  - user.role.anonymous
+  - user.role.authenticated

@@ -2,22 +2,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.account
+    - system.menu.main
   module:
     - system
   theme:
     - agov_whitlam
-id: useraccountmenu
+id: mainnavigation
 theme: agov_whitlam
-region: header
-weight: -1
+region: primary_menu
+weight: -2
 provider: null
-plugin: 'system_menu_block:account'
+plugin: 'system_menu_block:main'
 settings:
-  id: 'system_menu_block:account'
-  label: 'User account menu'
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
   provider: system
-  label_display: visible
+  label_display: '0'
   cache:
     max_age: -1
   level: 1
