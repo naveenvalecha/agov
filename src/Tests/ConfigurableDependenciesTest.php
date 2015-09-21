@@ -48,6 +48,8 @@ class ConfigurableDependenciesTest extends InstallerTestBase {
     $this->drupalGet('/admin/modules');
     $this->assertFieldChecked('edit-modules-core-forum-enable');
     $this->assertNoFieldChecked('edit-modules-core-contact-enable');
+
+    $this->assertTrue(FALSE);
   }
 
 }
