@@ -5,6 +5,9 @@ api = 2
 defaults[projects][subdir] = "contrib"
 
 ; Contrib modules
+projects[layout_plugin][version] = '1.0-alpha14'
+projects[page_manager][version] = '1.0-alpha14'
+
 projects[file_entity][type] = module
 projects[file_entity][download][type] = git
 projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
