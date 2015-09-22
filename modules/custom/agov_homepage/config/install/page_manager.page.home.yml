@@ -1,6 +1,9 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - block_page_layout
+    - twitter_block
 id: home
 label: Home
 use_admin_theme: null
@@ -12,15 +15,69 @@ display_variants:
     weight: 10
     uuid: cb22f203-85bf-4da9-b300-e95fd2ba95ed
     status_code: 404
-  1453a585-2838-4881-b762-9836080f1260:
+  6fbc5ded-fb7d-46fd-9100-ecf7f77bd305:
     selection_conditions: {  }
-    blocks: {  }
-    id: block_display
-    label: Default
-    uuid: 1453a585-2838-4881-b762-9836080f1260
+    blocks:
+      bb567939-6959-4fa9-9a19-25d2ae7c7d9a:
+        id: twitter_block
+        label: 'Twitter block'
+        provider: twitter_block
+        label_display: 0
+        cache:
+          max_age: '-1'
+        widget_id: '360632154172030979'
+        theme: ''
+        link_color: ''
+        width: ''
+        height: ''
+        chrome:
+          noheader: noheader
+          nofooter: nofooter
+          noborders: noborders
+          transparent: transparent
+          noscrollbar: 0
+        border_color: ''
+        language: ''
+        tweet_limit: ''
+        related: ''
+        polite: polite
+        region: right-sidebar
+        weight: '0'
+        uuid: bb567939-6959-4fa9-9a19-25d2ae7c7d9a
+        context_mapping: {  }
+      f270e7c2-8c62-4cc4-b807-7c2238678696:
+        id: twitter_block
+        label: 'Twitter block'
+        provider: twitter_block
+        label_display: 0
+        cache:
+          max_age: '-1'
+        widget_id: '360632154172030979'
+        theme: ''
+        link_color: ''
+        width: ''
+        height: ''
+        chrome:
+          noheader: noheader
+          nofooter: nofooter
+          noborders: noborders
+          noscrollbar: 0
+          transparent: 0
+        border_color: ''
+        language: ''
+        tweet_limit: ''
+        related: ''
+        polite: polite
+        region: right_sidebar
+        uuid: f270e7c2-8c62-4cc4-b807-7c2238678696
+        context_mapping: {  }
+    id: block_page_layout
+    label: Home
+    uuid: 6fbc5ded-fb7d-46fd-9100-ecf7f77bd305
     weight: 0
     selection_logic: and
     page_title: Home
+    layout: landing_page
 access_logic: and
 access_conditions: {  }
 static_context: {  }
