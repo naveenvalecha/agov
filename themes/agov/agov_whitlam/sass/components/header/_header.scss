@@ -1,6 +1,3 @@
-// Dependencies.
-@import 'components/inline-links/inline-links';
-
 // Header
 //
 // The header of page.
@@ -20,8 +17,7 @@
   }
 }
 
-.header__inner,
-%header__inner {
+.header__inner {
   padding: 30px 35px 25px;
   position: relative;
 
@@ -31,20 +27,14 @@
   }
 }
 
-.header__secondary-menu,
-%header__secondary-menu {
+.header__secondary-menu {
   position: absolute;
   top: 0;
   right: 0;
   font-size: .8rem;
 
-  ul {
-    @extend %inline-links;
+  .links.inline {
     margin: 0;
-  }
-
-  li {
-    @extend %inline-links__item;
   }
 
   a {
@@ -56,23 +46,18 @@
   }
 }
 
-
-.header__logo,
-%header__logo {
-  @include respond-to('medium') {
+@include respond-to('medium') {
+  .header__logo {
     float: left;
   }
-}
 
-.header__region,
-%header__region {
-  @include respond-to('medium') {
+  .header__region {
     float: right;
   }
 }
 
-.header__logo-image,
-%header__logo-image {
+
+.header__logo-image {
   max-width: 50%;
 
   @include respond-to('medium') {
