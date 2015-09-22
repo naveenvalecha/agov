@@ -6,6 +6,7 @@ core: '8.x'
 
 dependencies:
   - layout_plugin
+  - block_page_layout
   - page_manager
 
 config_devel:
