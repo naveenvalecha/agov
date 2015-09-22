@@ -8,7 +8,7 @@ function agov_test_profile_install_tasks(&$install_state) {
   // implement hook_install_tasks() in a test install profile so we can have
   // fake configurable dependencies. This form wouldn't normally be included
   // since we're not installing with aGov, so manually include it.
-  require_once __DIR__ . '/../src/Form/ConfigurableProfileDependenciesForm.php';
+  require_once __DIR__ . '/../../src/Form/ConfigurableProfileDependenciesForm.php';
 
   return [
     'configurable_profile_dependencies' => [
