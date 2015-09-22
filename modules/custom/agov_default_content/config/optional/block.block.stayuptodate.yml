@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_block:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
+  module:
+    - block_content
+    - system
+  theme:
+    - agov_whitlam
+id: stayuptodate
+theme: agov_whitlam
+region: sidebar_second
+weight: -2
+provider: null
+plugin: 'block_content:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
+settings:
+  id: 'block_content:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
+  label: 'Stay up to date'
+  provider: block_content
+  label_display: visible
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
