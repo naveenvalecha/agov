@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_install_tasks().
+ */
+function agov_install_tasks(&$install_state) {
+  return [
+    'configurable_profile_dependencies' => [
+      'display_name' => t('Configurable Modules'),
+      'display' => TRUE,
+      'type' => 'form',
+      'function' => 'Drupal\agov\Form\ConfigurableProfileDependenciesForm',
+    ],
+  ];
+}
