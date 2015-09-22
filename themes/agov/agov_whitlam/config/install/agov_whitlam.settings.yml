@@ -1,14 +1,14 @@
-# The default values for this config are found in:
-# core/modules/system/config/install/system.theme.global.yml
 features:
+  logo: true
+  name: true
+  slogan: true
+  node_user_picture: true
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
-  logo: true
-  name: true
-  node_user_picture: true
-  slogan: true
 logo:
-  path: ''
-  url: ''
+  use_default: false
+  path: profiles/agov/themes/agov/agov_whitlam/logo.png
+favicon:
   use_default: true
+  path: ''

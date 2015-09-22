@@ -17,23 +17,23 @@ content:
     settings:
       url_only: false
       url_plain: false
-      rel: 0
-      target: 0
+      rel: ''
+      target: ''
       linkicon_prefix: fa
       linkicon_wrapper_class: linkicon--social
-      linkicon_link: 0
-      linkicon_load: 0
-      linkicon_vertical: 0
+      linkicon_link: false
+      linkicon_load: false
+      linkicon_vertical: false
       linkicon_style: ''
       linkicon_color: ''
-      linkicon_tooltip: 0
-      linkicon_no_text: 0
-      linkicon_maxlength: ''
+      linkicon_tooltip: false
+      linkicon_no_text: false
+      linkicon_maxlength: 60
       linkicon_global_title: ''
       linkicon_position: ''
       linkicon_size: ''
       linkicon_bundle: ''
-      trim_length: '80'
+      trim_length: 80
     third_party_settings: {  }
     type: linkicon
 hidden: {  }

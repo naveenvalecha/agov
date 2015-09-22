@@ -13,6 +13,7 @@ projects[file_entity][subdir] = 'contrib'
 
 projects[linkicon][subdir] = 'contrib'
 projects[linkicon][version] = '1.0'
+projects[linkicon][patch][] = https://www.drupal.org/files/issues/linkicon-schema.patch
 
 ; aGov
 

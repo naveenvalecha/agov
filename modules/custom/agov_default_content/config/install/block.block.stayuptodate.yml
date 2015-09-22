@@ -5,7 +5,6 @@ dependencies:
     - 'block_content:social_block:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
   module:
     - block_content
-    - system
   theme:
     - agov_whitlam
 id: stayuptodate

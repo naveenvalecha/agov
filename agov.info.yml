@@ -58,7 +58,6 @@ themes:
 
 config_devel:
   # Global config.
-  - agov_whitlam.settings
   - system.theme
 
   # Permissions.
@@ -87,3 +86,4 @@ config_devel:
 
   # Contact page.
   - contact.form.contact
+  - contact.settings
