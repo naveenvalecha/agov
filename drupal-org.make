@@ -20,6 +20,9 @@ projects[twitter_block][download][url] = sam@git.drupal.org:sandbox/sam/2572433.
 projects[twitter_block][download][branch] = 8.x-1.x
 projects[twitter_block][subdir] = 'contrib'
 
+projects[linkicon][subdir] = 'contrib'
+projects[linkicon][version] = '1.0'
+
 ; aGov
 
 ; Themes
