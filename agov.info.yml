@@ -48,6 +48,7 @@ dependencies:
   # Custom modules
   - agov_standard_page
   - agov_social_icons
+  - agov_homepage
 
 configurable_dependencies:
   agov_default_content:

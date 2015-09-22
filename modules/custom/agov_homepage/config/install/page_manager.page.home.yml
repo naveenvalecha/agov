@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies: {  }
+id: home
+label: Home
+use_admin_theme: null
+path: /home
+display_variants:
+  cb22f203-85bf-4da9-b300-e95fd2ba95ed:
+    id: http_status_code
+    label: Default
+    weight: 10
+    uuid: cb22f203-85bf-4da9-b300-e95fd2ba95ed
+    status_code: 404
+  1453a585-2838-4881-b762-9836080f1260:
+    selection_conditions: {  }
+    blocks: {  }
+    id: block_display
+    label: Default
+    uuid: 1453a585-2838-4881-b762-9836080f1260
+    weight: 0
+    selection_logic: and
+    page_title: Home
+access_logic: and
+access_conditions: {  }
+static_context: {  }
