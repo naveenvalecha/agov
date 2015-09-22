@@ -11,6 +11,9 @@ projects[file_entity][download][url] = https://github.com/md-systems/file_entity
 projects[file_entity][download][branch] = 8.x-2.x
 projects[file_entity][subdir] = 'contrib'
 
+projects[linkicon][subdir] = 'contrib'
+projects[linkicon][version] = '1.0'
+
 ; aGov
 
 ; Themes
