@@ -12,8 +12,6 @@ use Symfony\Component\BrowserKit\Request;
 
 /**
  * Base class for testing aGov.
- *
- * @group agov
  */
 abstract class AgovTestBase extends WebTestBase {
 
