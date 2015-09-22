@@ -1,0 +1,17 @@
+// Lede
+//
+// The lede is introductory text that is given special prominent styling.
+//
+// Markup: lede.hbs
+//
+// Style guide: components.lede
+
+.lede,
+%lede {
+  font-size: 20px;
+  line-height: 31px;
+
+  p {
+    margin: .4rem 0;
+  }
+}

@@ -1,0 +1,62 @@
+// @TODO: Refactor to reduce the excessive nesting.
+// scss-lint:disable SelectorDepth
+
+// Dependencies.
+@import 'layouts/layout-3col/layout-3col';
+@import 'components/unstyled-list/unstyled-list';
+
+// Footer Top
+//
+// The footer top region of page
+//
+// Markup: footer-top.hbs
+//
+// Style guide: components.footer-top
+
+.footer-top,
+%footer-top {
+  margin-top: 60px;
+  background-color: color(white-smoke);
+  padding-top: 60px;
+  padding-bottom: 25px;
+
+  &__menu {
+    border-top: 2px solid color('white');
+    margin-top: 25px;
+
+    &:first-child {
+      border-top: 0;
+      margin-top: 0;
+    }
+
+    ul {
+      @extend %unstyled-list;
+    }
+
+    > ul {
+      @extend %layout-3col;
+
+      > li {
+        @extend %layout-3col__col-x;
+      }
+    }
+
+    &--nested {
+      padding-left: .3rem;
+      padding-top: .3rem;
+      font-size: 15px;
+    }
+  }
+}
+
+//
+// Drupal selectors.
+//
+
+.footer-top .block {
+  @extend %footer-top__menu;
+
+  ul ul {
+    @extend %footer-top__menu--nested;
+  }
+}

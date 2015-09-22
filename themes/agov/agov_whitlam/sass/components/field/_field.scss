@@ -1,0 +1,17 @@
+.field,
+%field {
+  @include output-rhythm(margin, rhythm(1) 0);
+
+  &--no-spacing {
+    margin: 0;
+  }
+}
+
+//Fugly selectors.
+
+//Few fields should not have spacing.
+
+.field-type-text-with-summary,
+.teaser .field {
+  @extend %field--no-spacing;
+}

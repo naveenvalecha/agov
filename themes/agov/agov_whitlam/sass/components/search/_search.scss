@@ -1,0 +1,151 @@
+// Search
+//
+// A simple search styling.
+//
+// Markup: search.hbs
+//
+// Style guide: components.search
+
+
+.search,
+%search {
+  color: color(search-color);
+  background: color(search-bg);
+
+  &--light {
+    @include respond-to('medium') {
+      color: color(search-color-light);
+      background: transparent;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding: 15px 20px;
+
+    @include respond-to('medium') {
+      position: relative;
+      bottom: 0;
+      padding: 14px 5px 5px;
+    }
+  }
+
+  &__inner-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 13px;
+    width: 100%;
+    border-bottom: 1px solid color(search-border);
+
+    &--light {
+      @include respond-to('medium') {
+        border-bottom: 2px solid color(search-border);
+        min-width: 363px;
+        padding: 0 0 13px;
+
+        &:hover,
+        &:focus {
+          border-color: color('white');
+        }
+      }
+    }
+  }
+
+  &__input-wrapper {
+    margin-bottom: 0;
+  }
+
+  &__input {
+    @include box-shadow(none);
+    background: none;
+    border: 0;
+    padding: 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+
+    @include input-placeholder() {
+      @include opacity(1);
+      color: color(search-color);
+    }
+
+    &--light {
+      @include respond-to('medium') {
+        @include input-placeholder() {
+          color: color(search-color-light);
+        }
+      }
+    }
+  }
+
+  &__button {
+    background: none;
+    background-repeat: no-repeat;
+    background-image: inline-image('components/search/search-icon-blue.png');
+    position: absolute;
+    right: 0;
+    top: 1em;
+    border: 0;
+    text-indent: -999em;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-color: none;
+    padding-left: 13px;
+
+    &--light {
+      @include respond-to('medium') {
+        background: none;
+        background-repeat: no-repeat;
+        background-image: inline-image('components/search/search-icon.png');
+        top: 0;
+        padding: 0;
+       }
+    }
+  }
+}
+
+// Fugly selectors.
+// scss-lint:disable IdSelector
+
+.block-search,
+.block-search-api-page {
+  @extend %search__wrapper;
+}
+
+.search-form,
+#search-api-page-search-form-default-search {
+  @extend %search;
+
+  > div {
+    @extend %search__inner-wrapper;
+  }
+
+  .form-item {
+    @extend %search__input-wrapper;
+  }
+
+  .form-text {
+    @extend %search__input;
+  }
+
+  .form-submit {
+    @extend %search__button;
+  }
+}
+
+#search-api-page-search-form-default-search {
+  @extend %search--light;
+
+  > div {
+    @extend %search__inner-wrapper--light;
+  }
+
+  .form-text {
+    @extend %search__input--light;
+  }
+
+  .form-submit {
+    @extend %search__button--light;
+  }
+}

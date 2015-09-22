@@ -1,0 +1,66 @@
+// Header
+//
+// The header of page.
+//
+// Markup: header.hbs
+//
+// Style guide: components.header
+
+.header,
+%header {
+  background: color(header-background);
+  position: relative;
+  margin-bottom: 80px;
+
+  @include respond-to('medium') {
+    margin-bottom: 0;
+  }
+}
+
+.header__inner {
+  padding: 30px 35px 25px;
+  position: relative;
+
+  @include respond-to('medium') {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.header__secondary-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: .8rem;
+
+  .links.inline {
+    margin: 0;
+  }
+
+  a {
+    color: color(secondary-menu);
+
+    &:hover {
+      color: color(secondary-menu-hover);
+    }
+  }
+}
+
+@include respond-to('medium') {
+  .header__logo {
+    float: left;
+  }
+
+  .header__region {
+    float: right;
+  }
+}
+
+
+.header__logo-image {
+  max-width: 50%;
+
+  @include respond-to('medium') {
+    max-width: 100%;
+  }
+}
