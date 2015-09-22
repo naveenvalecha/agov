@@ -4,6 +4,7 @@
  * Returns the HTML for a wrapping container around comments.
  *
  * Complete documentation for this file is available online.
+ *
  * @see https://drupal.org/node/1728230
  */
 
