@@ -41,6 +41,7 @@ dependencies:
 
   # Contrib modules
   - file_entity
+  - twitter_block
 
   # Custom modules
   - agov_standard_page
