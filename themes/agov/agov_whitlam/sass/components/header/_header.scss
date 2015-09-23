@@ -45,13 +45,9 @@
     }
   }
 
-  @include respond-to('medium') {
-    &__logo {
+  &__logo {
+    @include respond-to('medium') {
       float: left;
-    }
-
-    &__region {
-      float: right;
     }
   }
 
@@ -60,6 +56,12 @@
 
     @include respond-to('medium') {
       max-width: 100%;
+    }
+  }
+
+  &__region {
+    @include respond-to('medium') {
+      float: right;
     }
   }
 }
