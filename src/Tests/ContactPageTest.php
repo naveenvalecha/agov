@@ -32,19 +32,41 @@ class ContactPageTest extends AgovTestBase {
   }
 
   /**
-   * Test we're on the configurable dependencies.
+   * Test the contact page is available and working.
    */
   public function testContactPage() {
     // Anonymous users can view the contact page and get the name fields.
-    $this->drupalGet('/contact');
-    $this->assertResponse(200);
-    $this->assertFieldById('edit-message-0-value');
+    $this->assertContactPage();
+    $mails = $this->drupalGetMails();
+    $this->assertEqual(1, count($mails));
 
     // Authenticated users get the form as well.
     $this->drupalLogin($this->adminUser);
+    $this->assertContactPage();
+    $mails = $this->drupalGetMails();
+    $this->assertEqual(2, count($mails));
+  }
+
+  /**
+   * Assert we're on the contact page, it's available and submissions work.
+   */
+  protected function assertContactPage() {
     $this->drupalGet('/contact');
     $this->assertResponse(200);
     $this->assertFieldById('edit-message-0-value');
+    $this->assertNoFieldById('edit-preview', 'There is no preview');
+
+    $edit = [
+      'subject[0][value]' => $this->randomMachineName(),
+      'message[0][value]' => $this->randomString(),
+    ];
+    if (!$this->loggedInUser) {
+      $edit += [
+        'name' => $this->randomString(),
+        'mail' => $this->randomMachineName() . '@example.com'
+      ];
+    }
+    $this->drupalPostForm($this->getUrl(), $edit, 'Send message');
   }
 
 }
