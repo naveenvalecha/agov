@@ -54,7 +54,7 @@ class ContactPageTest extends AgovTestBase {
     $this->drupalGet('/contact');
     $this->assertResponse(200);
     $this->assertFieldById('edit-message-0-value');
-    $this->assertNoFieldById('edit-preview', 'There is no preview');
+    $this->assertNoFieldById('edit-preview', 'Preview');
 
     $edit = [
       'subject[0][value]' => $this->randomMachineName(),
@@ -67,6 +67,7 @@ class ContactPageTest extends AgovTestBase {
       ];
     }
     $this->drupalPostForm($this->getUrl(), $edit, 'Send message');
+    $this->assertText('Your message has been sent.');
   }
 
 }
