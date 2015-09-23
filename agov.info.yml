@@ -59,6 +59,7 @@ themes:
 config_devel:
   # Global config.
   - system.theme
+  - node.settings
 
   # Permissions.
   - user.role.anonymous
@@ -68,6 +69,15 @@ config_devel:
   - filter.format.basic_html
   - filter.format.full_html
   - filter.format.restricted_html
+
+  # Article.
+  - core.entity_form_display.node.article.default
+  - core.entity_view_display.node.article.default
+  - core.entity_view_display.node.article.teaser
+  - field.field.node.article.body
+  - field.field.node.article.field_article_image
+  - field.storage.node.field_article_image
+  - node.type.article
 
   # Blocks
   - block.block.mainnavigation
