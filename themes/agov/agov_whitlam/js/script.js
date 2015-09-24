@@ -7,7 +7,7 @@
 
   'use strict';
 
-  Drupal.behaviors.agov_whitlam = {
+  Drupal.behaviors.agov_whitlam_menu = {
     attach: function (context, settings) {
 
       // Create an icon for toggling the menu.
