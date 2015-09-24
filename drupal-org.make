@@ -6,6 +6,8 @@ defaults[projects][subdir] = "contrib"
 
 ; Contrib modules
 projects[layout_plugin][version] = '1.0-alpha14'
+projects[layout_plugin][patch][] = https://www.drupal.org/files/issues/2573857-1-variant-schema.patch
+
 projects[page_manager][version] = '1.0-alpha14'
 
 projects[file_entity][type] = module
