@@ -16,16 +16,6 @@ use Symfony\Component\BrowserKit\Request;
 abstract class AgovTestBase extends WebTestBase {
 
   /**
-   * Disable strict config checking.
-   *
-   * Right now we can't enable strict config checking because of how page
-   * manager interacts with: https://www.drupal.org/node/2392057.
-   *
-   * @var bool
-   */
-  protected $strictConfigSchema = FALSE;
-
-  /**
    * Override the installation profile to our testing profile.
    *
    * @var string
