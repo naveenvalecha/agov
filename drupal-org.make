@@ -17,7 +17,7 @@ projects[linkicon][patch][] = https://www.drupal.org/files/issues/linkicon-schem
 
 projects[fences][subdir] = 'contrib'
 projects[fences][version] = '2.x'
-projects[fences][patch][] = https://www.drupal.org/files/issues/2572477-2.patch
+projects[fences][patch][] = https://www.drupal.org/files/issues/2572477-5.patch
 
 
 ; aGov
