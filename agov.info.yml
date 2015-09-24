@@ -41,6 +41,7 @@ dependencies:
 
   # Contrib modules
   - file_entity
+  - fences
 
   # Custom modules
   - agov_standard_page
@@ -60,6 +61,7 @@ config_devel:
   # Global config.
   - system.theme
   - node.settings
+  - core.date_format.publication_date
 
   # Permissions.
   - user.role.anonymous
@@ -71,13 +73,15 @@ config_devel:
   - filter.format.restricted_html
 
   # Article.
+  - node.type.article
   - core.entity_form_display.node.article.default
   - core.entity_view_display.node.article.default
   - core.entity_view_display.node.article.teaser
   - field.field.node.article.body
   - field.field.node.article.field_article_image
   - field.storage.node.field_article_image
-  - node.type.article
+  - field.field.node.article.field_article_date
+  - field.storage.node.field_article_date
 
   # Blocks
   - block.block.mainnavigation

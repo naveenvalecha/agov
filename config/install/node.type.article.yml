@@ -10,8 +10,8 @@ third_party_settings:
     parent: 'main:'
 name: Article
 type: article
-description: 'The article content type can be used for blogs, news and more'
+description: 'Use articles to keep your audience up-to-date with the latest news. Articles flagged "Promoted to front page" will appear in the "Latest Updates" section of the front page.'
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false
