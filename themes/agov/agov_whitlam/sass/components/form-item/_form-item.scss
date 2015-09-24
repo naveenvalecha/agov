@@ -33,6 +33,9 @@
   // The part of the label that indicates a required field.
   &__required {
     color: color(form-error);
+    content: '(required)';
+    background: none;
+    vertical-align: baseline;
   }
 
   // The descriptive help text (separate from the label).
@@ -103,7 +106,9 @@
 }
 
 .form-required {
-  @extend %form-item__required;
+  &:after {
+    @extend %form-item__required;
+  }
 }
 
 // Password confirmation.

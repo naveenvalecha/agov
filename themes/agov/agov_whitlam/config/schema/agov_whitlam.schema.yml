@@ -1,0 +1,5 @@
+# Schema for the aGov Whitlam theme settings.
+
+agov_whitlam.settings:
+  type: theme_settings
+  label: 'aGov Whitlam settings'
