@@ -89,7 +89,7 @@
   }
 }
 
-.navbar,
+.navigation .navbar,
 %navbar {
   width: 100%;
   position: relative;
@@ -293,9 +293,5 @@
       padding-left: 40px;
     }
   }
-}
-
-.navigation {
-  @extend %navbar;
 }
 
