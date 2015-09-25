@@ -294,3 +294,8 @@
     }
   }
 }
+
+.navigation {
+  @extend %navbar;
+}
+
