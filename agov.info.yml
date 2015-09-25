@@ -98,6 +98,9 @@ config_devel:
   - block.block.seven_secondary_local_tasks
   - block.block.useraccountmenu
 
+  # Menus
+  - system.menu.quick-links
+
   # Contact page.
   - contact.form.contact
   - contact.settings

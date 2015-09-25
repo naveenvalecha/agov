@@ -1,4 +1,4 @@
-mail: agov@example.com
+mail: admin@example.com
 name: aGov
 slogan: ''
 page:
@@ -9,3 +9,4 @@ admin_compact_mode: false
 weight_select_max: 100
 langcode: en
 default_langcode: en
+uuid: 6b9931dc-ed6f-4be0-9f45-6995ac396ff8
