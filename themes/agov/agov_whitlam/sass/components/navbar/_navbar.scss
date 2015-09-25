@@ -173,7 +173,6 @@
     }
   }
 
-  &.sfHover,
   &:focus,
   &:hover {
     a {
@@ -233,8 +232,7 @@
     width: 100%;
 
     &:focus,
-    &:hover,
-    &.sfHover {
+    &:hover {
       ul {
         @include respond-to('medium') {
           display: block !important;
@@ -279,6 +277,12 @@
           text-decoration: underline;
         }
       }
+
+      &-is-active,
+      .is-active {
+        background: color(navbar-active);
+        color: color(navbar) !important;
+      }
     }
   }
 
@@ -296,19 +300,6 @@
 }
 
 // Fugly selectors.
-
-.block-superfish {
-  @extend %navbar;
-}
-
-.sf-main-menu > li.active-trail {
-  @extend %menu__item-is-active;
-
-  a {
-    @extend %menu__item-active-trail;
-  }
-}
-
 .navigation {
   @extend %navbar;
 }
