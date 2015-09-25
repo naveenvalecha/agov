@@ -308,3 +308,7 @@
     @extend %menu__item-active-trail;
   }
 }
+
+.navigation {
+  @extend %navbar;
+}

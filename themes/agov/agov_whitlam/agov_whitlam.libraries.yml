@@ -3,3 +3,8 @@ component-library:
   css:
     theme:
       css/styles.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
