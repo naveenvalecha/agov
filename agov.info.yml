@@ -41,10 +41,15 @@ dependencies:
 
   # Contrib modules
   - file_entity
+  - twitter_block
+  - layout_plugin
+  - page_manager
+  - fences
 
   # Custom modules
   - agov_standard_page
   - agov_social_icons
+  - agov_homepage
 
 configurable_dependencies:
   agov_default_content:
@@ -57,10 +62,37 @@ themes:
   - seven
 
 config_devel:
+  # Global config.
+  - system.theme
+  - system.theme
+  - system.site
+  - node.settings
+  - core.date_format.publication_date
+
+  # Permissions.
+  - user.role.anonymous
+  - user.role.authenticated
+
+  # Filter formats
+  - filter.format.basic_html
+  - filter.format.full_html
+  - filter.format.restricted_html
+
+  # Article.
+  - node.type.article
+  - core.entity_form_display.node.article.default
+  - core.entity_view_display.node.article.default
+  - core.entity_view_display.node.article.teaser
+  - field.field.node.article.body
+  - field.field.node.article.field_article_image
+  - field.storage.node.field_article_image
+  - field.field.node.article.field_article_date
+  - field.storage.node.field_article_date
+
+  # Blocks
   - block.block.mainnavigation
   - block.block.searchform
   - block.block.useraccountmenu
-  - agov_whitlam.settings
   - block.block.searchform
   - block.block.seven_breadcrumbs
   - block.block.seven_content
@@ -71,9 +103,7 @@ config_devel:
   - block.block.seven_primary_local_tasks
   - block.block.seven_secondary_local_tasks
   - block.block.useraccountmenu
-  - filter.format.basic_html
-  - filter.format.full_html
-  - filter.format.restricted_html
-  - system.theme
-  - user.role.anonymous
-  - user.role.authenticated
+
+  # Contact page.
+  - contact.form.contact
+  - contact.settings

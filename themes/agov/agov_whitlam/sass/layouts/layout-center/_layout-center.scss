@@ -1,6 +1,5 @@
 // Dependencies.
 // Allow layout-center's margin/padding to override layout-3col.
-@import 'layouts/layout-3col/layout-3col';
 
 // Layout Center
 //
@@ -40,17 +39,5 @@
   &--has-unnested-child {
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-//
-// Fugly selectors.
-//
-
-.layout-center {
-  // Ensure the .layout-center--no-padding variant is automatically used by
-  // adding all other .layout-* classes here.
-  &.layout-3col {
-    @extend %layout-center--has-unnested-child;
   }
 }

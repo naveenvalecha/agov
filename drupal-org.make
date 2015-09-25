@@ -5,14 +5,31 @@ api = 2
 defaults[projects][subdir] = "contrib"
 
 ; Contrib modules
+projects[layout_plugin][version] = '1.0-alpha14'
+projects[layout_plugin][patch][] = https://www.drupal.org/files/issues/2573857-1-variant-schema.patch
+
+projects[page_manager][version] = '1.0-alpha14'
+
 projects[file_entity][type] = module
 projects[file_entity][download][type] = git
 projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
 projects[file_entity][download][branch] = 8.x-2.x
 projects[file_entity][subdir] = 'contrib'
 
+projects[twitter_block][type] = module
+projects[twitter_block][download][type] = git
+projects[twitter_block][download][url] = http://git.drupal.org/sandbox/sam/2572433.git
+projects[twitter_block][download][branch] = 8.x-1.x
+projects[twitter_block][subdir] = 'contrib'
+
 projects[linkicon][subdir] = 'contrib'
 projects[linkicon][version] = '1.0'
+projects[linkicon][patch][] = https://www.drupal.org/files/issues/linkicon-schema.patch
+
+projects[fences][subdir] = 'contrib'
+projects[fences][version] = '2.x'
+projects[fences][patch][] = https://www.drupal.org/files/issues/2572477-5.patch
+
 
 ; aGov
 

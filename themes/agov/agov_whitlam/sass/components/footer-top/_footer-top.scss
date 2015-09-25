@@ -2,7 +2,6 @@
 // scss-lint:disable SelectorDepth
 
 // Dependencies.
-@import 'layouts/layout-3col/layout-3col';
 @import 'components/unstyled-list/unstyled-list';
 
 // Footer Top
@@ -31,14 +30,6 @@
 
     ul {
       @extend %unstyled-list;
-    }
-
-    > ul {
-      @extend %layout-3col;
-
-      > li {
-        @extend %layout-3col__col-x;
-      }
     }
 
     &--nested {
