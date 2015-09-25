@@ -11,6 +11,7 @@
 %nav-menu {
   padding: 0;
   text-indent: 0;
+  margin: 0;
 
   &__item {
     padding: 0;
@@ -48,4 +49,8 @@
   ul {
     @extend %nav-menu__nested-list;
   }
+}
+
+#block-quicklinks-menu ul {
+  @extend %nav-menu;
 }
