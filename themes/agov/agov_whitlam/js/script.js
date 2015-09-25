@@ -21,7 +21,7 @@
       var $close_icon = $open_icon.clone();
 
       $close_icon
-          .html('menu<i class="fa fa fa-close"></i>')
+          .html('close<i class="fa fa fa-close"></i>')
           .removeClass('active')
           .prependTo($navigation);
 
