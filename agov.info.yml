@@ -44,6 +44,8 @@ dependencies:
   - twitter_block
   - layout_plugin
   - page_manager
+  - fences
+  - title
 
   # Custom modules
   - agov_article
