@@ -38,7 +38,7 @@ content:
     label: hidden
     settings:
       image_style: teaser_medium
-      image_link: ''
+      image_link: content
     third_party_settings:
       fences:
         fences_field_tag: div
