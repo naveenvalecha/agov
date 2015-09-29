@@ -1,0 +1,164 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/node\/6?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/article"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_image": [
+            {
+                "href": "http:\/\/default\/file\/6?_format=hal_json"
+            }
+        ]
+    },
+    "uuid": [
+        {
+            "value": "9b53a126-b629-4c84-9801-1e1a5c3b9540"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "article"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Cogo Commodo Erat Immitto Macto Usitas",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9ace05bd-3d79-475f-bf03-3dce58a64a86"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9ace05bd-3d79-475f-bf03-3dce58a64a86"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/file\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d6db0c2a-efff-4b20-b105-05d209d1e007"
+                    }
+                ],
+                "display": null,
+                "description": null
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "1443509396",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1443509396",
+            "lang": "en"
+        }
+    ],
+    "promote": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": "0",
+            "lang": "en"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "1443509425"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "Appellatio distineo interdico nobis pertineo quadrum quae quis validus volutpat. Ille imputo melior nunc os premo proprius scisco usitas. Illum quis refoveo tincidunt. Eu haero nulla nunc plaga. Abigo antehabeo feugiat laoreet molior nulla pagus rusticus. Abico erat incassum jus pala probo quadrum similis suscipere suscipit. Abico consectetuer enim nunc tego vel. Letalis ut vicis. Abigo commodo consectetuer enim feugiat illum molior premo suscipit uxor. Gemino lobortis probo quae virtus. Ibidem pagus pala sed suscipere tamen. Aliquip antehabeo commodo consequat elit letalis praemitto sino tum. Commoveo decet in lucidus neo nulla pneum. Abdo gemino ille nobis. Capto hos luptatum quis. Consectetuer defui duis eros esse macto meus suscipere. Causa elit minim vel vindico. Exerci iriure quis refero vel verto. Abdo aptent consectetuer diam modo volutpat ymo. Adipiscing cui eros haero inhibeo iustum meus ullamcorper. Augue damnum ex singularis te turpis. Gemino gilvus magna melior neque quibus sino sudo uxor valetudo. Abluo appellatio augue hos olim sagaciter vereor wisi. Acsi dolus fere immitto luctus sit typicus. Distineo gilvus incassum. Damnum et olim uxor zelus. Amet cogo elit in luptatum nunc paulatim populus refoveo venio. Brevitas ideo natu neo premo velit. Aliquip cui dolore haero illum praemitto sagaciter utrum voco. Defui ludus tego. Appellatio immitto importunus letalis minim ut. Autem hendrerit ille meus pertineo qui quibus sit turpis vulpes. Ille magna nobis os pala tego. Bene defui erat inhibeo iriure jugis verto. Distineo hos macto refoveo saluto suscipit torqueo ymo. Adipiscing augue gemino ideo importunus lobortis roto saepius tum virtus. Consequat dolor exerci ibidem metuo saepius si valde. Blandit natu premo refoveo tamen. Esse lenis lobortis macto meus obruo paratus quidne vero vulputate. Appellatio esca exerci hendrerit lucidus magna si. Autem dolor facilisis haero neo quia si. Aliquam aliquip bene imputo paratus refoveo sino venio. Consequat et exerci jus odio quae vulputate. Antehabeo dolor dolus esse facilisis nostrud oppeto tation. Amet ibidem tego uxor vicis. Abbas causa melior persto refero similis turpis valde vulputate ymo. Defui incassum jus nunc persto saluto torqueo voco. Feugiat jumentum nunc rusticus.",
+            "format": "basic_html",
+            "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_article_date": [
+        {
+            "value": "2015-09-29"
+        }
+    ]
+}
