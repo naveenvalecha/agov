@@ -27,6 +27,9 @@ projects[linkicon][subdir] = 'contrib'
 projects[linkicon][version] = '1.0'
 projects[linkicon][patch][] = https://www.drupal.org/files/issues/linkicon-schema.patch
 
+projects[title][subdir] = 'contrib'
+projects[linkicon][version] = '2.x'
+
 projects[fences][subdir] = 'contrib'
 projects[fences][version] = '2.x'
 projects[fences][patch][] = https://www.drupal.org/files/issues/2572477-5.patch

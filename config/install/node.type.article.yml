@@ -3,11 +3,14 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - title
 third_party_settings:
   menu_ui:
     available_menus:
       - main
     parent: 'main:'
+  title:
+    display_configurable_title: true
 name: Article
 type: article
 description: 'Use articles to keep your audience up-to-date with the latest news. Articles flagged "Promoted to front page" will appear in the "Latest Updates" section of the front page.'

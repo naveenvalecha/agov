@@ -68,6 +68,7 @@ config_devel:
   - system.site
   - node.settings
   - core.date_format.publication_date
+  - image.style.teaser_medium
 
   # Permissions.
   - user.role.anonymous
@@ -107,3 +108,6 @@ config_devel:
   # Contact page.
   - contact.form.contact
   - contact.settings
+
+  # Views
+  - views.view.latest_updates
