@@ -8,6 +8,7 @@ dependencies:
   - layout_plugin
   - block_page_layout
   - page_manager
+  - agov_article
 
 config_devel:
   - page_manager.page.home
