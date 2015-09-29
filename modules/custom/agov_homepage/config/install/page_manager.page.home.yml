@@ -1,12 +1,15 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.latest_updates
   module:
     - block_page_layout
     - twitter_block
+    - views
 id: home
 label: Home
-use_admin_theme: null
+use_admin_theme: false
 path: /home
 display_variants:
   cb22f203-85bf-4da9-b300-e95fd2ba95ed:
@@ -44,6 +47,19 @@ display_variants:
         region: right_sidebar
         weight: 0
         uuid: f270e7c2-8c62-4cc4-b807-7c2238678696
+        context_mapping: {  }
+      26394e55-c4a2-431e-8200-b2b0bb7aec80:
+        id: 'views_block:latest_updates-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        cache:
+          max_age: -1
+        views_label: ''
+        items_per_page: none
+        region: main
+        weight: 0
+        uuid: 26394e55-c4a2-431e-8200-b2b0bb7aec80
         context_mapping: {  }
     id: block_page_layout
     label: Home
