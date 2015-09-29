@@ -14,6 +14,7 @@ projects[file_entity][type] = module
 projects[file_entity][download][type] = git
 projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
 projects[file_entity][download][branch] = 8.x-2.x
+projects[file_entity][download][revision] = 5ca855c29cf4c5968e2419f9017216bf591d973f
 projects[file_entity][subdir] = 'contrib'
 
 projects[twitter_block][type] = module
