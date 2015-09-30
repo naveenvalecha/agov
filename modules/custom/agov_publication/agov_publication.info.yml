@@ -5,7 +5,13 @@ package: aGov
 core: '8.x'
 
 dependencies:
+  - datetime
+  - fences
+  - file
+  - text
   - title
+  - user
+  - views
 
 config_devel:
   - core.base_field_override.node.publication.promote
