@@ -35,6 +35,8 @@ projects[title][version] = '2.x'
 projects[fences][subdir] = 'contrib'
 projects[fences][version] = '2.x'
 
+projects[title][subdir] = 'contrib'
+projects[title][version] = '2.x'
 
 ; aGov
 

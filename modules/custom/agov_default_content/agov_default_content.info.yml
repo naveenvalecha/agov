@@ -6,6 +6,8 @@ core: '8.x'
 
 dependencies:
   - default_content
+  - block_content
+  # # TODO, remove this and find it's true dependencies.
   - agov
 
 config_devel:
