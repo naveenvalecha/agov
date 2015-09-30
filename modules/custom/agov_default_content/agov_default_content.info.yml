@@ -6,6 +6,7 @@ core: '8.x'
 
 dependencies:
   - default_content
+  - block_content
 
 config_devel:
   - block.block.stayuptodate
