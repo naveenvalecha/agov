@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/admin\/structure\/menu\/item\/3\/edit?_format=hal_json"
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/1\/edit?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
@@ -9,7 +9,7 @@
     },
     "uuid": [
         {
-            "value": "c16facb0-1886-42e8-ab06-6a133282f069"
+            "value": "90ce7e6d-4a60-4225-8d00-dbaf4d55e1f9"
         }
     ],
     "bundle": [
@@ -19,7 +19,7 @@
     ],
     "title": [
         {
-            "value": "Contact",
+            "value": "Home",
             "lang": "en"
         }
     ],
@@ -30,7 +30,7 @@
     ],
     "link": [
         {
-            "uri": "internal:\/contact",
+            "uri": "internal:\/",
             "title": "",
             "options": []
         }
@@ -47,7 +47,7 @@
     ],
     "weight": [
         {
-            "value": "0"
+            "value": "-50"
         }
     ],
     "expanded": [
@@ -68,7 +68,7 @@
     ],
     "changed": [
         {
-            "value": "1442913147",
+            "value": "1442565034",
             "lang": "en"
         }
     ],

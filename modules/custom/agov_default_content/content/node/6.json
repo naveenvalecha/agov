@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/node\/6?_format=hal_json"
+            "href": "http:\/\/default\/article6?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/article"
@@ -25,7 +25,7 @@
     },
     "uuid": [
         {
-            "value": "95a25018-9419-41e1-a700-eacbffd656cb"
+            "value": "25a25018-9419-41e1-a700-eacbffd656cb"
         }
     ],
     "type": [
@@ -115,7 +115,7 @@
     ],
     "changed": [
         {
-            "value": "1443589992",
+            "value": "1443591615",
             "lang": "en"
         }
     ],

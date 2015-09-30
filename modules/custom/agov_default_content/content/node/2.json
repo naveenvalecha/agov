@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/node\/2?_format=hal_json"
+            "href": "http:\/\/default\/article2?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/article"
@@ -115,7 +115,7 @@
     ],
     "changed": [
         {
-            "value": "1443509350",
+            "value": "1443591778",
             "lang": "en"
         }
     ],
