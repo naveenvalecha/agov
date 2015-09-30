@@ -44,7 +44,7 @@ content:
     label: visually_hidden
     settings:
       image_style: full_page_wide
-      image_link: content
+      image_link: ''
     third_party_settings:
       fences:
         fences_field_tag: div
