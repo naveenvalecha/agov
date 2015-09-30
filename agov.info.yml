@@ -45,6 +45,7 @@ dependencies:
   - layout_plugin
   - page_manager
   - fences
+  - title
 
   # Custom modules
   - agov_standard_page
