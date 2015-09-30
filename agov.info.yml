@@ -72,6 +72,7 @@ config_devel:
   - node.settings
   - core.date_format.publication_date
   - image.style.teaser_medium
+  - editor.editor.basic_html
 
   # Permissions.
   - user.role.anonymous
