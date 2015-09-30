@@ -23,5 +23,12 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   field_standard_page_image: true
