@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\agov_default_content\EventSubscriber\DefaultContentImportedSubscriber
+ * Contains \Drupal\agov_default_content\EventSubscriber\DefaultContentImportedSubscriber.
  */
 
 namespace Drupal\agov_default_content\EventSubscriber;
@@ -12,6 +12,9 @@ use Drupal\default_content\Event\ImportEvent;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
+/**
+ * Subscribes to the default content imported event.
+ */
 class DefaultContentImportedSubscriber implements EventSubscriberInterface {
 
   /**
