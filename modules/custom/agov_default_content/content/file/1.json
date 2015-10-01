@@ -5,12 +5,7 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
-        },
-        "http:\/\/drupal.org\/rest\/relation\/file\/image\/uid": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
-            }
-        ]
+        }
     },
     "uuid": [
         {
@@ -22,25 +17,6 @@
             "value": "en"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/file\/image\/uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "c82fbfe2-e70d-4ce9-9606-6aef77e730a8"
-                    }
-                ]
-            }
-        ]
-    },
     "filename": [
         {
             "value": "default_image.jpg"
@@ -48,7 +24,7 @@
     ],
     "uri": [
         {
-            "value": "public:\/\/default_image.jpg"
+            "value": "public:\/\/default_image_7.jpg"
         }
     ],
     "filemime": [

@@ -1,16 +1,11 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/file\/4?_format=hal_json"
+            "href": "http:\/\/default\/file\/7?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
-        },
-        "http:\/\/drupal.org\/rest\/relation\/file\/image\/uid": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json"
-            }
-        ]
+        }
     },
     "uuid": [
         {
@@ -22,25 +17,6 @@
             "value": "en"
         }
     ],
-    "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/file\/image\/uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "9ace05bd-3d79-475f-bf03-3dce58a64a86"
-                    }
-                ]
-            }
-        ]
-    },
     "filename": [
         {
             "value": "bigstock-happy-family-having-fun-outdoo-18400505.jpg"
@@ -48,7 +24,7 @@
     ],
     "uri": [
         {
-            "value": "public:\/\/article\/bigstock-happy-family-having-fun-outdoo-18400505.jpg"
+            "value": "public:\/\/article\/bigstock-happy-family-having-fun-outdoo-18400505_7.jpg"
         }
     ],
     "filemime": [

@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/article4?_format=hal_json"
+            "href": "http:\/\/default\/node\/4?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/article"
@@ -19,7 +19,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_image": [
             {
-                "href": "http:\/\/default\/file\/2?_format=hal_json"
+                "href": "http:\/\/default\/file\/3?_format=hal_json"
             }
         ]
     },
@@ -58,7 +58,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "51edd5df-c94b-4919-8f00-fb72a65330b2"
+                        "value": "387f1e3c-f31e-4612-ad00-fdb76b65bb3a"
                     }
                 ],
                 "lang": "en"
@@ -76,7 +76,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "51edd5df-c94b-4919-8f00-fb72a65330b2"
+                        "value": "387f1e3c-f31e-4612-ad00-fdb76b65bb3a"
                     }
                 ]
             }
@@ -85,7 +85,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/file\/2?_format=hal_json"
+                        "href": "http:\/\/default\/file\/3?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/image"

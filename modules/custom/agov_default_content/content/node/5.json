@@ -1,36 +1,36 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/article5?_format=hal_json"
+            "href": "http:\/\/default\/node\/5?_format=hal_json"
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/node\/article"
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/standard_page"
         },
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/uid": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/uid": [
             {
                 "href": "http:\/\/default\/user\/0?_format=hal_json",
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/revision_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/revision_uid": [
             {
                 "href": "http:\/\/default\/user\/0?_format=hal_json"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_image": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/field_standard_page_image": [
             {
-                "href": "http:\/\/default\/file\/6?_format=hal_json"
+                "href": "http:\/\/default\/file\/1?_format=hal_json"
             }
         ]
     },
     "uuid": [
         {
-            "value": "8e339ddb-e924-44e1-8210-16c8a227c0e2"
+            "value": "3b2e357b-0a96-4371-af02-02a17cc0e41f"
         }
     ],
     "type": [
         {
-            "target_id": "article"
+            "target_id": "standard_page"
         }
     ],
     "langcode": [
@@ -41,12 +41,12 @@
     ],
     "title": [
         {
-            "value": "Gemino",
+            "value": "About Us",
             "lang": "en"
         }
     ],
     "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/uid": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/uid": [
             {
                 "_links": {
                     "self": {
@@ -58,13 +58,13 @@
                 },
                 "uuid": [
                     {
-                        "value": "51edd5df-c94b-4919-8f00-fb72a65330b2"
+                        "value": "387f1e3c-f31e-4612-ad00-fdb76b65bb3a"
                     }
                 ],
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/revision_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/revision_uid": [
             {
                 "_links": {
                     "self": {
@@ -76,16 +76,16 @@
                 },
                 "uuid": [
                     {
-                        "value": "51edd5df-c94b-4919-8f00-fb72a65330b2"
+                        "value": "387f1e3c-f31e-4612-ad00-fdb76b65bb3a"
                     }
                 ]
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_image": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/field_standard_page_image": [
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/file\/6?_format=hal_json"
+                        "href": "http:\/\/default\/file\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
@@ -93,7 +93,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "059001a3-48e0-4892-bc00-0c7b47d131c0"
+                        "value": "42d0e2cb-2345-44e5-9100-f60a68468038"
                     }
                 ],
                 "display": null,
@@ -109,19 +109,19 @@
     ],
     "created": [
         {
-            "value": "1443509326",
+            "value": "1442562546",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": "1443591800",
+            "value": "1443592219",
             "lang": "en"
         }
     ],
     "promote": [
         {
-            "value": "1",
+            "value": "0",
             "lang": "en"
         }
     ],
@@ -133,7 +133,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "1443509336"
+            "value": "1442562580"
         }
     ],
     "revision_translation_affected": [
@@ -150,15 +150,10 @@
     ],
     "body": [
         {
-            "value": "Decet eligo genitus jus meus saluto scisco veniam wisi. Iusto metuo nisl patria praemitto vel. Brevitas iusto obruo ratis saepius. Brevitas causa damnum dolus macto si. Camur immitto nulla occuro proprius similis ulciscor. Consequat diam eligo euismod hos luptatum pagus plaga quadrum scisco. Bene modo paratus pneum. Enim haero rusticus venio. Abico brevitas eligo ille interdico laoreet olim proprius saluto validus. Augue commodo consequat defui hendrerit jugis probo ulciscor veniam. Eros nulla premo tamen tego virtus volutpat. Ad comis ea hos laoreet luctus neo premo validus. Camur consectetuer esse euismod facilisis luctus occuro pneum sino. Enim esca fere feugiat hendrerit lenis meus modo nibh olim. Conventio jus nibh probo roto sit. Esca mos paratus rusticus sit. Eum praesent saluto ymo. Abico adipiscing luctus obruo utinam velit zelus. Brevitas illum jus probo roto scisco sed si volutpat. Modo nunc nutus quadrum. Causa dignissim fere mos pneum uxor. Abigo causa lucidus. Abico amet causa mos tego. Accumsan exerci gemino jumentum ludus melior obruo si turpis. Ex incassum nulla refoveo utinam velit vero vindico. Conventio euismod inhibeo jumentum letalis praesent refoveo sudo suscipit. Caecus defui eu similis. Defui enim meus pala pecus tation typicus vicis. Dolore huic immitto. Conventio damnum eum quia utrum valetudo volutpat. Elit mauris nunc quidne ut valetudo vicis virtus. Appellatio esca gilvus macto refero voco. Acsi appellatio commoveo enim gilvus letalis luctus sagaciter si. Haero lucidus persto pneum vindico.",
-            "format": "basic_html",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus risus sit amet dolor pretium dignissim. Sed convallis lorem quis tortor molestie, vulputate egestas ex interdum. Duis tellus nunc, ornare ut tortor id, efficitur laoreet tortor. Fusce feugiat justo sapien, ut sollicitudin elit tristique vel. Quisque ut arcu ex. Aenean luctus urna ac metus interdum egestas eget ut nisi. Phasellus efficitur libero vitae ultricies dapibus. Pellentesque dictum purus ac diam vulputate interdum. In sit amet leo ultrices, interdum velit a, volutpat erat. Quisque tincidunt magna sit amet egestas laoreet. Sed magna nulla, dictum ut pellentesque vitae, viverra in lacus. Proin accumsan placerat tellus. Vivamus ac lacinia purus.\r\n\r\nSed dapibus nulla odio, eget dapibus purus aliquam egestas. Donec quis tempor turpis. Nullam malesuada, eros eget porttitor interdum, risus felis finibus neque, ut volutpat nulla lectus sed libero. Donec leo eros, pellentesque quis nisl et, pretium pellentesque magna. Phasellus sed vulputate magna, ac mollis nunc. Quisque tincidunt nisl nisl, sit amet aliquet leo placerat maximus. Phasellus et dictum lorem. Cras laoreet, felis id pellentesque sollicitudin, mi odio sodales nulla, ut sodales sapien arcu et magna. Aliquam elementum arcu est, non sollicitudin justo imperdiet vitae. Duis scelerisque ultrices ligula, id porttitor nunc hendrerit eu. Nam nec enim at libero porttitor euismod. Aliquam congue eu tellus vitae laoreet.\r\n\r\nPhasellus sed nulla maximus, laoreet sapien a, luctus ex. Aliquam in bibendum enim. Cras euismod orci quis orci dignissim fermentum. Ut vestibulum accumsan vehicula. Curabitur ut orci vulputate, aliquet nisl nec, condimentum massa. Aenean in orci elit. Donec sit amet tincidunt nulla.\r\n\r\nDonec sit amet pellentesque sem. Quisque vel felis eget lorem luctus accumsan sit amet non nisl. Vestibulum et nulla lacus. Nulla non nisl viverra, feugiat erat eget, molestie arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris at leo urna. Etiam eget scelerisque justo. Vestibulum turpis nunc, commodo vitae posuere sed, vulputate eget sem. Vestibulum a lacus eget sapien aliquet blandit. Donec ut magna pellentesque, lobortis ante a, varius mauris. Cras hendrerit lacus at nisl ornare, a mollis leo semper. Vestibulum urna ipsum, mattis sed nisl in, blandit luctus risus.\r\n\r\nFusce et laoreet massa. Praesent ornare mi ut metus elementum, vel rutrum dolor varius. Maecenas congue, ligula vitae feugiat gravida, dui nulla pharetra lectus, a tempor lorem neque posuere dui. Nulla dictum efficitur risus sed sagittis. Quisque pharetra dignissim rutrum. Sed bibendum semper tellus, ac semper risus lobortis id. Proin enim tortor, lobortis eu molestie sed, maximus a magna. Suspendisse hendrerit elementum nisl, non elementum enim finibus quis. Donec dui diam, cursus vitae mattis eget, eleifend non velit. Duis vitae augue iaculis, mattis velit vitae, porta eros. Nullam mollis felis justo, interdum dignissim turpis blandit id. Quisque sit amet velit et velit volutpat tincidunt in quis odio. Nam varius auctor odio vitae ultrices. Sed suscipit massa in urna pretium laoreet.\r\n",
+            "format": "restricted_html",
             "summary": "",
             "lang": "en"
-        }
-    ],
-    "field_article_date": [
-        {
-            "value": "2015-09-19"
         }
     ]
 }
