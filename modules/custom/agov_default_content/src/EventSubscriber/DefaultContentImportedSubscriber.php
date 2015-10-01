@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\agov_default_content\EventSubscriber\DefaultContentImportedSubscriber.
+ * Drupal\agov_default_content\EventSubscriber\DefaultContentImportedSubscriber.
  */
 
 namespace Drupal\agov_default_content\EventSubscriber;
