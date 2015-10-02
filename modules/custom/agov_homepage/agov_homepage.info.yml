@@ -12,3 +12,9 @@ dependencies:
 
 config_devel:
   - page_manager.page.home
+
+  # Editorial Block
+  - field.field.block_content.editorial_content.body
+  - core.entity_form_display.block_content.editorial_content.default
+  - core.entity_view_display.block_content.editorial_content.default
+  - block_content.type.editorial_content
