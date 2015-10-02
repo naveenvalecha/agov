@@ -5,7 +5,11 @@ api = 2
 defaults[projects][subdir] = "contrib"
 
 ; Contrib modules
+projects[layout_plugin][subdir] = 'contrib'
 projects[layout_plugin][version] = '1.0-alpha14'
+; We save these patches locally because we're using a tagged version of layout_plugin because HEAD doesn't work with
+; Beta 15.
+projects[layout_plugin][patch][] = layout-plugin.patch
 projects[layout_plugin][patch][] = https://www.drupal.org/files/issues/2573857-1-variant-schema.patch
 
 projects[page_manager][version] = '1.0-alpha14'
@@ -31,6 +35,7 @@ projects[linkicon][patch][] = https://www.drupal.org/files/issues/linkicon-schem
 
 projects[title][subdir] = 'contrib'
 projects[title][version] = '2.x'
+projects[title][patch][] = https://www.drupal.org/files/issues/title-node.patch
 
 projects[fences][subdir] = 'contrib'
 projects[fences][version] = '2.x'

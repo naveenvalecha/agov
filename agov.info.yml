@@ -99,6 +99,17 @@ config_devel:
   # Menus
   - system.menu.quick-links
 
+  # Promotional Blocks
+  - block_content.type.promotional_block
+  - core.entity_form_display.block_content.promotional_block.default
+  - core.entity_view_display.block_content.promotional_block.default
+  - field.field.block_content.promotional_block.field_promotional_description
+  - field.field.block_content.promotional_block.field_promotional_image
+  - field.field.block_content.promotional_block.field_promotional_title
+  - field.storage.block_content.field_promotional_description
+  - field.storage.block_content.field_promotional_image
+  - field.storage.block_content.field_promotional_title
+
   # Contact page.
   - contact.form.contact
   - contact.settings

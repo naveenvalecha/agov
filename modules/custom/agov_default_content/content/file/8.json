@@ -9,7 +9,7 @@
     },
     "uuid": [
         {
-            "value": "79dbde02-7f1f-492a-8e19-25e886c4076c"
+            "value": "8981663d-1df2-4d90-a261-9708f0c86960"
         }
     ],
     "langcode": [
@@ -19,12 +19,12 @@
     ],
     "filename": [
         {
-            "value": "publication2.txt"
+            "value": "publication1.txt"
         }
     ],
     "uri": [
         {
-            "value": "public:\/\/publication2_8.txt"
+            "value": "public:\/\/publication1_7.txt"
         }
     ],
     "filemime": [
@@ -44,7 +44,7 @@
     ],
     "created": [
         {
-            "value": "1443578882"
+            "value": "1443578879"
         }
     ],
     "changed": [
