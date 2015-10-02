@@ -9,6 +9,11 @@ dependencies:
   - block_content
   # # TODO, remove this and find it's true dependencies.
   - agov
+  - layout_plugin
+  - block_page_layout
+  - page_manager
+  - agov_article
 
 config_devel:
   - block.block.stayuptodate
+  - page_manager.page.home
