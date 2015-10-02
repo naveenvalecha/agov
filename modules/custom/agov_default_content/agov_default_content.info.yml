@@ -12,3 +12,4 @@ dependencies:
 
 config_devel:
   - block.block.stayuptodate
+  - page_manager.page.home
