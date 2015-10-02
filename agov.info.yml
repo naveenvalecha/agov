@@ -95,6 +95,7 @@ config_devel:
   - block.block.seven_primary_local_tasks
   - block.block.seven_secondary_local_tasks
   - block.block.useraccountmenu
+  - block.block.breadcrumbs
 
   # Contact page.
   - contact.form.contact
