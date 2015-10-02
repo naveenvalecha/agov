@@ -1,6 +1,13 @@
 <div class="landing-page">
+
   <div class="landing-page__full region-featured-top">
-    {{ content.header }}
+    <div class="landing-page__left-content">
+      {{ content.header_left }}
+    </div>
+
+    <div class="landing-page__right-sidebar">
+      {{ content.header_right }}
+    </div>
   </div>
 
   <div class="landing-page__full">
@@ -18,14 +25,16 @@
     </div>
   </div>
 
-  <div class="landing-page__left-content">
-    <hr>
-    {{ content.main }}
-  </div>
+  <div class="landing-page__full region-featured-top">
+    <div class="landing-page__left-content">
+      <hr>
+      {{ content.body_left }}
+    </div>
 
-  <div class="landing-page__right-sidebar">
-    <hr>
-    {{ content.right_sidebar }}
+    <div class="landing-page__right-sidebar">
+      <hr>
+      {{ content.body_right }}
+    </div>
   </div>
 
   <div class="landing-page__full">

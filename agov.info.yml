@@ -48,10 +48,8 @@ dependencies:
 
   # Custom modules
   - agov_article
-  - agov_homepage
   - agov_standard_page
   - agov_social_icons
-  - agov_homepage
   - agov_publication
 
 configurable_dependencies:
@@ -104,3 +102,9 @@ config_devel:
   # Contact page.
   - contact.form.contact
   - contact.settings
+
+  # Editorial Block
+  - field.field.block_content.editorial_content.body
+  - core.entity_form_display.block_content.editorial_content.default
+  - core.entity_view_display.block_content.editorial_content.default
+  - block_content.type.editorial_content
