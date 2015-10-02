@@ -6,6 +6,9 @@ dependencies:
   content:
     - 'block_content:editorial_content:af171e09-fcb2-4d93-a94d-77dc61aab213'
     - 'block_content:editorial_content:fa3e8c87-7002-4c75-9e37-556fa5573f38'
+    - 'block_content:icon_block:30a54cec-dd24-4c1c-9f61-97c1ff9e1965'
+    - 'block_content:icon_block:608c6fc7-2769-4756-a300-fe79586cdb37'
+    - 'block_content:icon_block:d2519df9-3664-4911-9b00-eaeec473440c'
     - 'block_content:promotional_block:2f69d5fd-a34c-412c-a514-20fe2197b501'
     - 'block_content:promotional_block:8e22eeef-05cb-48de-a100-e23f3bf707bf'
     - 'block_content:promotional_block:c5ac2614-aaa8-43e8-9315-21e2beece358'
@@ -137,6 +140,48 @@ display_variants:
         region: promo_3
         weight: 0
         uuid: ff80e17e-e13d-4b1a-820a-103db89aae06
+        context_mapping: {  }
+      4cd1603c-b5f7-40d5-a63a-588fb5aedbc5:
+        id: 'block_content:d2519df9-3664-4911-9b00-eaeec473440c'
+        label: 'Icon block 1'
+        provider: block_content
+        label_display: '0'
+        cache:
+          max_age: -1
+        status: true
+        info: ''
+        view_mode: full
+        region: footer_1
+        weight: 0
+        uuid: 4cd1603c-b5f7-40d5-a63a-588fb5aedbc5
+        context_mapping: {  }
+      e4dd3a5a-c092-4a65-9562-98111081cdba:
+        id: 'block_content:608c6fc7-2769-4756-a300-fe79586cdb37'
+        label: 'Icon block 2'
+        provider: block_content
+        label_display: '0'
+        cache:
+          max_age: -1
+        status: true
+        info: ''
+        view_mode: default
+        region: footer_2
+        weight: 0
+        uuid: e4dd3a5a-c092-4a65-9562-98111081cdba
+        context_mapping: {  }
+      54824818-863b-464c-8800-ee758a884db4:
+        id: 'block_content:30a54cec-dd24-4c1c-9f61-97c1ff9e1965'
+        label: 'Icon block 3'
+        provider: block_content
+        label_display: '0'
+        cache:
+          max_age: -1
+        status: true
+        info: ''
+        view_mode: default
+        region: footer_3
+        weight: 0
+        uuid: 54824818-863b-464c-8800-ee758a884db4
         context_mapping: {  }
     id: block_page_layout
     label: Home

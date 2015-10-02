@@ -116,3 +116,16 @@ config_devel:
   - core.entity_form_display.block_content.editorial_content.default
   - core.entity_view_display.block_content.editorial_content.default
   - block_content.type.editorial_content
+
+  # Icon block.
+  - block_content.type.icon_block
+  - core.entity_form_display.block_content.icon_block.default
+  - core.entity_view_display.block_content.icon_block.default
+  - field.field.block_content.icon_block.field_icon_block_description
+  - field.field.block_content.icon_block.field_icon_block_icon
+  - field.field.block_content.icon_block.field_icon_block_title
+  - field.field.block_content.social_block.field_social_icon
+  - field.storage.block_content.field_icon_block_description
+  - field.storage.block_content.field_icon_block_icon
+  - field.storage.block_content.field_icon_block_title
+  - field.storage.block_content.field_social_icon
