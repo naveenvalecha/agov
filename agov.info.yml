@@ -51,7 +51,6 @@ dependencies:
   - agov_standard_page
   - agov_social_icons
   - agov_publication
-  - agov_publications
 
 configurable_dependencies:
   agov_default_content:
