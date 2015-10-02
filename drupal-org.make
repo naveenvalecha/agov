@@ -10,6 +10,7 @@ projects[layout_plugin][version] = '1.0-alpha14'
 ; We save these patches locally because we're using a tagged version of layout_plugin because HEAD doesn't work with
 ; Beta 15.
 projects[layout_plugin][patch][] = layout-plugin.patch
+projects[layout_plugin][patch][] = https://www.drupal.org/files/issues/2573857-1-variant-schema.patch
 
 projects[page_manager][version] = '1.0-alpha14'
 ; See https://www.drupal.org/node/2391925#comment-10390651
