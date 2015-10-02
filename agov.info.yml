@@ -96,6 +96,9 @@ config_devel:
   - block.block.seven_secondary_local_tasks
   - block.block.useraccountmenu
 
+  # Menus
+  - system.menu.quick-links
+
   # Promotional Blocks
   - block_content.type.promotional_block
   - core.entity_form_display.block_content.promotional_block.default
