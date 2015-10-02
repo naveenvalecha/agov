@@ -5,6 +5,7 @@ dependencies:
     - views.view.latest_updates
   content:
     - 'block_content:editorial_content:af171e09-fcb2-4d93-a94d-77dc61aab213'
+    - 'block_content:editorial_content:fa3e8c87-7002-4c75-9e37-556fa5573f38'
   module:
     - block_content
     - block_page_layout
@@ -77,6 +78,20 @@ display_variants:
         region: header_left
         weight: -10
         uuid: 49d7554f-5f2e-4722-bb00-f2d45fd271db
+        context_mapping: {  }
+      8e764b0d-002f-4428-bd00-cb441e96615c:
+        id: 'block_content:fa3e8c87-7002-4c75-9e37-556fa5573f38'
+        label: 'Discover aGov'
+        provider: block_content
+        label_display: '0'
+        cache:
+          max_age: -1
+        status: true
+        info: ''
+        view_mode: full
+        region: header_right
+        weight: 0
+        uuid: 8e764b0d-002f-4428-bd00-cb441e96615c
         context_mapping: {  }
     id: block_page_layout
     label: Home

@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/2?_format=hal_json"
+            "href": "http:\/\/default\/block\/3?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/editorial_content"
@@ -9,7 +9,7 @@
     },
     "uuid": [
         {
-            "value": "af171e09-fcb2-4d93-a94d-77dc61aab213"
+            "value": "fa3e8c87-7002-4c75-9e37-556fa5573f38"
         }
     ],
     "langcode": [
@@ -20,7 +20,7 @@
     ],
     "info": [
         {
-            "value": "Homepage Blurb",
+            "value": "Discover aGov",
             "lang": "en"
         }
     ],
@@ -31,7 +31,7 @@
     ],
     "changed": [
         {
-            "value": "1443749279",
+            "value": "1443754356",
             "lang": "en"
         }
     ],
@@ -49,7 +49,7 @@
     ],
     "body": [
         {
-            "value": "<h2><span>This is a promo space to highlight important news or events. Customise this block with your own content.<\/span><\/h2>\r\n",
+            "value": "<p><a class=\"button button--large button--wide\" href=\"https:\/\/agov.com.au\/\">Discover aGov<\/a><\/p>\r\n",
             "format": "basic_html",
             "summary": "",
             "lang": "en"
