@@ -16,4 +16,5 @@ dependencies:
 
 config_devel:
   - block.block.stayuptodate
+  - block.block.quicklinks
   - page_manager.page.home
