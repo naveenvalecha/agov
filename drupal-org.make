@@ -5,8 +5,12 @@ api = 2
 defaults[projects][subdir] = "contrib"
 
 ; Contrib modules
-projects[layout_plugin][version] = '8.x-1.x'
-projects[layout_plugin][revision] = a2865cacc2d6ae7d6c230764be495570a1908897
+projects[layout_plugin][type] = module
+projects[layout_plugin][download][type] = git
+projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_plugin.git
+projects[layout_plugin][download][branch] = 8.x-1.x
+projects[layout_plugin][download][revision] = a2865cacc2d6ae7d6c230764be495570a1908897
+projects[layout_plugin][subdir] = 'contrib'
 
 projects[page_manager][version] = '1.0-alpha14'
 ; See https://www.drupal.org/node/2391925#comment-10390651
