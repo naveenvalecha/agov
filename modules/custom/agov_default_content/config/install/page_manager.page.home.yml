@@ -2,13 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - system.menu.quick-links
     - views.view.latest_updates
   content:
     - 'block_content:editorial_content:af171e09-fcb2-4d93-a94d-77dc61aab213'
     - 'block_content:editorial_content:fa3e8c87-7002-4c75-9e37-556fa5573f38'
+    - 'block_content:social_block:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
   module:
     - block_content
     - block_page_layout
+    - system
     - twitter_block
     - views
 id: home
@@ -92,6 +95,33 @@ display_variants:
         region: header_right
         weight: 0
         uuid: 8e764b0d-002f-4428-bd00-cb441e96615c
+        context_mapping: {  }
+      97a930be-b695-4ed9-ab22-3492f65f3b26:
+        id: 'system_menu_block:quick-links'
+        label: 'Quick Links'
+        provider: system
+        label_display: visible
+        cache:
+          max_age: -1
+        level: '1'
+        depth: '0'
+        region: body_right
+        weight: 0
+        uuid: 97a930be-b695-4ed9-ab22-3492f65f3b26
+        context_mapping: {  }
+      644e0370-1374-4a33-8c08-8c95cb7bf29f:
+        id: 'block_content:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
+        label: 'Stay up to date'
+        provider: block_content
+        label_display: visible
+        cache:
+          max_age: -1
+        status: true
+        info: ''
+        view_mode: full
+        region: body_right
+        weight: 0
+        uuid: 644e0370-1374-4a33-8c08-8c95cb7bf29f
         context_mapping: {  }
     id: block_page_layout
     label: Home

@@ -5,12 +5,13 @@ dependencies:
     - 'block_content:social_block:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
   module:
     - block_content
+    - system
   theme:
     - agov_whitlam
 id: stayuptodate
 theme: agov_whitlam
 region: sidebar_second
-weight: -2
+weight: 0
 provider: null
 plugin: 'block_content:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
 settings:
@@ -23,4 +24,9 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

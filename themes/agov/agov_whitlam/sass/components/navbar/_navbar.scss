@@ -295,3 +295,6 @@
   }
 }
 
+.menu--main {
+  @extend %navbar;
+}
