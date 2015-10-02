@@ -5,8 +5,8 @@ api = 2
 defaults[projects][subdir] = "contrib"
 
 ; Contrib modules
-projects[layout_plugin][version] = '1.0-alpha14'
-projects[layout_plugin][patch][] = https://www.drupal.org/files/issues/2573857-1-variant-schema.patch
+projects[layout_plugin][version] = '8.x-1.x'
+projects[layout_plugin][revision] = a2865cacc2d6ae7d6c230764be495570a1908897
 
 projects[page_manager][version] = '1.0-alpha14'
 ; See https://www.drupal.org/node/2391925#comment-10390651
@@ -31,6 +31,7 @@ projects[linkicon][patch][] = https://www.drupal.org/files/issues/linkicon-schem
 
 projects[title][subdir] = 'contrib'
 projects[title][version] = '2.x'
+projects[title][patch][] = https://www.drupal.org/files/issues/title-node.patch
 
 projects[fences][subdir] = 'contrib'
 projects[fences][version] = '2.x'
