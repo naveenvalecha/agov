@@ -14,7 +14,7 @@ projects[layout_plugin][patch][] = https://www.drupal.org/files/issues/2573857-1
 
 projects[page_manager][version] = '1.0-alpha14'
 ; See https://www.drupal.org/node/2391925#comment-10390651
-projects[page_manager][patch][] = https://www.drupal.org/files/issues/2391925-18.patch
+projects[page_manager][patch][] = https://www.drupal.org/files/issues/2391925-19.patch
 
 projects[file_entity][type] = module
 projects[file_entity][download][type] = git
