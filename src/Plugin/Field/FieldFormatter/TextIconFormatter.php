@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\agov\Plugin\Field\FieldFormatter\TextIconFormatter
+ * Contains \Drupal\agov\Plugin\Field\FieldFormatter\TextIconFormatter.
  */
 
 namespace Drupal\agov\Plugin\Field\FieldFormatter;
