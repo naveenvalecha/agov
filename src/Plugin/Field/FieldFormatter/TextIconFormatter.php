@@ -10,10 +10,9 @@ namespace Drupal\agov\Plugin\Field\FieldFormatter;
 use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Core\Field\FieldItemInterface;
 use Drupal\Core\Field\Plugin\Field\FieldFormatter\StringFormatter;
-use Drupal\Component\Utility\Html;
 
 /**
- * Plugin implementation of the 'string' formatter.
+ * Plugin implementation of the 'text_icon' formatter.
  *
  * @FieldFormatter(
  *   id = "text_icon",
