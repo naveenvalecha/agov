@@ -12,6 +12,10 @@ function agov_whitlam_preprocess_block__block_content(&$vars) {
   /** @var \Drupal\block_content\Entity\BlockContent $block */
   $block = $vars['elements']['content']['#block_content'];
   if ($block->bundle() === 'icon_block') {
-    $vars['attributes']['class'] = ['box--icon box--with-border box--with-hover'];
+    $vars['attributes']['class'] = [
+      'box--icon',
+      'box--with-border',
+      'box--with-hover',
+    ];
   }
 }
