@@ -35,7 +35,6 @@ projects[linkicon][patch][] = https://www.drupal.org/files/issues/linkicon-schem
 
 projects[title][subdir] = 'contrib'
 projects[title][version] = '2.x'
-projects[title][patch][] = https://www.drupal.org/files/issues/title-node.patch
 
 projects[fences][subdir] = 'contrib'
 projects[fences][version] = '2.x'
