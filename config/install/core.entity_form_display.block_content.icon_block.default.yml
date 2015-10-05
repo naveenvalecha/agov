@@ -8,7 +8,6 @@ dependencies:
     - field.field.block_content.icon_block.field_icon_block_title
   module:
     - link
-    - text
 id: block_content.icon_block.default
 targetEntityType: block_content
 bundle: icon_block
@@ -27,7 +26,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: string_textfield
   field_icon_block_title:
     weight: 1
     settings:

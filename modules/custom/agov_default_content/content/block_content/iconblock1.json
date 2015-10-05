@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/7?_format=hal_json"
+            "href": "http:\/\/default\/block\/2?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/icon_block"
@@ -31,7 +31,7 @@
     ],
     "changed": [
         {
-            "value": "1443778154",
+            "value": "1444018079",
             "lang": "en"
         }
     ],
@@ -54,8 +54,7 @@
     ],
     "field_icon_block_icon": [
         {
-            "value": "<i class=\"fa fa-book\"><\/i>",
-            "format": "full_html"
+            "value": "fa fa-book"
         }
     ],
     "field_icon_block_title": [

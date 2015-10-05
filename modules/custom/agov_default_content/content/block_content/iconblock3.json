@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/9?_format=hal_json"
+            "href": "http:\/\/default\/block\/5?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/icon_block"
@@ -31,7 +31,7 @@
     ],
     "changed": [
         {
-            "value": "1443778419",
+            "value": "1444017443",
             "lang": "en"
         }
     ],
@@ -54,8 +54,7 @@
     ],
     "field_icon_block_icon": [
         {
-            "value": "<i class=\"fa fa-calendar-o\"><\/i>",
-            "format": "full_html"
+            "value": "fa fa-calendar-o"
         }
     ],
     "field_icon_block_title": [

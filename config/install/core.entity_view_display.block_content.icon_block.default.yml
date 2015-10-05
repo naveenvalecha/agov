@@ -7,9 +7,9 @@ dependencies:
     - field.field.block_content.icon_block.field_icon_block_icon
     - field.field.block_content.icon_block.field_icon_block_title
   module:
+    - agov
     - fences
     - link
-    - text
 id: block_content.icon_block.default
 targetEntityType: block_content
 bundle: icon_block
@@ -31,7 +31,8 @@ content:
   field_icon_block_icon:
     weight: 0
     label: hidden
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings:
       fences:
         fences_field_tag: div
@@ -40,7 +41,7 @@ content:
         fences_field_item_classes: ''
         fences_label_tag: div
         fences_label_classes: ''
-    type: text_default
+    type: text_icon
   field_icon_block_title:
     weight: 1
     label: hidden
