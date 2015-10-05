@@ -1,0 +1,23 @@
+diff --git a/modules/block_page_layout/src/Plugin/DisplayVariant/BlockPageLayoutVariant.php b/modules/block_page_layout/src/Plugin/DisplayVariant/BlockPageLayoutVariant.php
+index eca0c75..99e2467 100644
+--- a/modules/block_page_layout/src/Plugin/DisplayVariant/BlockPageLayoutVariant.php
++++ b/modules/block_page_layout/src/Plugin/DisplayVariant/BlockPageLayoutVariant.php
+@@ -8,8 +8,8 @@
+ namespace Drupal\block_page_layout\Plugin\DisplayVariant;
+ 
+ use Drupal\Core\Form\FormStateInterface;
+-use Drupal\page_manager\Plugin\DisplayVariant\BlockDisplayVariant;
+ use Drupal\layout_plugin\Layout;
++use Drupal\page_manager\Plugin\DisplayVariant\PageBlockDisplayVariant;
+ 
+ /**
+  * Provides a page variant that simply contains blocks.
+@@ -19,7 +19,7 @@ use Drupal\layout_plugin\Layout;
+  *   admin_label = @Translation("Block page (with Layout plugin integration)")
+  * )
+  */
+-class BlockPageLayoutVariant extends BlockDisplayVariant {
++class BlockPageLayoutVariant extends PageBlockDisplayVariant {
+   /**
+    * Returns instance of the layout plugin used by this page variant.
+    *

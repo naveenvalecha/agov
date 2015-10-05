@@ -16,6 +16,4 @@ settings:
   label: 'User login'
   provider: user
   label_display: visible
-  cache:
-    max_age: -1
 visibility: {  }

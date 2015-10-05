@@ -18,8 +18,6 @@ settings:
   label: 'Quick Links'
   provider: system
   label_display: visible
-  cache:
-    max_age: -1
   level: 1
   depth: 0
 visibility:
