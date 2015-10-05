@@ -71,6 +71,7 @@ config_devel:
   - core.date_format.publication_date
   - image.style.teaser_medium
   - editor.editor.basic_html
+  - block.block.sitebranding
 
   # Permissions.
   - user.role.anonymous

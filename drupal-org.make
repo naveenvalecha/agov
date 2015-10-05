@@ -5,22 +5,35 @@ api = 2
 defaults[projects][subdir] = "contrib"
 
 ; Contrib modules
+projects[layout_plugin][type] = module
+projects[layout_plugin][download][type] = git
+projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_plugin.git
+projects[layout_plugin][download][branch] = 8.x-1.x
+projects[layout_plugin][download][revision] = a2865cacc2d6ae7d6c230764be495570a1908897
 projects[layout_plugin][subdir] = 'contrib'
-projects[layout_plugin][version] = '1.0-alpha14'
-; We save these patches locally because we're using a tagged version of layout_plugin because HEAD doesn't work with
-; Beta 15.
-projects[layout_plugin][patch][] = layout-plugin.patch
-projects[layout_plugin][patch][] = https://www.drupal.org/files/issues/2573857-1-variant-schema.patch
+projects[layout_plugin][patch][] = block-page-layout.patch
 
-projects[page_manager][version] = '1.0-alpha14'
+projects[page_manager][type] = module
+projects[page_manager][download][type] = git
+projects[page_manager][download][url] = http://git.drupal.org/project/page_manager.git
+projects[page_manager][download][branch] = 8.x-1.x
+projects[page_manager][download][revision] = 592daf945059e424f604d3d383307e672b419908
+projects[page_manager][subdir] = 'contrib'
 ; See https://www.drupal.org/node/2391925#comment-10390651
 projects[page_manager][patch][] = https://www.drupal.org/files/issues/2391925-19.patch
+
+projects[ctools][type] = module
+projects[ctools][download][type] = git
+projects[ctools][download][url] = http://git.drupal.org/project/ctools.git
+projects[ctools][download][branch] = 8.x-3.x
+projects[ctools][download][revision] = 45fbd1389384e57b8e68fc1fd944dd95a8a105a1
+projects[ctools][subdir] = 'contrib'
 
 projects[file_entity][type] = module
 projects[file_entity][download][type] = git
 projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
 projects[file_entity][download][branch] = 8.x-2.x
-projects[file_entity][download][revision] = 5ca855c29cf4c5968e2419f9017216bf591d973f
+projects[file_entity][download][revision] = 4654bdfee2e301b48da70ad9afab441ceca5b879
 projects[file_entity][subdir] = 'contrib'
 
 projects[twitter_block][type] = module
@@ -30,18 +43,13 @@ projects[twitter_block][download][branch] = 8.x-1.x
 projects[twitter_block][subdir] = 'contrib'
 
 projects[linkicon][subdir] = 'contrib'
-projects[linkicon][version] = '1.0'
-projects[linkicon][patch][] = https://www.drupal.org/files/issues/linkicon-schema.patch
+projects[linkicon][version] = '1.1'
 
 projects[title][subdir] = 'contrib'
 projects[title][version] = '2.x'
-projects[title][patch][] = https://www.drupal.org/files/issues/title-node.patch
 
 projects[fences][subdir] = 'contrib'
 projects[fences][version] = '2.x'
-
-projects[title][subdir] = 'contrib'
-projects[title][version] = '2.x'
 
 ; aGov
 
@@ -50,10 +58,12 @@ projects[title][version] = '2.x'
 ; Libraries
 
 ; Development Modules
-projects[config_devel][version] = '1.0-beta4'
+projects[config_devel][version] = '1.0-beta16'
 projects[config_devel][subdir] = 'development'
+
 projects[default_content][type] = module
 projects[default_content][download][type] = git
-projects[default_content][download][url] = git@github.com:benjy/default_content.git
-projects[default_content][download][branch] = add-import-export-events
+projects[default_content][download][url] = http://git.drupal.org/project/default_content.git
+projects[default_content][download][branch] = 8.x-1.x
+projects[default_content][download][revision] = 80fb60de4d7adf28abf8efedc9bcbabd148dec1d
 projects[default_content][subdir] = 'development'

@@ -39,8 +39,6 @@ display_variants:
         label: 'Twitter feed'
         provider: twitter_block
         label_display: visible
-        cache:
-          max_age: -1
         widget_id: '360632154172030979'
         theme: ''
         link_color: ''
@@ -66,8 +64,6 @@ display_variants:
         label: ''
         provider: views
         label_display: visible
-        cache:
-          max_age: -1
         views_label: ''
         items_per_page: none
         region: body_left
@@ -79,8 +75,6 @@ display_variants:
         label: 'Homepage Blurb'
         provider: block_content
         label_display: '0'
-        cache:
-          max_age: -1
         status: true
         info: ''
         view_mode: full
@@ -93,8 +87,6 @@ display_variants:
         label: 'Discover aGov'
         provider: block_content
         label_display: '0'
-        cache:
-          max_age: -1
         status: true
         info: ''
         view_mode: full
@@ -107,8 +99,6 @@ display_variants:
         label: 'Quick Links'
         provider: system
         label_display: visible
-        cache:
-          max_age: -1
         level: 1
         depth: 0
         region: body_right
@@ -120,8 +110,6 @@ display_variants:
         label: 'Stay up to date'
         provider: block_content
         label_display: visible
-        cache:
-          max_age: -1
         status: true
         info: ''
         view_mode: full
@@ -133,8 +121,6 @@ display_variants:
         label: 'Promo Block 1'
         provider: block_content
         label_display: '0'
-        cache:
-          max_age: -1
         status: true
         info: ''
         view_mode: full
@@ -147,8 +133,6 @@ display_variants:
         label: 'Promo Block 2'
         provider: block_content
         label_display: '0'
-        cache:
-          max_age: -1
         status: true
         info: ''
         view_mode: full
@@ -161,8 +145,6 @@ display_variants:
         label: 'Promo Block 3'
         provider: block_content
         label_display: '0'
-        cache:
-          max_age: -1
         status: true
         info: ''
         view_mode: full
