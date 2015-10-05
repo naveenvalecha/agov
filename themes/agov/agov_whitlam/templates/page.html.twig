@@ -60,24 +60,6 @@
 
 <header class="header" role="banner">
   <div class="layout-center header__inner clearfix">
-    {% if logo %}
-      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" class="header__logo"><img src="{{ logo }}" alt="{{ 'Home'|t }}" class="header__logo-image" /></a>
-    {% endif %}
-
-    {% if site_name or site_slogan %}
-      <div class="header__name-and-slogan">
-        {% if title %}
-          <h1 class="header__site-name visually-hidden">
-            <a href="{{ front_page }}" title="{{ 'Home'|t }}" class="header__site-link" rel="home">{{ site_name }}</a>
-          </h1>
-        {% endif %}
-
-        {% if site_slogan %}
-          <div class="header__site-slogan">{{ site_slogan }}</div>
-        {% endif %}
-      </div>{# ./header__name-and-slogan #}
-    {% endif %}
-
     {{ page.secondary_menu }}
 
     {{ page.header }}
