@@ -51,9 +51,6 @@ projects[title][version] = '2.x'
 projects[fences][subdir] = 'contrib'
 projects[fences][version] = '2.x'
 
-projects[default_content][subdir] = 'contrib'
-projects[default_content][version] = '1.0-alpha2'
-
 ; aGov
 
 ; Themes
