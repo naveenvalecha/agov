@@ -19,11 +19,11 @@ settings:
   label: 'Stay up to date'
   provider: block_content
   label_display: visible
-  cache:
-    max_age: -1
   status: true
   info: ''
   view_mode: full
+  cache:
+    max_age: -1
 visibility:
   request_path:
     id: request_path

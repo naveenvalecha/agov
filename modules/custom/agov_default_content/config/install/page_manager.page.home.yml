@@ -36,8 +36,6 @@ display_variants:
         label: 'Twitter feed'
         provider: twitter_block
         label_display: visible
-        cache:
-          max_age: -1
         widget_id: '360632154172030979'
         theme: ''
         link_color: ''
@@ -54,6 +52,8 @@ display_variants:
         tweet_limit: ''
         related: ''
         polite: polite
+        cache:
+          max_age: -1
         region: body_right
         weight: -10
         uuid: f270e7c2-8c62-4cc4-b807-7c2238678696
@@ -63,10 +63,10 @@ display_variants:
         label: ''
         provider: views
         label_display: visible
-        cache:
-          max_age: -1
         views_label: ''
         items_per_page: none
+        cache:
+          max_age: -1
         region: body_left
         weight: -10
         uuid: 26394e55-c4a2-431e-8200-b2b0bb7aec80
@@ -104,10 +104,10 @@ display_variants:
         label: 'Quick Links'
         provider: system
         label_display: visible
-        cache:
-          max_age: -1
         level: 1
         depth: 0
+        cache:
+          max_age: -1
         region: body_right
         weight: 0
         uuid: 97a930be-b695-4ed9-ab22-3492f65f3b26

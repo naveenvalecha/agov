@@ -14,8 +14,8 @@ settings:
   label: 'Secondary tabs'
   provider: core
   label_display: '0'
-  cache:
-    max_age: -1
   primary: false
   secondary: true
+  cache:
+    max_age: -1
 visibility: {  }
