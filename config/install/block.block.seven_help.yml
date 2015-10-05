@@ -16,6 +16,4 @@ settings:
   label: Help
   provider: help
   label_display: '0'
-  cache:
-    max_age: -1
 visibility: {  }

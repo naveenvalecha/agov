@@ -16,6 +16,4 @@ settings:
   label: 'Main page content'
   provider: system
   label_display: '0'
-  cache:
-    max_age: -1
 visibility: {  }
