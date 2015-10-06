@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 id: quick-links
 label: 'Quick Links'
-description: ''
+description: 'The quick links in the right hand side bar.'
 locked: false

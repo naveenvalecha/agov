@@ -1,5 +1,5 @@
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.quick-links
@@ -7,10 +7,10 @@ dependencies:
     - system
   theme:
     - agov_whitlam
-id: quicklinks
+id: quicklinks_2
 theme: agov_whitlam
-region: '-1'
-weight: -1
+region: sidebar_second
+weight: -4
 provider: null
 plugin: 'system_menu_block:quick-links'
 settings:
