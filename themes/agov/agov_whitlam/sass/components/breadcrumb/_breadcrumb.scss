@@ -25,6 +25,8 @@
   }
 
   &__item {
+    @extend .fa;
+    @extend .fa-angle-right;
     display: inline;
     list-style-type: none;
     margin: 0;
@@ -39,8 +41,6 @@
       }
     }
 
-    @extend .fa;
-    @extend .fa-angle-right;
 
     &:before {
       margin: 0 8px 0 11px;
@@ -48,7 +48,4 @@
     }
   }
 
-  &__separator {
-
-  }
 }
