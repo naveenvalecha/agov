@@ -1,0 +1,86 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/7?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/promotional_block"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/promotional_block\/field_promotional_image": [
+            {
+                "href": "http:\/\/default\/file\/11?_format=hal_json"
+            }
+        ]
+    },
+    "uuid": [
+        {
+            "value": "2f69d5fd-a34c-412c-a514-20fe2197b501"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "info": [
+        {
+            "value": "Promo Block 1",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "promotional_block"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1443758786",
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "field_promotional_description": [
+        {
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue vulputate convallis."
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/promotional_block\/field_promotional_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/file\/11?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "59674274-f1f5-4d6a-be00-fecedfde6534"
+                    }
+                ],
+                "display": null,
+                "description": null
+            }
+        ]
+    },
+    "field_promotional_title": [
+        {
+            "value": "Integer lacinia ullamcorper tempor"
+        }
+    ]
+}

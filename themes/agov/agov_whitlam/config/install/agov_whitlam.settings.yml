@@ -7,8 +7,8 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: false
-  path: profiles/agov/themes/agov/agov_whitlam/logo.png
+  use_default: true
+  path: ''
 favicon:
   use_default: true
   path: ''

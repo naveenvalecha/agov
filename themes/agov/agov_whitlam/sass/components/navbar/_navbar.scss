@@ -1,5 +1,5 @@
 // @TODO: Remove !important and move ".sfHover" to fugly selector section.
-// scss-lint:disable ImportantRule, SelectorFormat
+// scss-lint:disable ImportantRule, SelectorFormat, SelectorDepth
 
 // Navbar menu
 //
@@ -89,7 +89,7 @@
   }
 }
 
-.navbar,
+.navigation .navbar,
 %navbar {
   width: 100%;
   position: relative;
@@ -295,7 +295,6 @@
   }
 }
 
-.navigation {
+.menu--main {
   @extend %navbar;
 }
-

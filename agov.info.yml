@@ -71,6 +71,7 @@ config_devel:
   - core.date_format.publication_date
   - image.style.teaser_medium
   - editor.editor.basic_html
+  - block.block.sitebranding
 
   # Permissions.
   - user.role.anonymous
@@ -97,6 +98,20 @@ config_devel:
   - block.block.useraccountmenu
   - block.block.breadcrumbs
 
+  # Menus
+  - system.menu.quick-links
+
+  # Promotional Blocks
+  - block_content.type.promotional_block
+  - core.entity_form_display.block_content.promotional_block.default
+  - core.entity_view_display.block_content.promotional_block.default
+  - field.field.block_content.promotional_block.field_promotional_description
+  - field.field.block_content.promotional_block.field_promotional_image
+  - field.field.block_content.promotional_block.field_promotional_title
+  - field.storage.block_content.field_promotional_description
+  - field.storage.block_content.field_promotional_image
+  - field.storage.block_content.field_promotional_title
+
   # Contact page.
   - contact.form.contact
   - contact.settings
@@ -106,3 +121,16 @@ config_devel:
   - core.entity_form_display.block_content.editorial_content.default
   - core.entity_view_display.block_content.editorial_content.default
   - block_content.type.editorial_content
+
+  # Icon block.
+  - block_content.type.icon_block
+  - core.entity_form_display.block_content.icon_block.default
+  - core.entity_view_display.block_content.icon_block.default
+  - field.field.block_content.icon_block.field_icon_block_description
+  - field.field.block_content.icon_block.field_icon_block_icon
+  - field.field.block_content.icon_block.field_icon_block_title
+  - field.field.block_content.social_block.field_social_icon
+  - field.storage.block_content.field_icon_block_description
+  - field.storage.block_content.field_icon_block_icon
+  - field.storage.block_content.field_icon_block_title
+  - field.storage.block_content.field_social_icon
