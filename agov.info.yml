@@ -100,6 +100,7 @@ config_devel:
   - block.block.quicklinks
   - block.block.quicklinks_2
   - block.block.breadcrumbs
+  - block.block.pagetitle
 
   # Menus
   - system.menu.quick-links

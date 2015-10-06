@@ -1,5 +1,5 @@
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:social_block:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
@@ -10,7 +10,7 @@ dependencies:
     - agov_whitlam
 id: stayuptodate
 theme: agov_whitlam
-region: 'second_sidebar'
+region: '-1'
 weight: 0
 provider: null
 plugin: 'block_content:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
