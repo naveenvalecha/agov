@@ -84,6 +84,7 @@ config_devel:
 
   # Blocks
   - block.block.mainnavigation
+  - block.block.mainnavigation_2
   - block.block.searchform
   - block.block.useraccountmenu
   - block.block.searchform
