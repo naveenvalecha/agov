@@ -72,31 +72,13 @@
   </div>
 </div>
 
-<main class="layout-center layout-3col" role="main">
+{% if page.sidebar_second %}
+  {% set main_class = 'two-column' %}
+  {% set content_class = 'two-column__left' %}
+  {% set sidebar_second_class = 'two-column__right' %}
+{% endif %}
 
-  {# Decide on layout classes by checking if sidebars have content. #}
-
-  {# No sidebars. #}
-  {% set content_class = 'layout-3col__full' %}
-  {% set sidebar_first_class = '' %}
-  {% set sidebar_second_class = '' %}
-
-  {# Two sidebars on the left. #}
-  {% if page.sidebar_first and page.sidebar_second %}
-    {% set content_class = 'layout-3col__right-content' %}
-    {% set sidebar_first_class = 'layout-3col__left-sidebar' %}
-    {% set sidebar_second_class = 'layout-3col__left-sidebar' %}
-
-  {# One sidebar on the right. #}
-  {% elseif page.sidebar_second %}
-    {% set content_class = 'layout-3col__left-content' %}
-    {% set sidebar_second_class = 'layout-3col__right-sidebar' %}
-
-  {# One sidebar on the left. #}
-  {% elseif page.sidebar_first %}
-    {% set content_class = 'layout-3col__right-content' %}
-    {% set sidebar_first_class = 'layout-3col__left-sidebar' %}
-  {% endif %}
+<main class="layout-center {{ main_class }}" role="main">
 
   <div class="{{ content_class }}">
     {{ page.highlighted }}
@@ -118,12 +100,6 @@
     {{ page.content }}
   </div>
 
-  {% if page.sidebar_first %}
-    <aside class="{{ sidebar_first_class }}" role="complementary">
-      {{ page.sidebar_first }}
-    </aside>
-  {% endif %}
-
   {% if page.sidebar_second %}
     <aside class="{{ sidebar_second_class }}" role="complementary">
       {{ page.sidebar_second }}
@@ -137,7 +113,7 @@
 <footer class="footer-bottom" role="contentinfo">
   <div class="layout-center clearfix">
     {% if page.footer %}
-      <div class="footer-bottom__left <?php print $classes; ?>">
+      <div class="footer-bottom__left">
         {{ page.footer }}
       </div>
     {% endif %}
