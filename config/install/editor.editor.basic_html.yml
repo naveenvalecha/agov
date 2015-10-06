@@ -34,10 +34,11 @@ settings:
         -
           name: Tools
           items:
+            - Styles
             - Source
   plugins:
     stylescombo:
-      styles: ''
+      styles: "a.button|Button\r\na.button--large|Button Large\r\na.button--wide|Button Wide\r\n\r\n"
 image_upload:
   status: false
   scheme: public
