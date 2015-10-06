@@ -31,9 +31,15 @@ projects[ctools][subdir] = 'contrib'
 
 projects[file_entity][type] = module
 projects[file_entity][download][type] = git
-projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
-projects[file_entity][download][branch] = 8.x-2.x
-projects[file_entity][download][revision] = 4654bdfee2e301b48da70ad9afab441ceca5b879
+;projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
+;projects[file_entity][download][branch] = 8.x-2.x
+;projects[file_entity][download][revision] = 4654bdfee2e301b48da70ad9afab441ceca5b879
+
+; Temporary fix for image items, see https://github.com/md-systems/file_entity/issues/41
+projects[file_entity][download][url] = https://github.com/benjy/file_entity.git
+projects[file_entity][download][branch] = exclude-fields-for-image-item
+projects[file_entity][download][revision] = d7b92128068f3879d3a3a7a1d2b72228f25df026
+
 projects[file_entity][subdir] = 'contrib'
 
 projects[twitter_block][type] = module

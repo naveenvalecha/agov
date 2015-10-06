@@ -99,6 +99,7 @@ config_devel:
   - block.block.footerquicklinks
   - block.block.quicklinks
   - block.block.quicklinks_2
+  - block.block.breadcrumbs
 
   # Menus
   - system.menu.quick-links
