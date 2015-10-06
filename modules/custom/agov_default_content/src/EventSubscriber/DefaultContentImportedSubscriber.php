@@ -37,6 +37,8 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
     $entities = $event->getImportedEntities();
     $map = [
       '3b2e357b-0a96-4371-af02-02a17cc0e41f' => 'About Us',
+      '6eb572d1-dd76-4944-9f00-0dda6e0874d9' => 'Services',
+      '78eff650-8399-4c62-b92c-445de219a47d' => 'Resources',
     ];
     $weight = 0;
     foreach ($map as $uuid => $text) {
