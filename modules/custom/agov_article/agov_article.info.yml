@@ -21,3 +21,4 @@ config_devel:
   - field.field.node.article.field_article_date
   - field.storage.node.field_article_date
   - views.view.latest_updates
+  - views.view.news
