@@ -5,6 +5,8 @@
  * Whitlam code file.
  */
 
+use Drupal\Core\Cache\CacheableMetadata;
+
 /**
  * Implements hook_preprocess_block__PROVIDER().
  */
@@ -17,6 +19,43 @@ function agov_whitlam_preprocess_block__block_content(&$vars) {
       'box--with-border',
       'box--with-hover',
     ];
+  }
+  elseif ($block->bundle() === 'social_block') {
+    $vars['attributes']['class'][] = 'divider';
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__BLOCK_ID().
+ */
+function agov_whitlam_preprocess_block__quicklinks_2(&$vars) {
+  $vars['attributes']['class'][] = 'divider';
+}
+
+/**
+ * Implements hook_preprocess_block__BLOCK_ID().
+ */
+function agov_whitlam_preprocess_block__system_menu_block__quick_links(&$vars) {
+  $vars['attributes']['class'][] = 'divider';
+}
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+function agov_whitlam_preprocess_breadcrumb(&$vars) {
+  /** @var \Drupal\node\Entity\Node $node */
+
+  // Add the current page to the breadcrumbs if we are on a node page.
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $vars['breadcrumb'][] = [
+      'text' => $node->label(),
+      'url' => $node->urlInfo()->toString(),
+    ];
+
+    // Add the cache data.
+    CacheableMetadata::createFromRenderArray($vars)
+      ->addCacheableDependency($node)
+      ->applyTo($vars);
   }
 }
 

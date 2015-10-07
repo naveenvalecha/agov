@@ -98,9 +98,11 @@ config_devel:
   - block.block.seven_secondary_local_tasks
   - block.block.useraccountmenu
   - block.block.breadcrumbs
+  - block.block.pagetitle
 
   # Menus
   - system.menu.quick-links
+  - system.menu.footer-quick-links
 
   # Promotional Blocks
   - block_content.type.promotional_block
