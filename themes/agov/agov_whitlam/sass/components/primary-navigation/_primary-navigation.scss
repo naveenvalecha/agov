@@ -4,6 +4,8 @@
 //
 // Style guide: components.primary-navigation
 
+// scss-lint:disable DeclarationOrder
+
 .primary-navigation,
 %primary-navigation {
   background: color(primary-navigation-background);
@@ -41,7 +43,7 @@
       position: absolute;
       top: 47px;
       right: 34px;
-      color: #FFF;
+      color: color(primary-navigation-title-color);
       text-transform: uppercase;
       cursor: pointer;
       margin: 0;
