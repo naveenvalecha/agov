@@ -10,7 +10,7 @@ dependencies:
     - agov_whitlam
 id: stayuptodate
 theme: agov_whitlam
-region: 'sidebar_second'
+region: sidebar_second
 weight: 0
 provider: null
 plugin: 'block_content:69e9555f-f0f3-4dd6-b905-5b1efffa120f'
