@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.article
+    - system.menu.main
   module:
     - node
     - user
@@ -165,6 +166,7 @@ display:
       empty: {  }
       relationships: {  }
       arguments: {  }
+      display_extenders: {  }
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -181,6 +183,14 @@ display:
     display_options:
       display_extenders: {  }
       path: news
+      menu:
+        type: normal
+        title: News
+        description: ''
+        parent: ''
+        weight: -47
+        context: '0'
+        menu_name: main
     cache_metadata:
       contexts:
         - 'languages:language_content'
