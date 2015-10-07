@@ -4,7 +4,8 @@ component-library:
     theme:
       css/styles.css: {}
   js:
-    js/script.js: {}
+    sass/components/primary-navigation/primary-navigation.js: {}
   dependencies:
     - core/drupal
     - core/jquery
+    - core/jquery.once

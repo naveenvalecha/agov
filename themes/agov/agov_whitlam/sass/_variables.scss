@@ -190,8 +190,6 @@ $chroma: add-colors('functional', (
   skip-link:              'white',
   skip-link-bg:           'grey-dark',
 
-  nav-menu-active:        'grey-extra-dark',
-
   secondary-menu:         'white',
   secondary-menu-hover:   'grey-light',
 
@@ -226,10 +224,14 @@ $chroma: add-colors('functional', (
   table-select:           'yellow-pale',
 
   watermark:              'grey-extra-light',
-  navbar-bg:              'grey-extra-dark',
-  navbar-active:          'grey-extra-dark',
-  navbar:                 'white',
-  navbar-bg-hover:        'white-smoke',
+
+  // Primary navigation.
+  primary-navigation-background: 'grey-extra-dark',
+  primary-navigation-item-color: 'white',
+  primary-navigation-item-hover-color: 'grey-extra-dark',
+  primary-navigation-item-hover-background: 'white-smoke',
+  primary-navigation-item-active-color: 'grey-extra-dark',
+  primary-navigation-item-active-background: 'white',
 
   search-color-light:     'white-smoke',
   search-color:           'grey-dark',
@@ -284,6 +286,8 @@ $breakpoints: (
   'medium-only': ($medium ($large - 1), 'no-query' true),
   'large':       ($large,               'no-query' true),
   'larger':      ($larger),
+  'primary-navigation-mobile': (0 970px),
+  'primary-navigation-desktop': (971px),
 );
 
 //

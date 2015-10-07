@@ -66,11 +66,7 @@
   </div>
 </header>
 
-<div class="navbar__wrapper">
-  <div class="layout-center clearfix">
-    {{ page.primary_menu }}
-  </div>
-</div>
+{{ page.primary_menu }}
 
 <main class="layout-center layout-3col" role="main">
 
@@ -87,12 +83,12 @@
     {% set sidebar_first_class = 'layout-3col__left-sidebar' %}
     {% set sidebar_second_class = 'layout-3col__left-sidebar' %}
 
-  {# One sidebar on the right. #}
+    {# One sidebar on the right. #}
   {% elseif page.sidebar_second %}
     {% set content_class = 'layout-3col__left-content' %}
     {% set sidebar_second_class = 'layout-3col__right-sidebar' %}
 
-  {# One sidebar on the left. #}
+    {# One sidebar on the left. #}
   {% elseif page.sidebar_first %}
     {% set content_class = 'layout-3col__right-content' %}
     {% set sidebar_first_class = 'layout-3col__left-sidebar' %}
@@ -101,7 +97,8 @@
   <div class="{{ content_class }}">
     {{ page.highlighted }}
     {{ page.breadcrumb }}
-    <a href="#skip-link" class="visually-hidden--focusable" id="main-content">Back to top</a>{# link is in html.html.twig #}
+    <a href="#skip-link" class="visually-hidden--focusable" id="main-content">Back
+      to top</a>{# link is in html.html.twig #}
 
     {{ title_prefix }}
     {% if title %}

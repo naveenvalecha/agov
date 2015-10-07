@@ -1,0 +1,78 @@
+// Primary Navigation
+//
+// Markup: primary-navigation.hbs
+//
+// Style guide: components.primary-navigation
+
+.primary-navigation,
+%primary-navigation {
+  background: color(primary-navigation-background);
+  margin-bottom: 30px;
+
+  &__list {
+    overflow: hidden;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    padding: 0;
+  }
+
+  &__anchor {
+    @include adjust-font-size-to(17px);
+    color: color(primary-navigation-item-color);
+    display: block;
+    text-decoration: none;
+    padding: 14px 30px;
+
+    &:hover {
+      background: color(primary-navigation-item-hover-background);
+      color: color(primary-navigation-item-hover-color);
+    }
+
+    &--active {
+      background: color(primary-navigation-item-active-background);
+      color: color(primary-navigation-item-active-color);
+    }
+  }
+
+  @include respond-to('primary-navigation-mobile') {
+    &__title {
+      position: absolute;
+      top: 47px;
+      right: 34px;
+      color: #FFF;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &--expanded {
+      .primary-navigation__list {
+        display: block;
+      }
+    }
+  }
+
+  @include respond-to('primary-navigation-desktop') {
+    &__title {
+      display: none;
+    }
+
+    &__list-item {
+      float: left;
+    }
+  }
+}
+
+.primary-navigation a {
+  @extend %primary-navigation__anchor;
+}
+
+.primary-navigation .is-active {
+  @extend %primary-navigation__anchor--active;
+}
