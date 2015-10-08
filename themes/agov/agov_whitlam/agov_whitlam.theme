@@ -26,20 +26,6 @@ function agov_whitlam_preprocess_block__block_content(&$vars) {
 }
 
 /**
- * Implements hook_preprocess_block__BLOCK_ID().
- */
-function agov_whitlam_preprocess_block__quicklinks_2(&$vars) {
-  $vars['attributes']['class'][] = 'divider';
-}
-
-/**
- * Implements hook_preprocess_block__BLOCK_ID().
- */
-function agov_whitlam_preprocess_block__system_menu_block__quick_links(&$vars) {
-  $vars['attributes']['class'][] = 'divider';
-}
-
-/**
  * Implements hook_preprocess_breadcrumb().
  */
 function agov_whitlam_preprocess_breadcrumb(&$vars) {
@@ -64,7 +50,8 @@ function agov_whitlam_preprocess_breadcrumb(&$vars) {
  */
 function agov_whitlam_preprocess_block(&$vars) {
   $classes = [
-    'system_menu_block:main' => ['primary-navigation']
+    'system_menu_block:main' => ['primary-navigation'],
+    'system_menu_block:quick-links' => ['divider'],
   ];
   $title_classes = [
     'system_menu_block:main' => ['primary-navigation__title'],
