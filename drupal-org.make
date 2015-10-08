@@ -9,7 +9,7 @@ projects[layout_plugin][type] = module
 projects[layout_plugin][download][type] = git
 projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_plugin.git
 projects[layout_plugin][download][branch] = 8.x-1.x
-projects[layout_plugin][download][revision] = a2865cacc2d6ae7d6c230764be495570a1908897
+projects[layout_plugin][download][revision] = ecea017eaf546e942ef608f3e98b0067e350d5db
 projects[layout_plugin][subdir] = 'contrib'
 projects[layout_plugin][patch][] = block-page-layout.patch
 
