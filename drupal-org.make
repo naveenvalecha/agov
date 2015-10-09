@@ -11,7 +11,6 @@ projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_pl
 projects[layout_plugin][download][branch] = 8.x-1.x
 projects[layout_plugin][download][revision] = ecea017eaf546e942ef608f3e98b0067e350d5db
 projects[layout_plugin][subdir] = 'contrib'
-projects[layout_plugin][patch][] = block-page-layout.patch
 
 projects[page_manager][type] = module
 projects[page_manager][download][type] = git
