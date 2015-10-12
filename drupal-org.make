@@ -46,7 +46,7 @@ projects[token][type] = module
 projects[token][download][type] = git
 projects[token][download][url] = http://git.drupal.org/project/token.git
 projects[token][download][branch] = 8.x-1.x
-projects[token][download][revision] = 0a620c8df77dd60f0a54b7c6d02b43107db342a4
+projects[token][download][revision] = 5a36ca581d4c02d0afead767b48263e29af83824
 projects[token][subdir] = 'contrib'
 
 projects[twitter_block][type] = module
