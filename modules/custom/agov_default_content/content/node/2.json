@@ -1,36 +1,36 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/node\/2?_format=hal_json"
+            "href": "http:\/\/default\/content\/services?_format=hal_json"
         },
         "type": {
-            "href": "http:\/\/drupal.org\/rest\/type\/node\/article"
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/standard_page"
         },
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/uid": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/uid": [
             {
                 "href": "http:\/\/default\/user\/0?_format=hal_json",
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/revision_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/revision_uid": [
             {
                 "href": "http:\/\/default\/user\/0?_format=hal_json"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_image": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/field_standard_page_image": [
             {
-                "href": "http:\/\/default\/file\/1?_format=hal_json"
+                "href": "http:\/\/default\/file\/2?_format=hal_json"
             }
         ]
     },
     "uuid": [
         {
-            "value": "4d9d7e43-0281-4bd4-aa00-a607cb6f1707"
+            "value": "6eb572d1-dd76-4944-9f00-0dda6e0874d9"
         }
     ],
     "type": [
         {
-            "target_id": "article"
+            "target_id": "standard_page"
         }
     ],
     "langcode": [
@@ -41,12 +41,12 @@
     ],
     "title": [
         {
-            "value": "Populus",
+            "value": "Services",
             "lang": "en"
         }
     ],
     "_embedded": {
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/uid": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/uid": [
             {
                 "_links": {
                     "self": {
@@ -58,13 +58,13 @@
                 },
                 "uuid": [
                     {
-                        "value": "02245cfb-ab7a-45d3-9c04-4e8df64a0f26"
+                        "value": "276d9538-c0f7-483b-b304-4aa6417a84b6"
                     }
                 ],
                 "lang": "en"
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/revision_uid": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/revision_uid": [
             {
                 "_links": {
                     "self": {
@@ -76,16 +76,16 @@
                 },
                 "uuid": [
                     {
-                        "value": "02245cfb-ab7a-45d3-9c04-4e8df64a0f26"
+                        "value": "276d9538-c0f7-483b-b304-4aa6417a84b6"
                     }
                 ]
             }
         ],
-        "http:\/\/drupal.org\/rest\/relation\/node\/article\/field_article_image": [
+        "http:\/\/drupal.org\/rest\/relation\/node\/standard_page\/field_standard_page_image": [
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/file\/1?_format=hal_json"
+                        "href": "http:\/\/default\/file\/2?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
@@ -93,9 +93,13 @@
                 },
                 "uuid": [
                     {
-                        "value": "2bc29f1e-dd8c-4003-a502-2ce407dc0df6"
+                        "value": "0fab901d-36ba-4bfd-9b00-d6617ffc2f1f"
                     }
-                ]
+                ],
+                "alt": null,
+                "title": null,
+                "width": "900",
+                "height": "600"
             }
         ]
     },
@@ -107,19 +111,19 @@
     ],
     "created": [
         {
-            "value": "1443509350",
+            "value": "1444122991",
             "lang": "en"
         }
     ],
     "changed": [
         {
-            "value": "1443591778",
+            "value": "1444609534",
             "lang": "en"
         }
     ],
     "promote": [
         {
-            "value": "1",
+            "value": "0",
             "lang": "en"
         }
     ],
@@ -131,7 +135,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "1443509384"
+            "value": "1444123012"
         }
     ],
     "revision_translation_affected": [
@@ -148,15 +152,10 @@
     ],
     "body": [
         {
-            "value": "Duis ille quia. Abbas abdo nisl nulla scisco tego validus. Jus ludus turpis. Feugiat hendrerit letalis nostrud oppeto quis ratis secundum sino. Commodo consequat eros gemino imputo incassum lenis macto. Acsi amet iusto metuo pertineo saepius suscipit tincidunt utinam. Abbas aptent diam genitus patria paulatim usitas ut vindico vulpes. Aliquip comis neo saluto sudo suscipit typicus utrum. Aliquip autem vulpes. Aliquip illum saepius suscipere typicus. Haero hendrerit modo paratus praesent quadrum refero saepius tum. Consectetuer consequat ea luctus vero. Causa facilisi quae roto voco. Consequat distineo ibidem veniam. Diam fere macto magna mauris quia typicus ullamcorper ut. Decet letalis melior metuo nostrud populus quae quia. Dolor ea genitus hendrerit molior nulla probo. Huic iaceo mauris premo quae quia suscipere te turpis. Antehabeo quia torqueo vicis vulputate. Abico ad eu feugiat jumentum tamen. Eligo hos ideo lenis populus quis singularis. Diam huic immitto plaga qui typicus uxor verto. Abdo commoveo dolore oppeto os paulatim roto wisi. Appellatio imputo vindico. Accumsan luctus neo pertineo vulputate. Blandit conventio ex hos patria quae singularis tego velit vindico. Abbas comis esse ex haero hendrerit illum in singularis vicis. Nibh tego voco. Imputo jumentum paulatim quibus rusticus scisco. Facilisis odio quidem. Aliquam iustum luctus neque similis. Augue exputo hos jus. Enim eum macto sit. Enim hendrerit saluto singularis. Eligo similis turpis. Decet modo pagus suscipere tincidunt turpis. Causa jus utinam. Consectetuer inhibeo jumentum. Appellatio capto commodo consequat dolus eligo humo nunc pneum secundum. Accumsan at commoveo exputo iaceo lucidus luptatum pertineo praesent. Augue genitus secundum. Abbas ibidem imputo in incassum lobortis suscipit utrum. Fere obruo similis sudo. Abbas damnum haero lobortis mauris metuo neque odio similis wisi. Immitto luptatum utinam vindico. Aliquip consequat veniam. At gravis hendrerit hos illum persto probo quidne sino vulputate. Enim facilisi hos imputo quia saepius ulciscor. At distineo ludus minim paulatim tego vulputate. Diam dolor iusto veniam verto wisi. Augue ille iusto nobis praemitto quia vereor voco. Abdo erat eum. Euismod olim refoveo similis sudo ulciscor usitas. Huic luctus nisl qui. Ea importunus in nisl valetudo. Eligo euismod importunus ludus singularis velit. Conventio genitus hendrerit letalis nobis patria singularis volutpat. Dignissim facilisi laoreet modo nisl pala patria tincidunt. Camur gravis pertineo premo saluto. Ea euismod jugis. Aliquip commodo ludus te venio. Aptent incassum interdico luctus natu vicis vulpes. Duis eu humo importunus jugis jus luptatum nisl qui validus. Aliquip neo pneum quis valde. Camur ea eu imputo metuo nutus quae quidem tamen vicis. Appellatio cui dolor gilvus huic humo ideo. Aliquip gemino gravis interdico molior sed sit. Appellatio commodo commoveo haero praemitto ulciscor verto voco. Ex immitto vicis volutpat. Defui premo quadrum rusticus singularis utrum. Aptent torqueo uxor.",
+            "value": "<p>Lorem ipsum dolor sit amet, case malis praesent his ea, tota fuisset eum te, ex commune expetendis nec. Ad insolens recusabo similique nec. Ea pertinax eloquentiam neglegentur pri. At decore ponderum expetendis per, eum amet error in, ex sed tollit officiis electram. Nibh elaboraret his id, an ius mutat tempor voluptaria.<\/p>\r\n\r\n<p>Bonorum voluptua platonem mel ne. Fugit tincidunt sadipscing per in. Sit clita cetero legendos id, pro error appellantur cu. Ea quod scripta habemus qui. No eam probo melius aliquando, ad graecis mandamus per. Dolore expetenda eam et.<\/p>\r\n\r\n<p>Et dolore splendide voluptatibus cum, eos erat congue impedit ne. Accusata mandamus eam te. Cum ex oblique aliquid voluptatibus. Usu sonet zril corrumpit te, possim legimus an nec. Oporteat suavitate id per, sonet fastidii mel ex.<\/p>\r\n\r\n<p>Dico sale suavitate an pri, vim nostro equidem intellegam et, eu laudem partiendo accusamus has. Cum ex ipsum epicuri. In ius utroque deterruisset. Persius albucius cu eos, iriure recusabo te sed. Pri eu lorem detracto insolens, ne dicam populo omittam vel. No pro ullum electram accusamus.<\/p>\r\n\r\n<p>Magna augue graecis te eos. Nec at consequat prodesset rationibus. Ex postea inciderint pro, ius tantas aeterno albucius te, dico oratio invidunt ne nec. Eam et habeo facilisis intellegat. Et dicat officiis est, ad ubique aperiri voluptatum vix, oratio semper eum id. Nam ad doming dolores, suas iisque fabulas an pri, quodsi maluisset an mei. Nisl diam nominati sea no.<\/p>\r\n\r\n<p>Vix ei nisl erant primis, dolor perfecto contentiones pro ad, convenire consulatu pertinacia eu nam. Usu modo menandri in, qui eius mollis euripidis no. Nec ei sumo admodum consetetur, duo ne ferri utroque blandit. Cu vis illud accusam, utamur latine atomorum quo ut, est te sint tollit molestiae. Id per movet scripserit.<\/p>\r\n\r\n<p>Nec vocent assentior persequeris ne. Ludus dolore ut nam, scripta legimus corrumpit ex cum. Pro vidit percipit mandamus ne. Mei volumus inciderint cu, eruditi indoctum intellegat ad usu. An veri vidit pro, mea at aliquid interpretaris. Fabulas noluisse voluptatum ex pro.<\/p>\r\n\r\n<p>Ut qui voluptua gubergren, te illud feugait hendrerit vel. Cum efficiendi liberavisse eu. Lorem virtute sadipscing vel an, alii principes pro ex, eu unum impetus placerat ius. Sed assentior cotidieque theophrastus ne, mei id offendit eleifend maluisset. Persecuti vituperata duo an, duo labitur scripserit id.<\/p>\r\n\r\n<p>Eum in bonorum sanctus, labitur appareat mel ea. Solum ignota alienum vix cu, ne mea abhorreant dissentiunt efficiantur. Vix ei consul commodo, nominavi evertitur no eos, ne hinc oratio utroque nec. Sea ex sale ridens nostrum. Sit diceret recusabo ad. Quem nisl omnes at mei, te homero integre mnesarchum vis.<\/p>\r\n",
             "format": "basic_html",
             "summary": "",
             "lang": "en"
-        }
-    ],
-    "field_article_date": [
-        {
-            "value": "2015-09-21"
         }
     ]
 }
