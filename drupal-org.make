@@ -32,7 +32,7 @@ projects[file_entity][type] = module
 projects[file_entity][download][type] = git
 projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
 projects[file_entity][download][branch] = 8.x-2.x
-projects[file_entity][download][revision] = 07a7803899ac3b3c59ab2f30e7542b5ec0283516
+projects[file_entity][download][revision] = 6265cb578732646ea30a9ab0c6a23e870af2c28c
 projects[file_entity][subdir] = 'contrib'
 
 projects[pathauto][type] = module
