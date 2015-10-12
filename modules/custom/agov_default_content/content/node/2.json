@@ -96,8 +96,8 @@
                         "value": "0fab901d-36ba-4bfd-9b00-d6617ffc2f1f"
                     }
                 ],
-                "alt": null,
-                "title": null,
+                "alt": "Builders on site",
+                "title": "",
                 "width": "900",
                 "height": "600"
             }
@@ -117,7 +117,7 @@
     ],
     "changed": [
         {
-            "value": "1444609534",
+            "value": "1444610224",
             "lang": "en"
         }
     ],
