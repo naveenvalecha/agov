@@ -33,10 +33,21 @@ projects[file_entity][download][type] = git
 projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
 projects[file_entity][download][branch] = 8.x-2.x
 projects[file_entity][download][revision] = 07a7803899ac3b3c59ab2f30e7542b5ec0283516
-
-b25a5fd94e44b716c979e533b869a8d2da47e27b
-
 projects[file_entity][subdir] = 'contrib'
+
+projects[pathauto][type] = module
+projects[pathauto][download][type] = git
+projects[pathauto][download][url] = https://github.com/md-systems/pathauto.git
+projects[pathauto][download][branch] = 8.x-1.x
+projects[pathauto][download][revision] = e850af1d33adecd68c9e36274a7b6391a89125eb
+projects[pathauto][subdir] = 'contrib'
+
+projects[token][type] = module
+projects[token][download][type] = git
+projects[token][download][url] = http://git.drupal.org/project/token.git
+projects[token][download][branch] = 8.x-1.x
+projects[token][download][revision] = 0a620c8df77dd60f0a54b7c6d02b43107db342a4
+projects[token][subdir] = 'contrib'
 
 projects[twitter_block][type] = module
 projects[twitter_block][download][type] = git
