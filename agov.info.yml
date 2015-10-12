@@ -46,6 +46,7 @@ dependencies:
   - page_manager
   - fences
   - pathauto
+  - token
 
   # Custom modules
   - agov_article
