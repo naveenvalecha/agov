@@ -67,6 +67,7 @@ config_devel:
   - system.theme
   - system.theme
   - system.site
+  - search.settings
   - node.settings
   - core.date_format.publication_date
   - image.style.teaser_medium
@@ -137,3 +138,11 @@ config_devel:
   - field.storage.block_content.field_icon_block_icon
   - field.storage.block_content.field_icon_block_title
   - field.storage.block_content.field_social_icon
+
+  # Search
+  - block.block.searchform
+  - block.block.searchform_2
+  - core.entity_view_mode.node.search_index
+  - core.entity_view_mode.node.search_result
+  - search.page.node_search
+  - search.page.user_search

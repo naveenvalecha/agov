@@ -5,15 +5,15 @@ dependencies:
     - search
   theme:
     - agov_whitlam
-id: searchform
+id: searchform_2
 theme: agov_whitlam
-region: highlighted
-weight: -4
+region: header
+weight: -6
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: Search
+  label: 'Search form'
   provider: search
   label_display: '0'
 visibility: {  }
