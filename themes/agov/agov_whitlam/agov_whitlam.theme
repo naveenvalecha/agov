@@ -46,6 +46,45 @@ function agov_whitlam_preprocess_breadcrumb(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_block__BLOCK_ID().
+ */
+function agov_whitlam_preprocess_block__search_form_block(&$vars) {
+  // We have the searchbox twice, one light, one dark.
+  $modifier = $vars['elements']['#id'] == 'searchform_2' ? '--light' : '';
+
+  // The search form isn't all in one template, this code puts classes in about
+  // three different templates.
+  $vars['content']['#attributes']['class'][] = 'search search-form search' . $modifier;
+  $vars['content']['keys']['#wrapper_attributes']['class'][] = 'search__input-wrapper search__inner-wrapper' . $modifier;
+  $vars['content']['keys']['#attributes']['class'][] = 'search__input search__input' . $modifier;
+  $vars['content']['keys']['#attributes']['placeholder'] = t('Enter your keywords');
+
+  // Customise the submit button.
+  $vars['content']['actions']['submit']['#title_display'] = 'invisible';
+  $vars['content']['actions']['submit']['#attributes']['class'][] = 'search__button' . $modifier;
+  $vars['content']['actions']['submit']['#attributes']['class'][] = 'search__button';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function agov_whitlam_form_search_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $form['#attributes']['class'][] = 'search search-form';
+
+  // Customise the search box.
+  $form['basic']['keys']['#wrapper_attributes']['class'][] = 'search__input-wrapper search__inner-wrapper';
+  $form['basic']['keys']['#attributes']['class'][] = 'search__input';
+  $form['basic']['keys']['#attributes']['placeholder'] = t('Enter your keywords');
+  $form['basic']['keys']['#title_display'] = 'invisible';
+
+  // Add the submit classes.
+  $form['basic']['submit']['#attributes']['class'][] = 'search__button';
+
+  // Hide the help links.
+  $form['help_link']['#access'] = FALSE;
+}
+
+/**
  * Implements hook_preprocess_block().
  */
 function agov_whitlam_preprocess_block(&$vars) {

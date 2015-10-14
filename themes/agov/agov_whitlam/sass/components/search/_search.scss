@@ -11,6 +11,7 @@
 %search {
   color: color(search-color);
   background: color(search-bg);
+  position: relative;
 
   &--light {
     @include respond-to('medium') {
@@ -20,7 +21,6 @@
   }
 
   &__wrapper {
-    width: 100%;
     padding: 15px 20px;
 
     @include respond-to('medium') {
@@ -33,36 +33,25 @@
   &__inner-wrapper {
     position: relative;
     display: inline-block;
-    padding: 13px;
     width: 100%;
     border-bottom: 1px solid color(search-border);
-
-    &--light {
-      @include respond-to('medium') {
-        border-bottom: 2px solid color(search-border);
-        min-width: 363px;
-        padding: 0 0 13px;
-
-        &:hover,
-        &:focus {
-          border-color: color('white');
-        }
-      }
-    }
   }
 
   &__input-wrapper {
-    margin-bottom: 0;
+    margin: 0;
+    // scss-lint:disable ImportantRule
+    display: block !important;
   }
 
   &__input {
     @include box-shadow(none);
     background: none;
     border: 0;
-    padding: 0;
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
+    width: 100%;
+    padding: 12px;
 
     @include input-placeholder() {
       @include opacity(1);
@@ -71,8 +60,16 @@
 
     &--light {
       @include respond-to('medium') {
+        border-bottom: 2px solid color(search-border);
+        min-width: 363px;
+
         @include input-placeholder() {
           color: color(search-color-light);
+        }
+
+        &:hover,
+        &:focus {
+          border-color: color('white');
         }
       }
     }
@@ -93,14 +90,51 @@
     background-color: none;
     padding-left: 13px;
 
+    // Override the hover to counteract .button:hover
+    &:hover {
+      background: none;
+      background-repeat: no-repeat;
+      background-image: inline-image('components/search/search-icon-blue.png');
+    }
+
     &--light {
       @include respond-to('medium') {
         background: none;
         background-repeat: no-repeat;
         background-image: inline-image('components/search/search-icon.png');
-        top: 0;
+        bottom: 0;
         padding: 0;
+
+        // Override the hover to counteract .button:hover
+        &:hover {
+          background: none;
+          background-repeat: no-repeat;
+          background-image: inline-image('components/search/search-icon.png');
+        }
        }
     }
+
+  }
+}
+
+// Toggle the two search blocks for now.
+// scss-lint:disable IdSelector
+#block-searchform-2 {
+  display: none;
+  float: right;
+}
+
+// scss-lint:disable IdSelector
+#block-searchform {
+  display: block;
+}
+
+@include respond-to('medium') {
+  #block-searchform-2 {
+    display: block;
+  }
+
+  #block-searchform {
+    display: none;
   }
 }
