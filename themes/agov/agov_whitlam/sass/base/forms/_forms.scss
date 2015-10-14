@@ -83,6 +83,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="search"] {
+  @include box-sizing(border-box);
   // Address `appearance` set to `searchfield` in Safari and Chrome.
   -webkit-appearance: textfield;
 
@@ -93,7 +94,6 @@ input[type="search"] {
   &::-webkit-search-decoration {
     -webkit-appearance: none;
   }
-  @include box-sizing(border-box);
 }
 
 // Buttons

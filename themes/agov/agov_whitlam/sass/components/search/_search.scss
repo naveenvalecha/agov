@@ -35,14 +35,11 @@
     display: inline-block;
     width: 100%;
     border-bottom: 1px solid color(search-border);
-
-    &--light {
-
-    }
   }
 
   &__input-wrapper {
     margin: 0;
+    // scss-lint:disable ImportantRule
     display: block !important;
   }
 
@@ -63,11 +60,12 @@
 
     &--light {
       @include respond-to('medium') {
+        border-bottom: 2px solid color(search-border);
+        min-width: 363px;
+
         @include input-placeholder() {
           color: color(search-color-light);
         }
-        border-bottom: 2px solid color(search-border);
-        min-width: 363px;
 
         &:hover,
         &:focus {
@@ -120,9 +118,23 @@
 }
 
 // Toggle the two search blocks for now.
-#block-searchform-2 { display: none; float: right; }
-#block-searchform { display: block; }
+// scss-lint:disable IdSelector
+#block-searchform-2 {
+  display: none;
+  float: right;
+}
+
+// scss-lint:disable IdSelector
+#block-searchform {
+  display: block;
+}
+
 @include respond-to('medium') {
-  #block-searchform-2 { display: block; }
-  #block-searchform { display: none; }
+  #block-searchform-2 {
+    display: block;
+  }
+
+  #block-searchform {
+    display: none;
+  }
 }
