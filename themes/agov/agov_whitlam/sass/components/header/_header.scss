@@ -10,7 +10,6 @@
 %header {
   background: color(header-background);
   position: relative;
-  margin-bottom: 80px;
 
   @include respond-to('medium') {
     margin-bottom: 0;
