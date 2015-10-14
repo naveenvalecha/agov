@@ -108,7 +108,11 @@
 
 </main>
 
-{{ page.footer_top }}
+{% if page.footer_top %}
+  <div class="footer-top">
+    {{ page.footer_top }}
+  </div>
+{% endif %}
 
 <footer class="footer-bottom" role="contentinfo">
   <div class="layout-center clearfix">

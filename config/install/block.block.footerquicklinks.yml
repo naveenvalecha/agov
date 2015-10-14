@@ -10,7 +10,7 @@ dependencies:
 id: footerquicklinks
 theme: agov_whitlam
 region: footer_top
-weight: -4
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer-quick-links'
 settings:

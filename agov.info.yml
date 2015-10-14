@@ -99,6 +99,10 @@ config_devel:
   - block.block.useraccountmenu
   - block.block.breadcrumbs
   - block.block.pagetitle
+  - block.block.quicklinks
+  - block.block.quicklinks_2
+  - block.block.footerquicklinks
+  - block.block.mainnavigation_3
 
   # Menus
   - system.menu.quick-links
