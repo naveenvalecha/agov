@@ -45,6 +45,8 @@ dependencies:
   - layout_plugin
   - page_manager
   - fences
+  - pathauto
+  - token
 
   # Custom modules
   - agov_article
