@@ -9,7 +9,6 @@
 .primary-navigation,
 %primary-navigation {
   background: color(primary-navigation-background);
-  margin-bottom: 30px;
 
   &__list {
     overflow: hidden;
@@ -39,10 +38,20 @@
   }
 
   @include respond-to('primary-navigation-mobile') {
+    &--expanded {
+      .primary-navigation__list {
+        display: block;
+      }
+
+      .primary-navigation__title:after {
+        content: '\2716';
+      }
+    }
+
     &__title {
       @include adjust-font-size-to(15px);
       position: absolute;
-      top: 47px;
+      top: 40px;
       right: 34px;
       color: color(primary-navigation-title-color);
       text-transform: uppercase;
@@ -64,18 +73,14 @@
       display: none;
     }
 
-    &--expanded {
-      .primary-navigation__list {
-        display: block;
-      }
-
-      .primary-navigation__title:after {
-        content: '\2716';
-      }
+    &__anchor {
+      padding: 9px 15px;
     }
   }
 
   @include respond-to('primary-navigation-desktop') {
+    margin-bottom: 30px;
+
     &__title {
       display: none;
     }
