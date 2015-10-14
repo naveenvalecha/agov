@@ -1,0 +1,100 @@
+// Primary Navigation
+//
+// Markup: primary-navigation.hbs
+//
+// Style guide: components.primary-navigation
+
+// scss-lint:disable DeclarationOrder
+
+.primary-navigation,
+%primary-navigation {
+  background: color(primary-navigation-background);
+
+  &__list {
+    overflow: hidden;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    padding: 0;
+  }
+
+  &__anchor {
+    @include adjust-font-size-to(17px);
+    color: color(primary-navigation-item-color);
+    display: block;
+    text-decoration: none;
+    padding: 14px 30px;
+
+    &:hover {
+      background: color(primary-navigation-item-hover-background);
+      color: color(primary-navigation-item-hover-color);
+    }
+
+    &--active {
+      background: color(primary-navigation-item-active-background);
+      color: color(primary-navigation-item-active-color);
+    }
+  }
+
+  @include respond-to('primary-navigation-mobile') {
+    &--expanded {
+      .primary-navigation__list {
+        display: block;
+      }
+
+      .primary-navigation__title:after {
+        content: '\2716';
+      }
+    }
+
+    &__title {
+      @include adjust-font-size-to(15px);
+      position: absolute;
+      top: 40px;
+      right: 34px;
+      color: color(primary-navigation-title-color);
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 0;
+
+      &:after {
+        @include adjust-font-size-to(24px);
+        content: '\2630';
+        vertical-align: -2px;
+        font-size: 24px;
+        width: 30px;
+        display: inline-block;
+        text-align: right;
+      }
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__anchor {
+      padding: 9px 15px;
+    }
+  }
+
+  @include respond-to('primary-navigation-desktop') {
+    margin-bottom: 30px;
+
+    &__title {
+      display: none;
+    }
+
+    &__list-item {
+      float: left;
+    }
+  }
+}
+
+.primary-navigation a {
+  @extend %primary-navigation__anchor;
+}
+
+.primary-navigation .is-active {
+  @extend %primary-navigation__anchor--active;
+}

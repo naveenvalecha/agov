@@ -28,3 +28,6 @@ regions:
   # hidden from the "block layout" admin page.
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
+stylesheets-remove:
+  - @classy/css/components/menu.css
