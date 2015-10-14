@@ -19,4 +19,5 @@ config_devel:
   - block.block.quicklinks
   - block.block.quicklinks_2
   - block.block.footerquicklinks
+  - block.block.copyrightmessage
   - page_manager.page.home
