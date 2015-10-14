@@ -1,0 +1,30 @@
+// Three Column Menu
+//
+// A menu split into three columns of links.
+//
+// Markup: three-column-menu.hbs
+
+.three-column-menu {
+  &__item {
+    float: left;
+    width: 33.33%;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  @include respond-to('medium') {
+    &__item {
+      width: 50%;
+    }
+  }
+
+  @include respond-to('small') {
+    &__item {
+      float: none;
+      width: auto;
+    }
+  }
+
+}
