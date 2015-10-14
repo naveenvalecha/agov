@@ -14,9 +14,9 @@
 
 .footer-top,
 %footer-top {
+  @include clearfix;
   margin-top: 60px;
   background-color: color(white-smoke);
-  padding-top: 60px;
   padding-bottom: 25px;
 
   &__menu {

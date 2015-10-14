@@ -4,27 +4,31 @@
 //
 // Markup: three-column-menu.hbs
 
-.three-column-menu {
-  &__item {
-    float: left;
-    width: 33.33%;
+.three-column-menu,
+%three-column-menu {
+  &__list {
+    @include clearfix;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   &__link {
     display: block;
+    padding-right: 20px;
   }
 
-  @include respond-to('medium') {
+  @include respond-to('three-column-menu-two-column') {
     &__item {
+      float: left;
       width: 50%;
     }
   }
 
-  @include respond-to('small') {
+  @include respond-to('three-column-menu-three-column') {
     &__item {
-      float: none;
-      width: auto;
+      float: left;
+      width: 33.33%;
     }
   }
-
 }
