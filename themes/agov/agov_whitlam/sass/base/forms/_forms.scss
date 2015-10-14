@@ -93,6 +93,7 @@ input[type="search"] {
   &::-webkit-search-decoration {
     -webkit-appearance: none;
   }
+  @include box-sizing(border-box);
 }
 
 // Buttons
@@ -161,7 +162,6 @@ button,
 
 input {
   &[type="text"],
-  &[type="search"],
   &[type="tel"],
   &[type="url"],
   &[type="email"],
