@@ -9,15 +9,14 @@ projects[layout_plugin][type] = module
 projects[layout_plugin][download][type] = git
 projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_plugin.git
 projects[layout_plugin][download][branch] = 8.x-1.x
-projects[layout_plugin][download][revision] = a2865cacc2d6ae7d6c230764be495570a1908897
+projects[layout_plugin][download][revision] = ecea017eaf546e942ef608f3e98b0067e350d5db
 projects[layout_plugin][subdir] = 'contrib'
-projects[layout_plugin][patch][] = block-page-layout.patch
 
 projects[page_manager][type] = module
 projects[page_manager][download][type] = git
 projects[page_manager][download][url] = http://git.drupal.org/project/page_manager.git
 projects[page_manager][download][branch] = 8.x-1.x
-projects[page_manager][download][revision] = 592daf945059e424f604d3d383307e672b419908
+projects[page_manager][download][revision] = 91f13f592f60d46177a0eeff56c1ae7c5bbd229e
 projects[page_manager][subdir] = 'contrib'
 ; See https://www.drupal.org/node/2391925#comment-10390651
 projects[page_manager][patch][] = https://www.drupal.org/files/issues/2391925-19.patch
@@ -33,7 +32,9 @@ projects[file_entity][type] = module
 projects[file_entity][download][type] = git
 projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
 projects[file_entity][download][branch] = 8.x-2.x
-projects[file_entity][download][revision] = c416b5bd0e959b85fecbc6fcb43a14b4612e6c71
+projects[file_entity][download][revision] = 07a7803899ac3b3c59ab2f30e7542b5ec0283516
+
+b25a5fd94e44b716c979e533b869a8d2da47e27b
 
 projects[file_entity][subdir] = 'contrib'
 
