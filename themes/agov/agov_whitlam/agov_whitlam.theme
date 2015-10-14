@@ -87,34 +87,86 @@ function agov_whitlam_form_search_form_alter(&$form, \Drupal\Core\Form\FormState
 /**
  * Implements hook_preprocess_block().
  */
-function agov_whitlam_preprocess_block(&$vars) {
-  $classes = [
-    'system_menu_block:main' => ['primary-navigation'],
-    'system_menu_block:quick-links' => ['divider'],
-  ];
-  $title_classes = [
-    'system_menu_block:main' => ['primary-navigation__title'],
-  ];
-  if (isset($classes[$vars['plugin_id']])) {
-    $vars['attributes']['class'] = $classes[$vars['plugin_id']];
-  }
-  if (isset($title_classes[$vars['plugin_id']])) {
-    $vars['title_attributes']['class'] = $title_classes[$vars['plugin_id']];
+function agov_whitlam_preprocess_block__system_menu_block__quick_links(&$vars) {
+  $vars['attributes']['class'] = ['divider'];
+}
+
+/**
+ * Implements hook_theme_suggestions_menu_alter().
+ */
+function agov_whitlam_theme_suggestions_menu_alter(&$hooks, $vars) {
+  // Allow menus to be preprocessed individually based on an attribute which
+  // indicates the block placement ID added by specific block preprocess
+  // functions.
+  if (isset($vars['attributes']['placement_id'])) {
+    $hooks[] = 'menu__' . $vars['attributes']['placement_id'];
   }
 }
 
 /**
- * Implements hook_preprocess_menu().
+ * Implements hook_preprocess_block__mainnavigation().
  */
-function agov_whitlam_preprocess_menu(&$vars) {
-  // @todo, is there better context?
-  if ($vars['theme_hook_original'] === 'menu__main') {
-    $vars['attributes']['class'] = [
-      'primary-navigation__list',
-      'layout-center',
-    ];
-    foreach ($vars['items'] as $item) {
-      $item['attributes']->addClass('primary-navigation__list-item');
-    }
+function agov_whitlam_preprocess_block__mainnavigation(&$vars) {
+  $vars['attributes']['class'] = ['primary-navigation'];
+  $vars['title_attributes']['class'] = ['primary-navigation__title'];
+  $vars['content']['#attributes']['placement_id'] = $vars['elements']['#id'];
+}
+
+/**
+ * Implements hook_preprocess_menu__mainnavigation().
+ */
+function agov_whitlam_preprocess_menu__mainnavigation(&$vars) {
+  $vars['attributes']['class'] = [
+    'primary-navigation__list',
+    'layout-center',
+  ];
+  foreach ($vars['items'] as $item) {
+    $item['attributes']->addClass('primary-navigation__list-item');
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__mainnavigation_3().
+ */
+function agov_whitlam_preprocess_block__mainnavigation_3(&$vars) {
+  $vars['attributes']['class'] = [
+    'three-column-menu',
+    'footer-top__menu'
+  ];
+  $vars['content']['#attributes']['placement_id'] = $vars['elements']['#id'];
+}
+
+/**
+ * Implements hook_preprocess_menu__mainnavigation_3().
+ */
+function agov_whitlam_preprocess_menu__mainnavigation_3(&$vars) {
+  $vars['attributes']['class'] = [
+    'three-column-menu__list',
+  ];
+  foreach ($vars['items'] as $item) {
+    $item['attributes']->addClass('three-column-menu__item');
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__mainnavigation_3().
+ */
+function agov_whitlam_preprocess_block__footerquicklinks(&$vars) {
+  $vars['attributes']['class'] = [
+    'three-column-menu',
+    'footer-top__menu'
+  ];
+  $vars['content']['#attributes']['placement_id'] = $vars['elements']['#id'];
+}
+
+/**
+ * Implements hook_preprocess_menu__mainnavigation_3().
+ */
+function agov_whitlam_preprocess_menu__footerquicklinks(&$vars) {
+  $vars['attributes']['class'] = [
+    'three-column-menu__list',
+  ];
+  foreach ($vars['items'] as $item) {
+    $item['attributes']->addClass('three-column-menu__item');
   }
 }
