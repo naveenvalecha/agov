@@ -40,6 +40,7 @@
 
   @include respond-to('primary-navigation-mobile') {
     &__title {
+      @include adjust-font-size-to(15px);
       position: absolute;
       top: 47px;
       right: 34px;
@@ -47,6 +48,16 @@
       text-transform: uppercase;
       cursor: pointer;
       margin: 0;
+
+      &:after {
+        @include adjust-font-size-to(24px);
+        content: '\2630';
+        vertical-align: -2px;
+        font-size: 24px;
+        width: 30px;
+        display: inline-block;
+        text-align: right;
+      }
     }
 
     &__list {
@@ -56,6 +67,10 @@
     &--expanded {
       .primary-navigation__list {
         display: block;
+      }
+
+      .primary-navigation__title:after {
+        content: '\2716';
       }
     }
   }
