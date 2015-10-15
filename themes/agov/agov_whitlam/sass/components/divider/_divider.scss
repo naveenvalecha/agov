@@ -12,8 +12,3 @@
   border: 0;
   border-top: 10px solid color(border);
 }
-
-.landing-page .block-block-content,
-.landing-page .block-menu {
-  @extend %divider;
-}

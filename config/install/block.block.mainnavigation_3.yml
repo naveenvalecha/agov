@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - agov_whitlam
+id: mainnavigation_3
+theme: agov_whitlam
+region: footer_top
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Site map'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

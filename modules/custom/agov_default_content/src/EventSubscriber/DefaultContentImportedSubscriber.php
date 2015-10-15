@@ -46,6 +46,32 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
         $this->createMenuLink($text, 'entity:node/' . $entities[$uuid]->id(), $weight++);
       }
     }
+
+    $this->createFooterQuickLinks();
+  }
+
+  /**
+   * Create default links for the footer.
+   */
+  protected function createFooterQuickLinks() {
+    $link_labels = [
+      'A fortiori argument',
+      'Ceteris paribus',
+      'De dicto and de re',
+      'Eo ipso',
+      'Ignotum per ignotius',
+      'Modus ponendo tollens',
+      'Non causa pro causa',
+      'Per fas et nefas',
+      'Q.E.D.',
+      'Reductio ad absurdum',
+      'Salva congruitate',
+    ];
+    $weight = 0;
+    foreach ($link_labels as $link_label) {
+      $this->createMenuLink($link_label, 'internal:/<front>', $weight, 'footer-quick-links');
+      $weight++;
+    }
   }
 
   /**

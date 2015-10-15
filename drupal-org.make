@@ -9,15 +9,14 @@ projects[layout_plugin][type] = module
 projects[layout_plugin][download][type] = git
 projects[layout_plugin][download][url] = http://git.drupal.org/project/layout_plugin.git
 projects[layout_plugin][download][branch] = 8.x-1.x
-projects[layout_plugin][download][revision] = a2865cacc2d6ae7d6c230764be495570a1908897
+projects[layout_plugin][download][revision] = ecea017eaf546e942ef608f3e98b0067e350d5db
 projects[layout_plugin][subdir] = 'contrib'
-projects[layout_plugin][patch][] = block-page-layout.patch
 
 projects[page_manager][type] = module
 projects[page_manager][download][type] = git
 projects[page_manager][download][url] = http://git.drupal.org/project/page_manager.git
 projects[page_manager][download][branch] = 8.x-1.x
-projects[page_manager][download][revision] = 592daf945059e424f604d3d383307e672b419908
+projects[page_manager][download][revision] = 91f13f592f60d46177a0eeff56c1ae7c5bbd229e
 projects[page_manager][subdir] = 'contrib'
 ; See https://www.drupal.org/node/2391925#comment-10390651
 projects[page_manager][patch][] = https://www.drupal.org/files/issues/2391925-19.patch
@@ -31,16 +30,24 @@ projects[ctools][subdir] = 'contrib'
 
 projects[file_entity][type] = module
 projects[file_entity][download][type] = git
-;projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
-;projects[file_entity][download][branch] = 8.x-2.x
-;projects[file_entity][download][revision] = 4654bdfee2e301b48da70ad9afab441ceca5b879
-
-; Temporary fix for image items, see https://github.com/md-systems/file_entity/issues/41
-projects[file_entity][download][url] = https://github.com/benjy/file_entity.git
-projects[file_entity][download][branch] = exclude-fields-for-image-item
-projects[file_entity][download][revision] = d7b92128068f3879d3a3a7a1d2b72228f25df026
-
+projects[file_entity][download][url] = https://github.com/md-systems/file_entity.git
+projects[file_entity][download][branch] = 8.x-2.x
+projects[file_entity][download][revision] = 6265cb578732646ea30a9ab0c6a23e870af2c28c
 projects[file_entity][subdir] = 'contrib'
+
+projects[pathauto][type] = module
+projects[pathauto][download][type] = git
+projects[pathauto][download][url] = https://github.com/md-systems/pathauto.git
+projects[pathauto][download][branch] = 8.x-1.x
+projects[pathauto][download][revision] = e850af1d33adecd68c9e36274a7b6391a89125eb
+projects[pathauto][subdir] = 'contrib'
+
+projects[token][type] = module
+projects[token][download][type] = git
+projects[token][download][url] = http://git.drupal.org/project/token.git
+projects[token][download][branch] = 8.x-1.x
+projects[token][download][revision] = 5a36ca581d4c02d0afead767b48263e29af83824
+projects[token][subdir] = 'contrib'
 
 projects[twitter_block][type] = module
 projects[twitter_block][download][type] = git

@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a region.
+ * Default theme implementation to display a region.
  *
  * Available variables:
  * - content: The content for this region, typically blocks.
@@ -10,15 +10,12 @@
  *   .info.yml file.
  *
  * @see template_preprocess_region()
+ *
+ * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'footer-top',
-  ]
-%}
 {% if content %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{ attributes }}>
     <div class="layout-center">
       {{ content }}
     </div>

@@ -7,10 +7,10 @@ dependencies:
     - system
   theme:
     - agov_whitlam
-id: quicklinks
+id: quicklinks_2
 theme: agov_whitlam
 region: sidebar_second
-weight: -1
+weight: -4
 provider: null
 plugin: 'system_menu_block:quick-links'
 settings:

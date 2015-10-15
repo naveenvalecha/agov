@@ -19,7 +19,6 @@ regions:
   breadcrumb: Breadcrumb
   help: Help
   content: Content
-  sidebar_first: 'Left sidebar'
   sidebar_second: 'Right sidebar (or additional left sidebar)'
   footer_top: 'Footer top'
   footer: Footer
@@ -29,3 +28,6 @@ regions:
   # hidden from the "block layout" admin page.
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
+stylesheets-remove:
+  - @classy/css/components/menu.css
