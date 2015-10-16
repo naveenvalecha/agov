@@ -8,15 +8,17 @@
   @include clearfix;
   @include box-sizing(border-box);
 
-  &__left {
-    float: left;
-    width: 67%;
-    padding: 0 12px;
-  }
+  @include respond-to('two-column') {
+    &__left {
+      float: left;
+      width: 67%;
+      padding: 0 12px;
+    }
 
-  &__right {
-    float: left;
-    width: 33%;
-    padding: 0 12px;
+    &__right {
+      float: left;
+      width: 33%;
+      padding: 0 12px;
+    }
   }
 }

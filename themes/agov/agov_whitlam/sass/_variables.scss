@@ -287,10 +287,12 @@ $breakpoints: (
   'medium-only': ($medium ($large - 1), 'no-query' true),
   'large':       ($large,               'no-query' true),
   'larger':      ($larger),
+
   'header-mobile': (0 970px),
   'header-desktop': (971px),
   'three-column-menu-two-column': (550px 960px),
   'three-column-menu-three-column': (961px),
+  'two-column': (850px),
 );
 
 //
