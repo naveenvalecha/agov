@@ -17,14 +17,4 @@ patterns:
     default: '/[term:vocabulary]/[term:name]'
   user:
     default: '/users/[user:name]'
-  file:
-    default: 'files/[file:name]'
-    bundles:
-      audio:
-        default: ''
-      document:
-        default: ''
-      image:
-        default: ''
-      video:
-        default: ''
+
