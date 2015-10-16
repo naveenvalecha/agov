@@ -52,9 +52,9 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
       $weight = 0;
       foreach ($map as $uuid => $link) {
         if (isset($entities[$uuid])) {
-          $this->createMenuLink($link['label'], 'entity:node/' . $entities[$uuid]->id(), $weight++, 'main', $parent);
+          $saved_link = $this->createMenuLink($link['label'], 'entity:node/' . $entities[$uuid]->id(), $weight++, 'main', $parent);
           if (isset($link['children'])) {
-            $links_from_map($link['children'], $uuid);
+            $links_from_map($link['children'], $saved_link->uuid());
           }
         }
       }
@@ -102,6 +102,9 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
    *  The menu to add the link to.
    * @param string $parent
    *   The parent menu item to attach the link to.
+   *
+   * @return \Drupal\menu_link_content\Entity\MenuLinkContent
+   *   The saved menu link.
    */
   protected function createMenuLink($text, $path, $weight = 0, $menu = 'main', $parent = NULL) {
     $menu_link = MenuLinkContent::create([
@@ -115,6 +118,7 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
       $menu_link->set('parent', 'menu_link_content:' . $parent);
     }
     $menu_link->save();
+    return $menu_link;
   }
 
   /**
