@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - block_content.type.promotional_block
+    - field.field.block_content.promotional_block.field_link
     - field.field.block_content.promotional_block.field_promotional_description
     - field.field.block_content.promotional_block.field_promotional_image
     - field.field.block_content.promotional_block.field_promotional_title
@@ -49,4 +50,5 @@ content:
         fences_label_tag: div
         fences_label_classes: ''
     type: string
-hidden: {  }
+hidden:
+  field_link: true
