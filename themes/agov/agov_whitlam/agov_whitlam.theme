@@ -8,23 +8,42 @@
 use Drupal\Core\Cache\CacheableMetadata;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Template\Attribute;
+use Drupal\Core\Url;
 
 /**
- * Implements hook_preprocess_block__PROVIDER().
+ * Implements hook_theme_suggestions
  */
-function agov_whitlam_preprocess_block__block_content(&$vars) {
-  /** @var \Drupal\block_content\Entity\BlockContent $block */
-  $block = $vars['elements']['content']['#block_content'];
-  if ($block->bundle() === 'icon_block') {
-    $vars['attributes']['class'] = [
-      'box--icon',
-      'box--with-border',
-      'box--with-hover',
-    ];
+function agov_whitlam_theme_suggestions_block_alter(&$hooks, $vars) {
+  if ($vars['elements']['#configuration']['provider'] === 'block_content') {
+    $hooks[] = 'block__block_content__' . $vars['elements']['content']['#block_content']->bundle();
   }
-  elseif ($block->bundle() === 'social_block') {
-    $vars['attributes']['class'][] = 'divider';
-  }
+}
+
+/**
+ * Implements hook_preprocess_block__PROVIDER__BUNDLE().
+ */
+function agov_whitlam_preprocess_block__block_content__icon_block(&$vars) {
+  $vars['attributes']['class'] = [
+    'box--icon',
+    'box--with-border',
+    'box--with-hover',
+  ];
+}
+
+/**
+ * Implements hook_preprocess_block__PROVIDER__BUNDLE().
+ */
+function agov_whitlam_preprocess_block__block_content__social_block(&$vars) {
+  $vars['attributes']['class'][] = 'divider';
+}
+
+/**
+ * Implements hook_preprocess_block__PROVIDER__BUNDLE().
+ */
+function agov_whitlam_preprocess_block__block_content__promotional_block(&$vars) {
+  $entity = $vars['content']['#block_content'];
+  $vars['content']['field_promotional_title'][0]['#url'] = Url::fromUri($entity->field_link->uri);
+  $vars['content']['field_promotional_image'][0]['#url'] = Url::fromUri($entity->field_link->uri);
 }
 
 /**
