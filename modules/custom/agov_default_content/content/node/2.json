@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/content\/resources?_format=hal_json"
+            "href": "http:\/\/default\/resources?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/standard_page"
@@ -58,7 +58,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "55bdeae7-c5ef-4b78-8149-738fc11b9d83"
+                        "value": "24a82d78-821b-47ca-a405-5a8e16b1a5e6"
                     }
                 ],
                 "lang": "en"
@@ -76,7 +76,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "55bdeae7-c5ef-4b78-8149-738fc11b9d83"
+                        "value": "24a82d78-821b-47ca-a405-5a8e16b1a5e6"
                     }
                 ]
             }

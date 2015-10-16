@@ -3,7 +3,8 @@
     attach: function (context, settings) {
       $('.primary-navigation', context).once().each(function () {
         var $menu = $(this),
-          $title = $menu.find('.primary-navigation__title');
+          $title = $menu.find('.primary-navigation__title'),
+          $level_2_list = $menu.find('.primary-navigation__list-level-2');
         var toggle = true;
         $title.click(function () {
           if (toggle) {
@@ -16,6 +17,14 @@
             $title.text('Menu');
             toggle = true;
           }
+        });
+
+        // Enable keyboard navigation for accessibility.
+        $level_2_list.find('a').focus(function() {
+          $(this).closest($level_2_list).closest('li').addClass('opened');
+        });
+        $level_2_list.find('a').blur(function() {
+          $(this).closest($level_2_list).closest('li').removeClass('opened');
         });
       });
     }
