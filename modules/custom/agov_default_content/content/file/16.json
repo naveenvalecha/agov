@@ -1,15 +1,20 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/file\/14?_format=hal_json"
+            "href": "http:\/\/default\/file\/16?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/image\/uid": [
+            {
+                "href": "http:\/\/default\/users\/admin?_format=hal_json"
+            }
+        ]
     },
     "uuid": [
         {
-            "value": "39316635-6a51-483a-a64e-781c1dfa7e99"
+            "value": "79c0f7eb-1379-4985-b203-3ea7f87e75f2"
         }
     ],
     "langcode": [
@@ -17,14 +22,33 @@
             "value": "en"
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/image\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/users\/admin?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f145d0ec-f92b-45c9-ad05-5c37df6d79a3"
+                    }
+                ]
+            }
+        ]
+    },
     "filename": [
         {
-            "value": "bigstock-Farmer-hand-holding-a-fresh-yo-14504939.jpg"
+            "value": "plant.jpg"
         }
     ],
     "uri": [
         {
-            "value": "public:\/\/article\/bigstock-Farmer-hand-holding-a-fresh-yo-14504939_0_5_0_0_0.jpg"
+            "value": "public:\/\/article\/plant.jpg"
         }
     ],
     "filemime": [
@@ -44,12 +68,12 @@
     ],
     "created": [
         {
-            "value": "1444966110"
+            "value": "1444988667"
         }
     ],
     "changed": [
         {
-            "value": "1444966116"
+            "value": "1444988671"
         }
     ],
     "type": [
