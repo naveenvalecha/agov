@@ -99,7 +99,7 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
    * @param int $weight
    *   The menu link weight.
    * @param string $menu
-   *  The menu to add the link to.
+   *   The menu to add the link to.
    * @param string $parent
    *   The parent menu item to attach the link to.
    *
