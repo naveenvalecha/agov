@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_preprocess_block__PROVIDER().
@@ -69,7 +70,7 @@ function agov_whitlam_preprocess_block__search_form_block(&$vars) {
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function agov_whitlam_form_search_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+function agov_whitlam_form_search_form_alter(&$form, FormStateInterface $form_state) {
   $form['#attributes']['class'][] = 'search search-form';
 
   // Customise the search box.
@@ -90,6 +91,7 @@ function agov_whitlam_form_search_form_alter(&$form, \Drupal\Core\Form\FormState
  */
 function agov_whitlam_preprocess_block__system_menu_block__quick_links(&$vars) {
   $vars['attributes']['class'] = ['divider'];
+  $vars['content']['#attributes']['class'][] = 'unstyled-list';
 }
 
 /**
