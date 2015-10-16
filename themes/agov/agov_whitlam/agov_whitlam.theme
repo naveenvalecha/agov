@@ -33,15 +33,17 @@ function agov_whitlam_preprocess_breadcrumb(&$vars) {
   $title = \Drupal::service('title_resolver')
     ->getTitle(\Drupal::request(), $route);
 
-  $vars['breadcrumb'][] = [
-    'text' => $title,
-  ];
+  if ($title) {
+    $vars['breadcrumb'][] = [
+      'text' => $title,
+    ];
 
-  // Adding a dependency on the route actually disables caching for this block
-  // but that's what we want, to prevent caching issues.
-  CacheableMetadata::createFromRenderArray($vars)
-    ->addCacheableDependency($route)
-    ->applyTo($vars);
+    // Adding a dependency on the route actually disables caching for this block
+    // but that's what we want, to prevent caching issues.
+    CacheableMetadata::createFromRenderArray($vars)
+      ->addCacheableDependency($route)
+      ->applyTo($vars);
+  }
 }
 
 /**
