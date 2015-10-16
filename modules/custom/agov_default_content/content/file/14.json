@@ -1,15 +1,20 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/file\/12?_format=hal_json"
+            "href": "http:\/\/default\/file\/14?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/image\/uid": [
+            {
+                "href": "http:\/\/default\/users\/admin?_format=hal_json"
+            }
+        ]
     },
     "uuid": [
         {
-            "value": "97695ee7-7468-4c8e-a351-81ed6e291968"
+            "value": "39316635-6a51-483a-a64e-781c1dfa7e99"
         }
     ],
     "langcode": [
@@ -17,6 +22,25 @@
             "value": "en"
         }
     ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/image\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/users\/admin?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4f46a07b-b574-4c97-8901-1ce25e2966df"
+                    }
+                ]
+            }
+        ]
+    },
     "filename": [
         {
             "value": "bigstock-Farmer-hand-holding-a-fresh-yo-14504939.jpg"
@@ -24,7 +48,7 @@
     ],
     "uri": [
         {
-            "value": "public:\/\/article\/bigstock-Farmer-hand-holding-a-fresh-yo-14504939.jpg"
+            "value": "public:\/\/article\/bigstock-Farmer-hand-holding-a-fresh-yo-14504939_0.jpg"
         }
     ],
     "filemime": [
@@ -44,12 +68,12 @@
     ],
     "created": [
         {
-            "value": "1443683855"
+            "value": "1444966110"
         }
     ],
     "changed": [
         {
-            "value": "1443683861"
+            "value": "1444966116"
         }
     ],
     "type": [
