@@ -41,37 +41,7 @@
     }
   }
 
-  // Level 2 list, list item and anchor.
-  &__list-level-2 {
-    // Do not use display none to hide the sub menu. Keep it in the DOM for
-    // keyboard navigation.
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-    list-style-type: none;
-    z-index: 10;
-    background: color(primary-navigation-item-hover-background);
-    margin: 0;
-    padding: 0;
-    min-width: 250px;
-  }
-
-  &__anchor-level-2 {
-    @include adjust-font-size-to(15px);
-    text-decoration: none;
-    display: block;
-    color: color(primary-navigation-item-active-color);
-    padding: 4px 13px;
-
-    &:hover,
-    &:focus {
-      background: color(primary-navigation-item-active-background);
-      color: color(primary-navigation-item-hover-color-secondary);
-      text-decoration: underline;
-      outline: none;
-    }
-  }
-
+  // Styles on mobile only.
   @include respond-to('primary-navigation-mobile') {
     &--expanded {
       .primary-navigation__list {
@@ -117,6 +87,7 @@
     }
   }
 
+  // Styles on desktop only.
   @include respond-to('primary-navigation-desktop') {
     margin-bottom: 30px;
 
@@ -128,20 +99,59 @@
       float: left;
     }
 
-    // Make the dropdown menu work.
-    &__list-item:hover > a,
-    &__list-item > a:focus,
-    &__list-item.opened > a{
+    // Level 2 list, list item and anchor.
+    &__list-level-2 {
+      // Do not use display none to hide the sub menu. Keep it in the DOM for
+      // keyboard navigation.
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      list-style-type: none;
+      z-index: 10;
       background: color(primary-navigation-item-hover-background);
-      color: color(primary-navigation-item-hover-color);
+      margin: 0;
+      padding: 0;
+      min-width: 250px;
     }
 
-    &__list-item:hover > ul,
-    &__list-item a:focus + ul,
-    &__list-item.opened > ul {
-      height: auto;
-      border: 2px solid color(primary-navigation-item-hover-background);
+    &__anchor-level-2 {
+      @include adjust-font-size-to(15px);
+      text-decoration: none;
+      display: block;
+      color: color(primary-navigation-item-active-color);
+      padding: 4px 13px;
+
+      &:hover,
+      &:focus {
+        background: color(primary-navigation-item-active-background);
+        color: color(primary-navigation-item-hover-color-secondary);
+        text-decoration: underline;
+        outline: none;
+      }
     }
+  }
+}
+
+// Make the keyboard navigation and dropdown menus work.
+.primary-navigation {
+  // Visually indicate a top level item when hovering.
+  &__list-item:hover > a,
+    // Visually indicate sub items are focused.
+  &__list-item > a:focus,
+    // Keep visual indicate when tabbing through children.
+  &__list-item.opened > a {
+    background: color(primary-navigation-item-hover-background);
+    color: color(primary-navigation-item-hover-color);
+  }
+
+  // Standard dropdown hover.
+  &__list-item:hover > ul,
+    // Open during keyboard nav when the top level anchor comes into focus.
+  &__list-item a:focus + ul,
+    // Maintain the opened state when tabbing through the items.
+  &__list-item.opened > ul {
+    height: auto;
+    border: 2px solid color(primary-navigation-item-hover-background);
   }
 }
 
