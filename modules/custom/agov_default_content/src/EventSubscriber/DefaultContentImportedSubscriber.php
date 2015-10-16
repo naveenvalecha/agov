@@ -36,16 +36,30 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
 
     $entities = $event->getImportedEntities();
     $map = [
-      '3b2e357b-0a96-4371-af02-02a17cc0e41f' => 'About Us',
-      '6eb572d1-dd76-4944-9f00-0dda6e0874d9' => 'Services',
-      '78eff650-8399-4c62-b92c-445de219a47d' => 'Resources',
+      '3b2e357b-0a96-4371-af02-02a17cc0e41f' => ['label' => 'About Us'],
+      '6eb572d1-dd76-4944-9f00-0dda6e0874d9' => ['label' => 'Services'],
+      '78eff650-8399-4c62-b92c-445de219a47d' => [
+        'label' => 'Resources',
+        'children' => [
+          'b6d6d9fd-4f28-4918-b100-ffcfb15c9374' => ['label' => 'Nam vitae diam'],
+          'c9a89616-7057-4971-8337-555e425ed782' => ['label' => 'Curabitur pretium'],
+          '27500c7a-92b9-4781-a32d-451da0c24df9' => ['label' => 'Cras at faucibus'],
+        ],
+      ]
     ];
-    $weight = 0;
-    foreach ($map as $uuid => $text) {
-      if (isset($entities[$uuid])) {
-        $this->createMenuLink($text, 'entity:node/' . $entities[$uuid]->id(), $weight++);
+
+    $links_from_map = function($map, $parent = NULL) use (&$links_from_map) {
+      $weight = 0;
+      foreach ($map as $uuid => $link) {
+        if (isset($entities[$uuid])) {
+          $this->createMenuLink($link['label'], 'entity:node/' . $entities[$uuid]->id(), $weight++, 'main', $parent);
+          if (isset($link['children'])) {
+            $links_from_map($link['children'], $uuid);
+          }
+        }
       }
-    }
+    };
+    $links_from_map($map);
 
     $this->createFooterQuickLinks();
   }
@@ -83,14 +97,22 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
    *   The menu link path.
    * @param int $weight
    *   The menu link weight.
+   * @param string $menu
+   *  The menu to add the link to.
+   * @param string $parent
+   *   The parent menu item to attach the link to.
    */
-  protected function createMenuLink($text, $path, $weight = 0, $menu = 'main') {
-    MenuLinkContent::create([
+  protected function createMenuLink($text, $path, $weight = 0, $menu = 'main', $parent = NULL) {
+    $menu_link = MenuLinkContent::create([
       'title' => $text,
       'link' => ['uri' => $path],
       'menu_name' => $menu,
       'weight' => $weight,
-    ])->save();
+    ]);
+    if ($parent !== NULL) {
+      $menu_link->set('parent', 'menu_link_content:' . $parent);
+    }
+    $menu_link->save();
   }
 
   /**
