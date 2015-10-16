@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\Core\Template\Attribute;
 
 /**
  * Implements hook_preprocess_block__PROVIDER().
@@ -122,7 +123,13 @@ function agov_whitlam_preprocess_menu__mainnavigation(&$vars) {
   ];
   foreach ($vars['items'] as $item) {
     $item['attributes']->addClass('primary-navigation__list-item');
+    if (isset($item['below'])) {
+      foreach ($item['below'] as $sub_item) {
+        $sub_item['attributes']->addClass('primary-navigation__list-item-level-2');
+      }
+    }
   }
+  $vars['sub_menu_attributes'] = new Attribute(['class' => 'primary-navigation__list-level-2']);
 }
 
 /**
