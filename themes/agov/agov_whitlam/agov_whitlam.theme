@@ -29,18 +29,19 @@ function agov_whitlam_preprocess_block__block_content(&$vars) {
  * Implements hook_preprocess_breadcrumb().
  */
 function agov_whitlam_preprocess_breadcrumb(&$vars) {
-  /** @var \Drupal\node\Entity\Node $node */
+  $route = \Drupal::routeMatch()->getRouteObject();
+  $title = \Drupal::service('title_resolver')
+    ->getTitle(\Drupal::request(), $route);
 
-  // Add the current page to the breadcrumbs if we are on a node page.
-  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+  if ($title) {
     $vars['breadcrumb'][] = [
-      'text' => $node->label(),
-      'url' => $node->urlInfo()->toString(),
+      'text' => $title,
     ];
 
-    // Add the cache data.
+    // Adding a dependency on the route actually disables caching for this block
+    // but that's what we want, to prevent caching issues.
     CacheableMetadata::createFromRenderArray($vars)
-      ->addCacheableDependency($node)
+      ->addCacheableDependency($route)
       ->applyTo($vars);
   }
 }
