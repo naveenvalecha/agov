@@ -11,7 +11,7 @@ use Drupal\Core\Template\Attribute;
 use Drupal\Core\Url;
 
 /**
- * Implements hook_theme_suggestions
+ * Implements hook_theme_suggestions_block_alter().
  */
 function agov_whitlam_theme_suggestions_block_alter(&$hooks, $vars) {
   if ($vars['elements']['#configuration']['provider'] === 'block_content') {
