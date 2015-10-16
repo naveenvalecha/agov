@@ -48,7 +48,7 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
       ]
     ];
 
-    $links_from_map = function($map, $parent = NULL) use (&$links_from_map) {
+    $links_from_map = function($map, $parent = NULL) use (&$links_from_map, $entities) {
       $weight = 0;
       foreach ($map as $uuid => $link) {
         if (isset($entities[$uuid])) {
@@ -59,6 +59,7 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
         }
       }
     };
+
     $links_from_map($map);
 
     $this->createFooterQuickLinks();
@@ -108,6 +109,7 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
       'link' => ['uri' => $path],
       'menu_name' => $menu,
       'weight' => $weight,
+      'expanded' => '1',
     ]);
     if ($parent !== NULL) {
       $menu_link->set('parent', 'menu_link_content:' . $parent);
