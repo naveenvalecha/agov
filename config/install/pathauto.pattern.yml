@@ -1,0 +1,30 @@
+patterns:
+  node:
+    default: '[node:title]'
+    bundles:
+      article:
+        default: 'news/[node:title]'
+      publication:
+        default: 'publications/[node:title]'
+      standard_page:
+        default: ''
+  taxonomy_term:
+    default: '/[term:vocabulary]/[term:name]'
+    bundles:
+      taxonomy_term:
+        default: ''
+  forum:
+    default: '/[term:vocabulary]/[term:name]'
+  user:
+    default: '/users/[user:name]'
+  file:
+    default: 'files/[file:name]'
+    bundles:
+      audio:
+        default: ''
+      document:
+        default: ''
+      image:
+        default: ''
+      video:
+        default: ''

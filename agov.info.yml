@@ -75,6 +75,8 @@ config_devel:
   - image.style.teaser_medium
   - editor.editor.basic_html
   - block.block.sitebranding
+  - pathauto.settings
+  - pathauto.pattern
 
   # Permissions.
   - user.role.anonymous
