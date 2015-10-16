@@ -12,7 +12,6 @@ dependencies:
     - fences
     - file
     - text
-    - title
     - user
 id: node.publication.default
 targetEntityType: node
@@ -60,20 +59,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  title:
-    type: linked_and_wrapped
-    settings:
-      tag: h1
-      linked: false
-    weight: -5
-    label: hidden
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
 hidden:
   links: true
+  title: true
