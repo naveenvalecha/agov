@@ -33,7 +33,7 @@ content:
     third_party_settings:
       fences:
         fences_field_tag: div
-        fences_field_classes: rhythm
+        fences_field_classes: rhythm-top
         fences_field_item_tag: div
         fences_field_item_classes: ''
         fences_label_tag: div
@@ -57,8 +57,21 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: p
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
     type: string
+  title:
+    type: string
+    settings:
+      link_to_entity: false
+    weight: -5
+    label: above
+    third_party_settings: {  }
 hidden:
   links: true
-  title: true
