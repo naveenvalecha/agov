@@ -14,7 +14,7 @@
   position: relative;
 
   &--light {
-    @include respond-to('medium') {
+    @include respond-to('header-desktop') {
       color: color(search-color-light);
       background: transparent;
     }
@@ -23,7 +23,7 @@
   &__wrapper {
     padding: 15px 20px;
 
-    @include respond-to('medium') {
+    @include respond-to('header-desktop') {
       position: relative;
       bottom: 0;
       padding: 14px 5px 5px;
@@ -98,7 +98,7 @@
     }
 
     &--light {
-      @include respond-to('medium') {
+      @include respond-to('header-desktop') {
         background: none;
         background-repeat: no-repeat;
         background-image: inline-image('components/search/search-icon.png');
@@ -129,7 +129,7 @@
   display: block;
 }
 
-@include respond-to('medium') {
+@include respond-to('header-desktop') {
   #block-searchform-2 {
     display: block;
   }

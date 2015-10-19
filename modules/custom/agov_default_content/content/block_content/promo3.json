@@ -1,14 +1,14 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/9?_format=hal_json"
+            "href": "http:\/\/default\/block\/10?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/promotional_block"
         },
         "http:\/\/drupal.org\/rest\/relation\/block_content\/promotional_block\/field_promotional_image": [
             {
-                "href": "http:\/\/default\/file\/13?_format=hal_json"
+                "href": "http:\/\/default\/file\/4?_format=hal_json"
             }
         ]
     },
@@ -36,7 +36,7 @@
     ],
     "changed": [
         {
-            "value": "1443758762",
+            "value": "1445229859",
             "lang": "en"
         }
     ],
@@ -52,6 +52,13 @@
             "lang": "en"
         }
     ],
+    "field_link": [
+        {
+            "uri": "http:\/\/google.com",
+            "title": "",
+            "options": []
+        }
+    ],
     "field_promotional_description": [
         {
             "value": "Sed gravida, dui et sodales auctor, lacus massa ultrices neque, ut venenatis odio nisi vitae dolor. Mauris eu dui purus, non consectetur ipsum."
@@ -62,7 +69,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/file\/13?_format=hal_json"
+                        "href": "http:\/\/default\/file\/4?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
@@ -73,8 +80,10 @@
                         "value": "0589c569-4ede-4bc5-b100-f28d66063e94"
                     }
                 ],
-                "display": null,
-                "description": null
+                "alt": "Koala",
+                "title": "",
+                "width": "900",
+                "height": "600"
             }
         ]
     },

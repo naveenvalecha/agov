@@ -12,6 +12,7 @@
 
   // Level 1 list, list item and anchor.
   &__list {
+    text-indent: 0;
     overflow: hidden;
     list-style-type: none;
   }
@@ -42,7 +43,7 @@
   }
 
   // Styles on mobile only.
-  @include respond-to('primary-navigation-mobile') {
+  @include respond-to('header-mobile') {
     &--expanded {
       .primary-navigation__list {
         display: block;
@@ -88,7 +89,7 @@
   }
 
   // Styles on desktop only.
-  @include respond-to('primary-navigation-desktop') {
+  @include respond-to('header-desktop') {
     margin-bottom: 30px;
 
     &__title {

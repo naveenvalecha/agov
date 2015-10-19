@@ -1,14 +1,14 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/8?_format=hal_json"
+            "href": "http:\/\/default\/block\/9?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/promotional_block"
         },
         "http:\/\/drupal.org\/rest\/relation\/block_content\/promotional_block\/field_promotional_image": [
             {
-                "href": "http:\/\/default\/file\/12?_format=hal_json"
+                "href": "http:\/\/default\/file\/13?_format=hal_json"
             }
         ]
     },
@@ -36,7 +36,7 @@
     ],
     "changed": [
         {
-            "value": "1443758795",
+            "value": "1445229872",
             "lang": "en"
         }
     ],
@@ -52,6 +52,13 @@
             "lang": "en"
         }
     ],
+    "field_link": [
+        {
+            "uri": "http:\/\/google.com",
+            "title": "",
+            "options": []
+        }
+    ],
     "field_promotional_description": [
         {
             "value": "Nullam tristique adipiscing mauris sit amet pharetra."
@@ -62,7 +69,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/file\/12?_format=hal_json"
+                        "href": "http:\/\/default\/file\/13?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
@@ -73,8 +80,10 @@
                         "value": "3a52100e-08d4-413e-b41d-294e8f52b0d1"
                     }
                 ],
-                "display": null,
-                "description": null
+                "alt": "Leaf",
+                "title": "",
+                "width": "365",
+                "height": "207"
             }
         ]
     },

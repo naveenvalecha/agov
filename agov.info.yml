@@ -123,6 +123,8 @@ config_devel:
   - field.storage.block_content.field_promotional_description
   - field.storage.block_content.field_promotional_image
   - field.storage.block_content.field_promotional_title
+  - field.storage.block_content.field_link
+  - field.field.block_content.promotional_block.field_link
 
   # Contact page.
   - contact.form.contact

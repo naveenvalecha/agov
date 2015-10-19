@@ -53,12 +53,13 @@ content:
     settings:
       tag: h3
       linked: true
+      classes: teaser__title
     weight: -5
     label: hidden
     third_party_settings:
       fences:
         fences_field_tag: div
-        fences_field_classes: teaser__title
+        fences_field_classes: ''
         fences_field_item_tag: div
         fences_field_item_classes: ''
         fences_label_tag: div

@@ -1,14 +1,14 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/block\/7?_format=hal_json"
+            "href": "http:\/\/default\/block\/8?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/block_content\/promotional_block"
         },
         "http:\/\/drupal.org\/rest\/relation\/block_content\/promotional_block\/field_promotional_image": [
             {
-                "href": "http:\/\/default\/file\/11?_format=hal_json"
+                "href": "http:\/\/default\/file\/10?_format=hal_json"
             }
         ]
     },
@@ -36,7 +36,7 @@
     ],
     "changed": [
         {
-            "value": "1443758786",
+            "value": "1445229770",
             "lang": "en"
         }
     ],
@@ -52,6 +52,13 @@
             "lang": "en"
         }
     ],
+    "field_link": [
+        {
+            "uri": "http:\/\/google.com",
+            "title": "",
+            "options": []
+        }
+    ],
     "field_promotional_description": [
         {
             "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue vulputate convallis."
@@ -62,7 +69,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/file\/11?_format=hal_json"
+                        "href": "http:\/\/default\/file\/10?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
@@ -73,8 +80,10 @@
                         "value": "59674274-f1f5-4d6a-be00-fecedfde6534"
                     }
                 ],
-                "display": null,
-                "description": null
+                "alt": "Rocks",
+                "title": "",
+                "width": "363",
+                "height": "204"
             }
         ]
     },
