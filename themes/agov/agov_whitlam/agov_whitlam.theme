@@ -42,8 +42,9 @@ function agov_whitlam_preprocess_block__block_content__social_block(&$vars) {
  */
 function agov_whitlam_preprocess_block__block_content__promotional_block(&$vars) {
   $entity = $vars['content']['#block_content'];
-  $vars['content']['field_promotional_title'][0]['#url'] = Url::fromUri($entity->field_link->uri);
-  $vars['content']['field_promotional_image'][0]['#url'] = Url::fromUri($entity->field_link->uri);
+  $url = $url = Url::fromUri($entity->field_link->uri);
+  $vars['content']['field_promotional_title'][0]['#url'] = $url;
+  $vars['content']['field_promotional_image'][0]['#url'] = $url;
 }
 
 /**
