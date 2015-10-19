@@ -207,3 +207,10 @@ function agov_whitlam_preprocess_menu__footerquicklinks(&$vars) {
     $item['attributes']->addClass('three-column-menu__item');
   }
 }
+
+/**
+ * Implements hook_preprocess_node_HOOK().
+ */
+function agov_whitlam_preprocess_node__publication__teaser(&$vars) {
+  $vars['title_attributes']['class'][] = 'teaser__title';
+}
