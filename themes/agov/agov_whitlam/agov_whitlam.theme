@@ -160,6 +160,7 @@ function agov_whitlam_preprocess_menu__mainnavigation(&$vars) {
  */
 function agov_whitlam_preprocess_block__mainnavigation_2(&$vars) {
   $vars['attributes']['class'] = ['divider'];
+  $vars['content']['#attributes']['class'] = ['unstyled-list'];
 }
 
 /**
