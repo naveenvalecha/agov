@@ -112,7 +112,7 @@ class DefaultContentImportedSubscriber implements EventSubscriberInterface {
       'link' => ['uri' => $path],
       'menu_name' => $menu,
       'weight' => $weight,
-      'expanded' => '1',
+      'expanded' => '0',
     ]);
     if ($parent !== NULL) {
       $menu_link->set('parent', 'menu_link_content:' . $parent);

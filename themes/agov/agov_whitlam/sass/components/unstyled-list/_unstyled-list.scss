@@ -8,7 +8,7 @@
 
 .unstyled-list,
 %unstyled-list {
-  margin-top: 0;
+  @include leader(1);
   margin-bottom: 0;
   padding: 0;
   list-style-type: none;
