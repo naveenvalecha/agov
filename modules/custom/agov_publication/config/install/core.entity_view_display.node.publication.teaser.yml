@@ -48,11 +48,11 @@ content:
         fences_label_tag: div
         fences_label_classes: ''
   title:
+    label: hidden
     type: string
+    weight: -5
     settings:
       link_to_entity: false
-    weight: -5
-    label: above
     third_party_settings: {  }
 hidden:
   field_publication_documents: true

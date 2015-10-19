@@ -67,11 +67,11 @@ content:
         fences_label_classes: ''
     type: string
   title:
+    label: hidden
     type: string
+    weight: -5
     settings:
       link_to_entity: false
-    weight: -5
-    label: above
     third_party_settings: {  }
 hidden:
   links: true
