@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - agov_whitlam
+    - agov_base
 id: breadcrumbs
-theme: agov_whitlam
+theme: agov_base
 region: breadcrumb
 weight: -1
 provider: null

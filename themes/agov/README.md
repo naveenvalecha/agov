@@ -21,14 +21,14 @@ The [Zen](http://drupal.org/project/zen) base theme is Drupal's most popular con
 **agov_zen**
 A sub-theme of the Zen base-theme that includes markup and styling changes to customize aGov's presentation layer, add accessibility improvements, and provided functionality through javascript. Low-level theme changes like colors and css3 enhancements are meant to be provided by the following sub-theme layer.
 
-**agov_whitlam**
+**agov_base**
 A ready-made example of a theme that has been lightly customized. It inherits from *ENABLE this theme to see a standard representation of aGov*
 
 **AGOV_STARTERKIT**
-An example sub-theme that contains all the designs in agov_whitlam and that you can use as a starting point to creating a sub-theme for your website.
+An example sub-theme that contains all the designs in agov_base and that you can use as a starting point to creating a sub-theme for your website.
 
 **STARTERKIT**
-Zen's starter kit. agov_zen and agov_whitlam were built using this theme. You should use Zen's STARTERKIT directly if the design components of your custom theme deviate strongly from those in aGov.
+Zen's starter kit. agov_zen and agov_base were built using this theme. You should use Zen's STARTERKIT directly if the design components of your custom theme deviate strongly from those in aGov.
 
 ## Theme Hierarchy diagram:
 

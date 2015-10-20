@@ -1,5 +1,5 @@
 (function ($) {
-  Drupal.behaviors.agov_whitlam_primary_navigation = {
+  Drupal.behaviors.agov_base_primary_navigation = {
     attach: function (context, settings) {
       $('.primary-navigation', context).once().each(function () {
         var $menu = $(this),
