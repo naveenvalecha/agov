@@ -15,6 +15,8 @@ namespace Drupal\agov\Tests;
 class SearchTest extends AgovTestBase {
 
   /**
+   * An authenticated user.
+   *
    * @var \Drupal\user\Entity\User
    */
   protected $authenticatedUser;
