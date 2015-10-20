@@ -7,9 +7,9 @@ dependencies:
     - block_content
     - system
   theme:
-    - agov_whitlam
+    - agov_base
 id: stayuptodate
-theme: agov_whitlam
+theme: agov_base
 region: sidebar_second
 weight: 0
 provider: null
