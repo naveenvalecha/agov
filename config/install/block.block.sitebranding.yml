@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - agov_whitlam
+    - agov_base
 id: sitebranding
-theme: agov_whitlam
+theme: agov_base
 region: header
 weight: -5
 provider: null
