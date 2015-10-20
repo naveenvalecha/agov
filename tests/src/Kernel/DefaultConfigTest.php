@@ -89,6 +89,8 @@ class DefaultConfigTest extends KernelTestBase {
   protected $excludedModules = [
     // This causes many issues when installed with KTB so ignore it.
     'agov_default_content',
+    // @TODO, move to contrib.
+    'text_icon',
   ];
 
   /**
