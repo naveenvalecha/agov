@@ -7,7 +7,6 @@ dependencies:
     - field.field.block_content.icon_block.field_icon_block_icon
     - field.field.block_content.icon_block.field_icon_block_title
   module:
-    - agov
     - fences
     - link
 id: block_content.icon_block.default
