@@ -92,6 +92,13 @@ class DefaultConfigTest extends KernelTestBase {
   ];
 
   /**
+   * The name of the profile.
+   *
+   * @var string
+   */
+  protected $profile = 'agov';
+
+  /**
    * {@inheritdoc}
    */
   protected function setUp() {
@@ -104,7 +111,7 @@ class DefaultConfigTest extends KernelTestBase {
     // We must set agov as the active profile so that we can install its default
     // config below.
     $old_settings = Settings::getAll();
-    new Settings(['install_profile' => 'agov'] + $old_settings);
+    new Settings(['install_profile' => $this->profile] + $old_settings);
 
     // Set up the state values so we know where to find the files when running
     // drupal_get_filename().
@@ -119,7 +126,15 @@ class DefaultConfigTest extends KernelTestBase {
     $this->installConfig(['node', 'block_content', 'system']);
 
     // Install the default config for our installation profile.
-    $this->container->get('config.installer')->installDefaultConfig('profile', 'agov');
+    $this->container->get('config.installer')->installDefaultConfig('profile', $this->profile);
+  }
+
+  /**
+   * Test the configuration for the profile specifically.
+   */
+  public function testProfileConfig() {
+    $default_install_path = drupal_get_path('profile', $this->profile) . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY;
+    $this->assertConfig($default_install_path);
   }
 
   /**
@@ -132,6 +147,18 @@ class DefaultConfigTest extends KernelTestBase {
       ->install([$module]);
 
     $default_install_path = drupal_get_path('module', $module) . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY;
+    $this->assertConfig($default_install_path);
+  }
+
+  /**
+   * Assert the configuration is the same as the installed config.
+   *
+   * @param string $default_install_path
+   *   The full path to the install directory of the extension.
+   *
+   * @throws \Exception
+   */
+  protected function assertConfig($default_install_path) {
     $module_config_storage = new FileStorage($default_install_path, StorageInterface::DEFAULT_COLLECTION);
 
     // Compare the installed config with the one in the module directory.
