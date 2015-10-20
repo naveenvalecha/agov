@@ -61,7 +61,7 @@ configurable_dependencies:
     enabled: true
 
 themes:
-  - agov_whitlam
+  - agov_base
   - seven
 
 config_devel:
