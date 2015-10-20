@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Whitlam code file.
+ * Base code file.
  */
 
 use Drupal\Core\Cache\CacheableMetadata;
@@ -13,7 +13,7 @@ use Drupal\Core\Url;
 /**
  * Implements hook_theme_suggestions_block_alter().
  */
-function agov_whitlam_theme_suggestions_block_alter(&$hooks, $vars) {
+function agov_base_theme_suggestions_block_alter(&$hooks, $vars) {
   if ($vars['elements']['#configuration']['provider'] === 'block_content') {
     $hooks[] = 'block__block_content__' . $vars['elements']['content']['#block_content']->bundle();
   }
@@ -22,7 +22,7 @@ function agov_whitlam_theme_suggestions_block_alter(&$hooks, $vars) {
 /**
  * Implements hook_preprocess_block__PROVIDER__BUNDLE().
  */
-function agov_whitlam_preprocess_block__block_content__icon_block(&$vars) {
+function agov_base_preprocess_block__block_content__icon_block(&$vars) {
   $vars['attributes']['class'] = [
     'box--icon',
     'box--with-border',
@@ -33,14 +33,14 @@ function agov_whitlam_preprocess_block__block_content__icon_block(&$vars) {
 /**
  * Implements hook_preprocess_block__PROVIDER__BUNDLE().
  */
-function agov_whitlam_preprocess_block__block_content__social_block(&$vars) {
+function agov_base_preprocess_block__block_content__social_block(&$vars) {
   $vars['attributes']['class'][] = 'divider';
 }
 
 /**
  * Implements hook_preprocess_block__PROVIDER__BUNDLE().
  */
-function agov_whitlam_preprocess_block__block_content__promotional_block(&$vars) {
+function agov_base_preprocess_block__block_content__promotional_block(&$vars) {
   $entity = $vars['content']['#block_content'];
   $url = $url = Url::fromUri($entity->field_link->uri);
   $vars['content']['field_promotional_title'][0]['#url'] = $url;
@@ -50,7 +50,7 @@ function agov_whitlam_preprocess_block__block_content__promotional_block(&$vars)
 /**
  * Implements hook_preprocess_breadcrumb().
  */
-function agov_whitlam_preprocess_breadcrumb(&$vars) {
+function agov_base_preprocess_breadcrumb(&$vars) {
   $route = \Drupal::routeMatch()->getRouteObject();
   $title = \Drupal::service('title_resolver')
     ->getTitle(\Drupal::request(), $route);
@@ -71,7 +71,7 @@ function agov_whitlam_preprocess_breadcrumb(&$vars) {
 /**
  * Implements hook_preprocess_block__BLOCK_ID().
  */
-function agov_whitlam_preprocess_block__search_form_block(&$vars) {
+function agov_base_preprocess_block__search_form_block(&$vars) {
   // We have the searchbox twice, one light, one dark.
   $modifier = $vars['elements']['#id'] == 'searchform_2' ? '--light' : '';
 
@@ -91,7 +91,7 @@ function agov_whitlam_preprocess_block__search_form_block(&$vars) {
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function agov_whitlam_form_search_form_alter(&$form, FormStateInterface $form_state) {
+function agov_base_form_search_form_alter(&$form, FormStateInterface $form_state) {
   $form['#attributes']['class'][] = 'search search-form';
 
   // Customise the search box.
@@ -110,7 +110,7 @@ function agov_whitlam_form_search_form_alter(&$form, FormStateInterface $form_st
 /**
  * Implements hook_preprocess_block().
  */
-function agov_whitlam_preprocess_block__system_menu_block__quick_links(&$vars) {
+function agov_base_preprocess_block__system_menu_block__quick_links(&$vars) {
   $vars['attributes']['class'] = ['divider'];
   $vars['content']['#attributes']['class'][] = 'unstyled-list';
 }
@@ -118,7 +118,7 @@ function agov_whitlam_preprocess_block__system_menu_block__quick_links(&$vars) {
 /**
  * Implements hook_theme_suggestions_menu_alter().
  */
-function agov_whitlam_theme_suggestions_menu_alter(&$hooks, $vars) {
+function agov_base_theme_suggestions_menu_alter(&$hooks, $vars) {
   // Allow menus to be preprocessed individually based on an attribute which
   // indicates the block placement ID added by specific block preprocess
   // functions.
@@ -130,7 +130,7 @@ function agov_whitlam_theme_suggestions_menu_alter(&$hooks, $vars) {
 /**
  * Implements hook_preprocess_block__mainnavigation().
  */
-function agov_whitlam_preprocess_block__mainnavigation(&$vars) {
+function agov_base_preprocess_block__mainnavigation(&$vars) {
   $vars['attributes']['class'] = ['primary-navigation'];
   $vars['title_attributes']['class'] = ['primary-navigation__title'];
   $vars['content']['#attributes']['placement_id'] = $vars['elements']['#id'];
@@ -139,7 +139,7 @@ function agov_whitlam_preprocess_block__mainnavigation(&$vars) {
 /**
  * Implements hook_preprocess_menu__mainnavigation().
  */
-function agov_whitlam_preprocess_menu__mainnavigation(&$vars) {
+function agov_base_preprocess_menu__mainnavigation(&$vars) {
   $vars['attributes']['class'] = [
     'primary-navigation__list',
     'layout-center',
@@ -158,7 +158,7 @@ function agov_whitlam_preprocess_menu__mainnavigation(&$vars) {
 /**
  * Implements hook_preprocess_block__mainnavigation_2().
  */
-function agov_whitlam_preprocess_block__mainnavigation_2(&$vars) {
+function agov_base_preprocess_block__mainnavigation_2(&$vars) {
   $vars['attributes']['class'] = ['divider'];
   $vars['content']['#attributes']['class'] = ['unstyled-list'];
 }
@@ -166,7 +166,7 @@ function agov_whitlam_preprocess_block__mainnavigation_2(&$vars) {
 /**
  * Implements hook_preprocess_block__mainnavigation_3().
  */
-function agov_whitlam_preprocess_block__mainnavigation_3(&$vars) {
+function agov_base_preprocess_block__mainnavigation_3(&$vars) {
   $vars['attributes']['class'] = [
     'three-column-menu',
     'footer-top__menu'
@@ -177,7 +177,7 @@ function agov_whitlam_preprocess_block__mainnavigation_3(&$vars) {
 /**
  * Implements hook_preprocess_menu__mainnavigation_3().
  */
-function agov_whitlam_preprocess_menu__mainnavigation_3(&$vars) {
+function agov_base_preprocess_menu__mainnavigation_3(&$vars) {
   $vars['attributes']['class'] = [
     'three-column-menu__list',
   ];
@@ -189,7 +189,7 @@ function agov_whitlam_preprocess_menu__mainnavigation_3(&$vars) {
 /**
  * Implements hook_preprocess_block__footerquicklinks().
  */
-function agov_whitlam_preprocess_block__footerquicklinks(&$vars) {
+function agov_base_preprocess_block__footerquicklinks(&$vars) {
   $vars['attributes']['class'] = [
     'three-column-menu',
     'footer-top__menu'
@@ -200,7 +200,7 @@ function agov_whitlam_preprocess_block__footerquicklinks(&$vars) {
 /**
  * Implements hook_preprocess_menu__footerquicklinks().
  */
-function agov_whitlam_preprocess_menu__footerquicklinks(&$vars) {
+function agov_base_preprocess_menu__footerquicklinks(&$vars) {
   $vars['attributes']['class'] = [
     'three-column-menu__list',
   ];
@@ -212,6 +212,6 @@ function agov_whitlam_preprocess_menu__footerquicklinks(&$vars) {
 /**
  * Implements hook_preprocess_node_HOOK().
  */
-function agov_whitlam_preprocess_node__publication__teaser(&$vars) {
+function agov_base_preprocess_node__publication__teaser(&$vars) {
   $vars['title_attributes']['class'][] = 'teaser__title';
 }

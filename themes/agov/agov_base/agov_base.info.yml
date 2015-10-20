@@ -1,4 +1,4 @@
-name: aGov Whitlam
+name: aGov Base
 description: 'Drupal 8 aGov Theme.'
 screenshot: screenshot.jpg
 
@@ -9,7 +9,7 @@ core: 8.x
 base theme: classy
 
 libraries:
-  - agov_whitlam/component-library
+  - agov_base/component-library
 
 regions:
   secondary_menu: 'Secondary menu'
