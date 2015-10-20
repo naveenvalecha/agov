@@ -28,7 +28,7 @@ class Agov4032404Subscriber implements EventSubscriberInterface {
    * {@inheritdoc}
    */
   public static function getSubscribedEvents() {
-    $events[KernelEvents::EXCEPTION][] = array('on403');
+    $events[KernelEvents::EXCEPTION][] = ['on403'];
     return $events;
   }
 
