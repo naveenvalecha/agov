@@ -7,6 +7,7 @@
 
 namespace Drupal\agov\Plugin\Field\FieldFormatter;
 
+use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Core\Field\FieldItemInterface;
 use Drupal\Core\Field\Plugin\Field\FieldFormatter\StringFormatter;
@@ -31,10 +32,8 @@ class TextIconFormatter extends StringFormatter {
    * {@inheritdoc}
    */
   protected function viewValue(FieldItemInterface $item) {
-    // @TODO, replace with FormattableMarkup() in Beta16.
     return [
-      '#markup' => SafeMarkup::format('<i class="@icon"></i>', ['@icon' => $item->value]),
-
+      '#markup' => new FormattableMarkup('<i class="@icon"></i>', ['@icon' => $item->value]),
     ];
   }
 

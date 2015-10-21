@@ -1,0 +1,5 @@
+services:
+  agov.http_exception:
+    class: Drupal\agov\EventSubscriber\Agov4032404Subscriber
+    tags:
+      - { name: event_subscriber }
