@@ -10,6 +10,14 @@ function agov_install() {
     ->set('name', 'aGov')
     ->set('page.front', '/home')
     ->save();
+
+  // @TODO, remove this once we can enable pathauto before file_entity. Also,
+  // @see https://github.com/md-systems/file_entity/pull/48
+  if (\Drupal::moduleHandler()->moduleExists('pathauto')) {
+    $path_storage_definition = \Drupal::entityManager()->getFieldStorageDefinitions('file')['path'];
+    \Drupal::entityManager()->getStorage('file')->onFieldStorageDefinitionCreate($path_storage_definition);
+    \Drupal::entityDefinitionUpdateManager()->installFieldStorageDefinition('path', 'file', 'file_entity', $path_storage_definition);
+  }
 }
 
 /**

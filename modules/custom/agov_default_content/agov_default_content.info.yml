@@ -6,10 +6,11 @@ core: '8.x'
 
 dependencies:
   - default_content
-  - block_content
   - layout_plugin
   - block_page_layout
+  - ctools
   - page_manager
+  - block_content
   - agov_article
 
 config_devel:

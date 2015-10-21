@@ -43,11 +43,11 @@ dependencies:
 
   # Contrib modules
   - file_entity
+  - pathauto
   - twitter_block
   - layout_plugin
   - page_manager
   - fences
-  - pathauto
   - token
   - text_icon
 

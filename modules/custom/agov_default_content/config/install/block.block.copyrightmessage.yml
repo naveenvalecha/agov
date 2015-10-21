@@ -1,10 +1,9 @@
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:editorial_content:a608987c-1b74-442b-b900-a54f40cda661'
-  module:
-    - block_content
+  enforced:
+    content:
+      - 'block_content:editorial_content:a608987c-1b74-442b-b900-a54f40cda661'
   theme:
     - agov_base
 id: copyrightmessage
