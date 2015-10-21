@@ -63,6 +63,7 @@ class DefaultConfigTest extends KernelTestBase {
     'tour',
     'link',
 
+    'linkicon',
     'fences',
     'file_entity',
     'twitter_block',
@@ -115,7 +116,7 @@ class DefaultConfigTest extends KernelTestBase {
     //   system.module, see https://www.drupal.org/node/2208429.
     include_once $this->root . '/core/modules/system/system.module';
 
-    // We must set agov as the active profile so that we can install its default
+    // We must set the active profile as so that we can install its default
     // config below.
     $old_settings = Settings::getAll();
     new Settings(['install_profile' => $this->profile] + $old_settings);

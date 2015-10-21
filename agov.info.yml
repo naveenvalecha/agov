@@ -100,8 +100,7 @@ config_devel:
   - block.block.seven_login
   - block.block.seven_messages
   - block.block.seven_primary_local_tasks
-  - block.block.seven_secondary_local_tasks
-  - block.block.useraccountmenu
+  - block.block.seven_secondary_local_tasksgs
   - block.block.breadcrumbs
   - block.block.pagetitle
   - block.block.quicklinks

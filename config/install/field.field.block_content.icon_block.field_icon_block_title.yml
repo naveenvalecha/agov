@@ -19,4 +19,5 @@ default_value_callback: ''
 settings:
   link_type: 17
   title: 2
+  title_predefined: ''
 field_type: link
