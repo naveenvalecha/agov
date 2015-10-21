@@ -70,8 +70,6 @@ themes:
 config_devel:
   # Global config.
   - system.theme
-  - system.theme
-  - system.site
   - search.settings
   - node.settings
   - core.date_format.publication_date
@@ -94,7 +92,6 @@ config_devel:
   - block.block.mainnavigation
   - block.block.mainnavigation_2
   - block.block.searchform
-  - block.block.useraccountmenu
   - block.block.searchform
   - block.block.seven_breadcrumbs
   - block.block.seven_content

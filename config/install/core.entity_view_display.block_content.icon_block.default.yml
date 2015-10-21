@@ -9,6 +9,7 @@ dependencies:
   module:
     - fences
     - link
+    - text_icon
 id: block_content.icon_block.default
 targetEntityType: block_content
 bundle: icon_block
