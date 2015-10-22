@@ -17,6 +17,10 @@
   &__title {
     margin-top: 5px;
     margin-bottom: 5px;
+
+    h2 {
+      @extend %h3;
+    }
   }
 
   &__date {
