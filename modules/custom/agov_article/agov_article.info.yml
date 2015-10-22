@@ -15,6 +15,8 @@ config_devel:
   - core.entity_form_display.node.article.default
   - core.entity_view_display.node.article.default
   - core.entity_view_display.node.article.teaser
+  - core.entity_view_mode.node.article.teaser_small
+  - core.entity_view_display.node.article.teaser_small
   - field.field.node.article.body
   - field.field.node.article.field_article_image
   - field.storage.node.field_article_image

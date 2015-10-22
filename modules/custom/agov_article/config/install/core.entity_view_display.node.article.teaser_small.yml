@@ -1,4 +1,4 @@
-uuid: 01aedbf4-b18c-41d1-8c43-673b19dab7e0
+uuid: 6066e133-65a2-4558-8234-5270d41c7140
 langcode: en
 status: true
 dependencies:
@@ -24,7 +24,7 @@ content:
     type: text_summary_or_trimmed
     weight: 2
     settings:
-      trim_length: 600
+      trim_length: 158
     third_party_settings:
       fences:
         fences_field_tag: div
