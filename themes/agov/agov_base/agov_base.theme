@@ -87,7 +87,7 @@ function agov_base_preprocess_block__search_form_block(&$vars) {
   $vars['content']['actions']['submit']['#attributes']['class'][] = 'search__button' . $modifier;
   $vars['content']['actions']['submit']['#attributes']['class'][] = 'search__button';
   // Add the search icon.
-  $vars['content']['actions']['submit']['#prefix'] = '<div class="search__button-wrapper'  . $modifier . '"><i class="fa fa-search search__icon" aria-hidden="true"></i>';
+  $vars['content']['actions']['submit']['#prefix'] = '<div class="search__button-wrapper' . $modifier . '"><i class="fa fa-search search__icon" aria-hidden="true"></i>';
   $vars['content']['actions']['submit']['#suffix'] = '</div>';
 }
 
