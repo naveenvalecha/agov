@@ -24,11 +24,8 @@
   }
 
   &__image {
-    a:focus {
-      outline: none;
-    }
-
     img {
+      display: block;
       margin-bottom: 5px;
     }
   }
@@ -39,7 +36,7 @@
       width: 30%;
     }
 
-    img {
+    .field__item {
       @include respond-to('medium') {
         padding-right: 30px;
       }
