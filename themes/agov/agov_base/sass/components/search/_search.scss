@@ -75,45 +75,64 @@
     }
   }
 
-  &__button {
-    background: none;
-    background-repeat: no-repeat;
-    background-image: inline-image('components/search/search-icon-blue.png');
+  &__button-wrapper {
     position: absolute;
+    top: 0;
     right: 0;
-    top: 1em;
+    width: 3.5em;
+    height: 3em;
+    display: block;
+    color: color('search-button');
+
+    &:hover {
+      color: color('search-color');
+    }
+
+    &--light {
+      color: color('search-button-light');
+
+      &:hover {
+        color: color('white');
+      }
+    }
+  }
+
+  &__button {
+    @extend %search__button-wrapper;
+    padding: 0;
+    margin: 0;
     border: 0;
     text-indent: -999em;
-    display: inline-block;
-    width: 23px;
-    height: 23px;
-    background-color: none;
-    padding-left: 13px;
+    background: none;
 
     // Override the hover to counteract .button:hover
-    &:hover {
+    &:hover,
+    &:focus {
       background: none;
-      background-repeat: no-repeat;
-      background-image: inline-image('components/search/search-icon-blue.png');
     }
 
     &--light {
       @include respond-to('header-desktop') {
         background: none;
-        background-repeat: no-repeat;
-        background-image: inline-image('components/search/search-icon.png');
         bottom: 0;
         padding: 0;
 
         // Override the hover to counteract .button:hover
         &:hover {
           background: none;
-          background-repeat: no-repeat;
-          background-image: inline-image('components/search/search-icon.png');
         }
        }
     }
+  }
 
+  &__icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0 .75em;
+    padding: 12px 0;
+    font-size: 1.5em;
+    color: currentColor;
   }
 }
 

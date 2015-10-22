@@ -86,6 +86,9 @@ function agov_base_preprocess_block__search_form_block(&$vars) {
   $vars['content']['actions']['submit']['#title_display'] = 'invisible';
   $vars['content']['actions']['submit']['#attributes']['class'][] = 'search__button' . $modifier;
   $vars['content']['actions']['submit']['#attributes']['class'][] = 'search__button';
+  // Add the search icon.
+  $vars['content']['actions']['submit']['#prefix'] = '<div class="search__button-wrapper'  . $modifier . '"><i class="fa fa-search search__icon" aria-hidden="true"></i>';
+  $vars['content']['actions']['submit']['#suffix'] = '</div>';
 }
 
 /**
@@ -102,6 +105,9 @@ function agov_base_form_search_form_alter(&$form, FormStateInterface $form_state
 
   // Add the submit classes.
   $form['basic']['submit']['#attributes']['class'][] = 'search__button';
+  // Add the search icon.
+  $form['basic']['submit']['#prefix'] = '<div class="search__button-wrapper"><i class="fa fa-search search__icon" aria-hidden="true"></i>';
+  $form['basic']['submit']['#suffix'] = '</div>';
 
   // Hide the help links.
   $form['help_link']['#access'] = FALSE;
