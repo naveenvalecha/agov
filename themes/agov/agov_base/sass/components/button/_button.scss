@@ -39,7 +39,7 @@
 
   &:hover,
   &:focus {
-    background: color(button-bg-hover);
+    background-color: color(button-bg-hover);
     border-color: color(form-element-border-hover);
     color: color(button-color-hover);
     text-decoration: none;
@@ -52,7 +52,7 @@
 
     &:hover,
     &:focus {
-      background: color(button-bg);
+      background-color: color(button-bg);
       border-color: color(form-element-border);
       color: color(text);
     }
