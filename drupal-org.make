@@ -39,8 +39,6 @@ projects[file_entity][download][branch] = fix-entity-field-mismatch
 projects[file_entity][download][revision] = 6f0b40faed6e72bea218a25aed1034c7bfff483f
 projects[file_entity][subdir] = 'contrib'
 
-
-
 projects[pathauto][type] = module
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = https://github.com/md-systems/pathauto.git
@@ -64,11 +62,19 @@ projects[twitter_block][subdir] = 'contrib'
 projects[linkicon][subdir] = 'contrib'
 projects[linkicon][version] = '1.1'
 
+projects[title][type] = module
+projects[title][download][type] = git
+projects[title][download][url] = http://git.drupal.org/project/title.git
+projects[title][download][branch] = 8.x-2.x
+projects[title][download][revision] = b163e2d50b3add3842ac67ea11cced5eb5d7ceaf
 projects[title][subdir] = 'contrib'
-projects[title][version] = '2.x'
 
+projects[fences][type] = module
+projects[fences][download][type] = git
+projects[fences][download][url] = http://git.drupal.org/project/fences.git
+projects[fences][download][branch] = 8.x-2.x
+projects[fences][download][revision] = 17e56ed95b358544e0a93a37b819793234f7876e
 projects[fences][subdir] = 'contrib'
-projects[fences][version] = '2.x'
 
 ; aGov
 
