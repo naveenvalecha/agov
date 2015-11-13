@@ -1,0 +1,21 @@
+application: previousnext/lamp
+
+deploy_setup: &deploy_setup
+  # Setup the remote repository.
+  - git remote add drupal pnx-bot@git.drupal.org:project/agov.git
+  - git fetch drupal
+  - git config --global user.email "admin@previousnext.com.au"
+  - git config --global user.name "PreviousNext"
+
+deploy_teardown: &deploy_teardown
+  # Remove the remote repository.
+  - git remote remove drupal
+
+deploy_7_1:
+  setup: *deploy_setup
+  steps:
+    # Update local build before we do anything else.
+    - git rebase drupal/7.x-1.x
+    # Push changes to Drupal.org.
+    - git push drupal 7.x-1.x
+  teardown: *deploy_teardown
