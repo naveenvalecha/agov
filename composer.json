@@ -46,10 +46,10 @@
     "composer/installers": "~1.0"
   },
   "require-dev": {
-    "drush/drush": "6.5.0",
-    "phing/phing": "~2.11@dev",
+    "drush/drush": "~6.5",
+    "phing/phing": "~2.11",
     "previousnext/phing-phpqatools": "dev-master",
-    "previousnext/phing-behat": "0.0.4"
+    "previousnext/phing-behat": "~0.0.4"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
