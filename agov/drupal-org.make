@@ -6,7 +6,7 @@ defaults[projects][subdir] = "contrib"
 ; Contrib modules
 projects[layout_plugin][version] = 1.0-alpha22
 projects[ctools][version] = 3.0-alpha22
-projects[twitter_block][version] = 2.0
+projects[twitter_block][version] = 2.1
 projects[linkicon][version] = '1.2'
 projects[pathauto][version] = '1.0-alpha1'
 projects[token][version] = '1.0-alpha2'
